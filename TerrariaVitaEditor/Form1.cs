@@ -51,33 +51,194 @@ namespace TerrariaVitaEditor
         {
             if (file.StartsWith("1500"))
             {    
-                file = file.Remove(0, 4);
+                try
+                {
+                    file = file.Remove(0, 4);
 
-                file = Pseudo(file);
+                    file = Pseudo(file);
 
-                file = Difficulty(file);
+                    file = Difficulty(file);
 
-                file = HairStyle(file);
+                    file = HairStyle(file);
 
-                file = Sex(file);
+                    file = Sex(file);
 
-                file = file.Remove(0, 18); //TODO (Helth + Mana)
+                    file = file.Remove(0, 18); //TODO (Helth + Mana)
 
-                file = ColorPlayer(file); //Everything works so far! 
+                    file = ColorPlayer(file); //Everything works so far! 
 
-                file = EquippedArmor(file);
+                    file = EquippedArmor(file);
 
-                file = EquippedAccessories(file);
+                    file = EquippedAccessories(file);
 
-                file = EquippedVanity(file);
+                    file = EquippedVanity(file);
 
-                file = Inventory(file);
+                    file = Inventory(file);
 
+                    file = Coin(file);
+
+                    file = Ammo(file);
+
+                    button3.Enabled = true;
+                    button2.Enabled = true;
+                    textBox2.Enabled = true;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error.\n" + ex);
+                }
             }
             else
             {
                 MessageBox.Show("This is not a valid Vita PLR file!");
             }
+        }
+
+        private string Ammo(string file)
+        {
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox64.Text = "0";
+            }
+            else
+            {
+                string ammo1 = file.Remove(10, file.Length - 10);
+                string ammo1PART1 = ammo1.Remove(0, 2);
+                ammo1PART1 = ammo1PART1.Remove(2, 6);
+                string ammo1PART2 = ammo1.Remove(2, 8);
+                string realammo1 = ammo1PART1 + ammo1PART2;
+                int ammo1id = Convert.ToInt32(realammo1, 16);
+                textBox64.Text = ammo1id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox65.Text = "0";
+            }
+            else
+            {
+                string ammo2 = file.Remove(10, file.Length - 10);
+                string ammo2PART1 = ammo2.Remove(0, 2);
+                ammo2PART1 = ammo2PART1.Remove(2, 6);
+                string ammo2PART2 = ammo2.Remove(2, 8);
+                string realammo2 = ammo2PART1 + ammo2PART2;
+                int ammo2id = Convert.ToInt32(realammo2, 16);
+                textBox65.Text = ammo2id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox66.Text = "0";
+            }
+            else
+            {
+                string ammo3 = file.Remove(10, file.Length - 10);
+                string ammo3PART1 = ammo3.Remove(0, 2);
+                ammo3PART1 = ammo3PART1.Remove(2, 6);
+                string ammo3PART2 = ammo3.Remove(2, 8);
+                string realammo3 = ammo3PART1 + ammo3PART2;
+                int ammo3id = Convert.ToInt32(realammo3, 16);
+                textBox66.Text = ammo3id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox67.Text = "0";
+            }
+            else
+            {
+                string ammo4 = file.Remove(10, file.Length - 10);
+                string ammo4PART1 = ammo4.Remove(0, 2);
+                ammo4PART1 = ammo4PART1.Remove(2, 6);
+                string ammo4PART2 = ammo4.Remove(2, 8);
+                string realammo4 = ammo4PART1 + ammo4PART2;
+                int ammo4id = Convert.ToInt32(realammo4, 16);
+                textBox67.Text = ammo4id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            return file;
+        }
+
+        private string Coin(string file)
+        {
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox68.Text = "0";
+            }
+            else
+            {
+                string coin1 = file.Remove(10, file.Length - 10);
+                string coin1PART1 = coin1.Remove(0, 2);
+                coin1PART1 = coin1PART1.Remove(2, 6);
+                string coin1PART2 = coin1.Remove(2, 8);
+                string realcoin1 = coin1PART1 + coin1PART2;
+                int coin1id = Convert.ToInt32(realcoin1, 16);
+                textBox68.Text = coin1id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox69.Text = "0";
+            }
+            else
+            {
+                string coin2 = file.Remove(10, file.Length - 10);
+                string coin2PART1 = coin2.Remove(0, 2);
+                coin2PART1 = coin2PART1.Remove(2, 6);
+                string coin2PART2 = coin2.Remove(2, 8);
+                string realcoin2 = coin2PART1 + coin2PART2;
+                int coin2id = Convert.ToInt32(realcoin2, 16);
+                textBox69.Text = coin2id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox70.Text = "0";
+            }
+            else
+            {
+                string coin3 = file.Remove(10, file.Length - 10);
+                string coin3PART1 = coin3.Remove(0, 2);
+                coin3PART1 = coin3PART1.Remove(2, 6);
+                string coin3PART2 = coin3.Remove(2, 8);
+                string realcoin3 = coin3PART1 + coin3PART2;
+                int coin3id = Convert.ToInt32(realcoin3, 16);
+                textBox70.Text = coin3id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            if (file.StartsWith("0000"))
+            {
+                file = file.Remove(0, 4);
+                textBox71.Text = "0";
+            }
+            else
+            {
+                string coin4 = file.Remove(10, file.Length - 10);
+                string coin4PART1 = coin4.Remove(0, 2);
+                coin4PART1 = coin4PART1.Remove(2, 6);
+                string coin4PART2 = coin4.Remove(2, 8);
+                string realcoin4 = coin4PART1 + coin4PART2;
+                int coin4id = Convert.ToInt32(realcoin4, 16);
+                textBox71.Text = coin4id.ToString();
+                file = file.Remove(0, 10);
+            }
+
+            return file;
         }
 
         private string Inventory(string file)
@@ -1100,12 +1261,7 @@ namespace TerrariaVitaEditor
 
         private void àProposToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Terraria Editor for PSVita v0.1\nBy valentinbreiz.");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Terraria Editor for PSVita v0.1\nBy valentinbreiz from CustomProtocol.com");
         }
 
         private void button2_Click(object sender, EventArgs e)
