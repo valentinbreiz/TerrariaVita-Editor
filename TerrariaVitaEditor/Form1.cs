@@ -16,6 +16,10 @@ namespace TerrariaVitaEditor
 
         public string path;
 
+        //Pour la sauvegarde
+        public string endfile;
+        public string HPMANA;
+
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
@@ -63,7 +67,9 @@ namespace TerrariaVitaEditor
 
                     file = Sex(file);
 
-                    file = file.Remove(0, 18); //TODO (Helth + Mana)
+                    HPMANA = file.Remove(16, file.Length - 16);
+                    
+                    file = file.Remove(0, 16); //TODO (Helth + Mana)
 
                     file = ColorPlayer(file); //Everything works so far! 
 
@@ -82,6 +88,8 @@ namespace TerrariaVitaEditor
                     button3.Enabled = true;
                     button2.Enabled = true;
                     textBox2.Enabled = true;
+
+                    endfile = file;
 
                 }
                 catch (Exception ex)
@@ -1181,17 +1189,20 @@ namespace TerrariaVitaEditor
             string sex = file.Remove(2, file.Length - 2);
             if (sex.Equals("00"))
             {
-                textBox5.Text = "Female";
+                comboBox2.Text = "Female";
+                file = file.Remove(0, 2);
                 return file;
             }
             else if (sex.Equals("01"))
             {
-                textBox5.Text = "Male";
+                comboBox2.Text = "Male";
+                file = file.Remove(0, 2);
                 return file;
             }
             else
             {
-                textBox5.Text = "Error";
+                comboBox2.Text = "Error";
+                file = file.Remove(0, 2);
                 return file;
             }
         }
@@ -1200,7 +1211,9 @@ namespace TerrariaVitaEditor
         {
             file = file.Remove(0, 2);
             string hairstyle = file.Remove(2, file.Length - 2);
-            textBox4.Text = hairstyle;
+            int decValue = int.Parse(hairstyle, System.Globalization.NumberStyles.HexNumber);
+            decValue = decValue + 1;
+            textBox4.Text = decValue.ToString();
             return file;
         }
 
@@ -1210,22 +1223,22 @@ namespace TerrariaVitaEditor
 
             if (difficulty.Equals("00"))
             {
-                textBox3.Text = "Easy (Normal)";
+                comboBox1.Text = "Easy (Normal)";
                 return file;
             }
             else if (difficulty.Equals("01"))
             {
-                textBox3.Text = "Normal (Difficile)";
+                comboBox1.Text = "Normal (Difficile)";
                 return file;
             }
             else if (difficulty.Equals("02"))
             {
-                textBox3.Text = "Hardcore (Hardcore)";
+                comboBox1.Text = "Hardcore (Hardcore)";
                 return file;
             }
             else
             {
-                textBox3.Text = "Error";
+                comboBox1.Text = "Error";
                 return file;
             }
         }
@@ -1286,5 +1299,104 @@ namespace TerrariaVitaEditor
                              .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
                              .ToArray();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Make();
+            MessageBox.Show("Done!");
+        }
+
+        private void Make()
+        {
+            string file = "1500";
+            int pseudolenght = textBox1.TextLength;
+            string pseudolenghta = HexFromID(pseudolenght);
+
+            if (pseudolenghta.Length == 1)
+            {
+                file = file + "0" + pseudolenghta;
+            }
+            else
+            {
+                file = file + pseudolenghta;
+            }
+
+            file = file + StringToHex(textBox1.Text);
+
+            if (comboBox1.Text == "Easy (Normal)")
+            {
+                file = file + "00";
+            }
+            else if (comboBox1.Text == "Normal (Difficile)")
+            {
+                file = file + "01";
+            }
+            else if (comboBox1.Text == "Hardcore (Hardcore)")
+            {
+                file = file + "02";
+            }
+
+            int dechairstyle = Int32.Parse(textBox4.Text);
+
+            if (dechairstyle > 134 || dechairstyle < 1)
+            {
+                MessageBox.Show("Invalid Hair Style");
+            }
+            else
+            {
+                int value = Int32.Parse(textBox4.Text);
+                value = value - 1;
+                file = file + HexFromID(value);
+            }
+
+            file = file + "0000";
+
+            if (comboBox2.Text == "Female")
+            {
+                file = file + "00";
+            }
+            else if (comboBox2.Text == "Male")
+            {
+                file = file + "01";
+            }
+
+            file = file + HPMANA;
+
+            file = file + textBox6.Text + textBox7.Text + textBox8.Text + textBox9.Text + textBox10.Text + textBox11.Text + textBox12.Text;
+
+            string equipedhelmet = StringToHex(textBox13.Text);
+            string equipedchest = StringToHex(textBox14.Text);
+            string equipedboots = StringToHex(textBox15.Text);
+
+            MessageBox.Show(equipedhelmet);
+
+            textBox3.Text = file;
+        }
+
+        private string HexFromID(int ID)
+        {
+            return ID.ToString("X");
+        }
+
+        private string StringToHex(string hexstring)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (char t in hexstring)
+            {
+                //Note: X for upper, x for lower case letters
+                sb.Append(Convert.ToInt32(t).ToString("x"));
+            }
+            string stringg = sb.ToString().ToUpper();
+            if (stringg.Length == 1)
+            {
+                stringg = "0" + stringg;
+                return stringg;
+            }
+            else
+            {
+                return stringg;
+            }
+        }
+
     }
 }
