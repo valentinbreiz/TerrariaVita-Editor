@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace TerrariaVitaEditor
 
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             openFileDialog1.ShowDialog();
             path = openFileDialog1.FileName;
             Text = openFileDialog1.FileName;
@@ -112,13 +114,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string ammo1 = file.Remove(10, file.Length - 10);
-                string ammo1PART1 = ammo1.Remove(0, 2);
-                ammo1PART1 = ammo1PART1.Remove(2, 6);
-                string ammo1PART2 = ammo1.Remove(2, 8);
-                string realammo1 = ammo1PART1 + ammo1PART2;
-                int ammo1id = Convert.ToInt32(realammo1, 16);
-                textBox64.Text = ammo1id.ToString();
+                try
+                {
+                    string ammo1 = file.Remove(10, file.Length - 10);
+                    string ammo1PART1 = ammo1.Remove(0, 2);
+                    ammo1PART1 = ammo1PART1.Remove(2, 6);
+                    string ammo1PART2 = ammo1.Remove(2, 8);
+                    string realammo1 = ammo1PART1 + ammo1PART2;
+                    int ammo1id = Convert.ToInt32(realammo1, 16);
+                    pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo1id + ".png");
+                    textBox64.Text = ammo1id.ToString();
+                }
+                catch
+                {
+                    pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -129,13 +140,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string ammo2 = file.Remove(10, file.Length - 10);
-                string ammo2PART1 = ammo2.Remove(0, 2);
-                ammo2PART1 = ammo2PART1.Remove(2, 6);
-                string ammo2PART2 = ammo2.Remove(2, 8);
-                string realammo2 = ammo2PART1 + ammo2PART2;
-                int ammo2id = Convert.ToInt32(realammo2, 16);
-                textBox65.Text = ammo2id.ToString();
+                try
+                {
+                    string ammo2 = file.Remove(10, file.Length - 10);
+                    string ammo2PART1 = ammo2.Remove(0, 2);
+                    ammo2PART1 = ammo2PART1.Remove(2, 6);
+                    string ammo2PART2 = ammo2.Remove(2, 8);
+                    string realammo2 = ammo2PART1 + ammo2PART2;
+                    int ammo2id = Convert.ToInt32(realammo2, 16);
+                    pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo2id + ".png");
+                    textBox65.Text = ammo2id.ToString();
+                }
+                catch
+                {
+                    pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -146,13 +166,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string ammo3 = file.Remove(10, file.Length - 10);
-                string ammo3PART1 = ammo3.Remove(0, 2);
-                ammo3PART1 = ammo3PART1.Remove(2, 6);
-                string ammo3PART2 = ammo3.Remove(2, 8);
-                string realammo3 = ammo3PART1 + ammo3PART2;
-                int ammo3id = Convert.ToInt32(realammo3, 16);
-                textBox66.Text = ammo3id.ToString();
+                try
+                {
+                    string ammo3 = file.Remove(10, file.Length - 10);
+                    string ammo3PART1 = ammo3.Remove(0, 2);
+                    ammo3PART1 = ammo3PART1.Remove(2, 6);
+                    string ammo3PART2 = ammo3.Remove(2, 8);
+                    string realammo3 = ammo3PART1 + ammo3PART2;
+                    int ammo3id = Convert.ToInt32(realammo3, 16);
+                    pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo3id + ".png");
+                    textBox66.Text = ammo3id.ToString();
+                }
+                catch
+                {
+                    pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -163,13 +192,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string ammo4 = file.Remove(10, file.Length - 10);
-                string ammo4PART1 = ammo4.Remove(0, 2);
-                ammo4PART1 = ammo4PART1.Remove(2, 6);
-                string ammo4PART2 = ammo4.Remove(2, 8);
-                string realammo4 = ammo4PART1 + ammo4PART2;
-                int ammo4id = Convert.ToInt32(realammo4, 16);
-                textBox67.Text = ammo4id.ToString();
+                try
+                {
+                    string ammo4 = file.Remove(10, file.Length - 10);
+                    string ammo4PART1 = ammo4.Remove(0, 2);
+                    ammo4PART1 = ammo4PART1.Remove(2, 6);
+                    string ammo4PART2 = ammo4.Remove(2, 8);
+                    string realammo4 = ammo4PART1 + ammo4PART2;
+                    int ammo4id = Convert.ToInt32(realammo4, 16);
+                    pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo4id + ".png");
+                    textBox67.Text = ammo4id.ToString();
+                }
+                catch
+                {
+                    pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+
                 file = file.Remove(0, 10);
             }
 
@@ -185,13 +223,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string coin1 = file.Remove(10, file.Length - 10);
-                string coin1PART1 = coin1.Remove(0, 2);
-                coin1PART1 = coin1PART1.Remove(2, 6);
-                string coin1PART2 = coin1.Remove(2, 8);
-                string realcoin1 = coin1PART1 + coin1PART2;
-                int coin1id = Convert.ToInt32(realcoin1, 16);
-                textBox68.Text = coin1id.ToString();
+                try
+                {
+                    string coin1 = file.Remove(10, file.Length - 10);
+                    string coin1PART1 = coin1.Remove(0, 2);
+                    coin1PART1 = coin1PART1.Remove(2, 6);
+                    string coin1PART2 = coin1.Remove(2, 8);
+                    string realcoin1 = coin1PART1 + coin1PART2;
+                    int coin1id = Convert.ToInt32(realcoin1, 16);
+                    pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin1id + ".png");
+                    textBox68.Text = coin1id.ToString();
+                }
+                catch
+                {
+                    pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -202,13 +249,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string coin2 = file.Remove(10, file.Length - 10);
-                string coin2PART1 = coin2.Remove(0, 2);
-                coin2PART1 = coin2PART1.Remove(2, 6);
-                string coin2PART2 = coin2.Remove(2, 8);
-                string realcoin2 = coin2PART1 + coin2PART2;
-                int coin2id = Convert.ToInt32(realcoin2, 16);
-                textBox69.Text = coin2id.ToString();
+                try
+                {
+                    string coin2 = file.Remove(10, file.Length - 10);
+                    string coin2PART1 = coin2.Remove(0, 2);
+                    coin2PART1 = coin2PART1.Remove(2, 6);
+                    string coin2PART2 = coin2.Remove(2, 8);
+                    string realcoin2 = coin2PART1 + coin2PART2;
+                    int coin2id = Convert.ToInt32(realcoin2, 16);
+                    pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin2id + ".png");
+                    textBox69.Text = coin2id.ToString();
+                }
+                catch
+                {
+                    pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -219,13 +275,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string coin3 = file.Remove(10, file.Length - 10);
-                string coin3PART1 = coin3.Remove(0, 2);
-                coin3PART1 = coin3PART1.Remove(2, 6);
-                string coin3PART2 = coin3.Remove(2, 8);
-                string realcoin3 = coin3PART1 + coin3PART2;
-                int coin3id = Convert.ToInt32(realcoin3, 16);
-                textBox70.Text = coin3id.ToString();
+                try
+                {
+                    string coin3 = file.Remove(10, file.Length - 10);
+                    string coin3PART1 = coin3.Remove(0, 2);
+                    coin3PART1 = coin3PART1.Remove(2, 6);
+                    string coin3PART2 = coin3.Remove(2, 8);
+                    string realcoin3 = coin3PART1 + coin3PART2;
+                    int coin3id = Convert.ToInt32(realcoin3, 16);
+                    pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin3id + ".png");
+                    textBox70.Text = coin3id.ToString();
+                }
+                catch
+                {
+                    pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -236,13 +301,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string coin4 = file.Remove(10, file.Length - 10);
-                string coin4PART1 = coin4.Remove(0, 2);
-                coin4PART1 = coin4PART1.Remove(2, 6);
-                string coin4PART2 = coin4.Remove(2, 8);
-                string realcoin4 = coin4PART1 + coin4PART2;
-                int coin4id = Convert.ToInt32(realcoin4, 16);
-                textBox71.Text = coin4id.ToString();
+                try
+                {
+                    string coin4 = file.Remove(10, file.Length - 10);
+                    string coin4PART1 = coin4.Remove(0, 2);
+                    coin4PART1 = coin4PART1.Remove(2, 6);
+                    string coin4PART2 = coin4.Remove(2, 8);
+                    string realcoin4 = coin4PART1 + coin4PART2;
+                    int coin4id = Convert.ToInt32(realcoin4, 16);
+                    pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin4id + ".png");
+                    textBox71.Text = coin4id.ToString();
+                }
+                catch
+                {
+                    pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -261,13 +335,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item1 = file.Remove(10, file.Length - 10);
-                string item1PART1 = item1.Remove(0, 2);
-                item1PART1 = item1PART1.Remove(2, 6);
-                string item1PART2 = item1.Remove(2, 8);
-                string realitem1 = item1PART1 + item1PART2;
-                int item1id = Convert.ToInt32(realitem1, 16);
-                textBox24.Text = item1id.ToString();
+                try
+                {
+                    string item1 = file.Remove(10, file.Length - 10);
+                    string item1PART1 = item1.Remove(0, 2);
+                    item1PART1 = item1PART1.Remove(2, 6);
+                    string item1PART2 = item1.Remove(2, 8);
+                    string realitem1 = item1PART1 + item1PART2;
+                    int item1id = Convert.ToInt32(realitem1, 16);
+                    pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item1id + ".png");
+                }
+                catch
+                {
+                    pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -279,13 +361,20 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item2 = file.Remove(10, file.Length - 10);
-                string item2PART1 = item2.Remove(0, 2);
-                item2PART1 = item2PART1.Remove(2, 6);
-                string item2PART2 = item2.Remove(2, 8);
-                string realitem2 = item2PART1 + item2PART2;
-                int item2id = Convert.ToInt32(realitem2, 16);
-                textBox25.Text = item2id.ToString();
+                try
+                {
+                    string item2 = file.Remove(10, file.Length - 10);
+                    string item2PART1 = item2.Remove(0, 2);
+                    item2PART1 = item2PART1.Remove(2, 6);
+                    string item2PART2 = item2.Remove(2, 8);
+                    string realitem2 = item2PART1 + item2PART2;
+                    int item2id = Convert.ToInt32(realitem2, 16);
+                    pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item2id + ".png");
+                }
+                catch
+                {
+                    pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -297,13 +386,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item3 = file.Remove(10, file.Length - 10);
-                string item3PART1 = item3.Remove(0, 2);
-                item3PART1 = item3PART1.Remove(2, 6);
-                string item3PART2 = item3.Remove(2, 8);
-                string realitem3 = item3PART1 + item3PART2;
-                int item3id = Convert.ToInt32(realitem3, 16);
-                textBox26.Text = item3id.ToString();
+                try
+                {
+                    string item3 = file.Remove(10, file.Length - 10);
+                    string item3PART1 = item3.Remove(0, 2);
+                    item3PART1 = item3PART1.Remove(2, 6);
+                    string item3PART2 = item3.Remove(2, 8);
+                    string realitem3 = item3PART1 + item3PART2;
+                    int item3id = Convert.ToInt32(realitem3, 16);
+                    pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item3id + ".png");
+                    textBox26.Text = item3id.ToString();
+                }
+                catch
+                {
+                    pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             } 
 
@@ -315,13 +412,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item4 = file.Remove(10, file.Length - 10);
-                string item4PART1 = item4.Remove(0, 2);
-                item4PART1 = item4PART1.Remove(2, 6);
-                string item4PART2 = item4.Remove(2, 8);
-                string realitem4 = item4PART1 + item4PART2;
-                int item4id = Convert.ToInt32(realitem4, 16);
-                textBox27.Text = item4id.ToString();
+                try
+                {
+                    string item4 = file.Remove(10, file.Length - 10);
+                    string item4PART1 = item4.Remove(0, 2);
+                    item4PART1 = item4PART1.Remove(2, 6);
+                    string item4PART2 = item4.Remove(2, 8);
+                    string realitem4 = item4PART1 + item4PART2;
+                    int item4id = Convert.ToInt32(realitem4, 16);
+                    pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item4id + ".png");
+                    textBox27.Text = item4id.ToString();
+                }
+                catch
+                {
+                    pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -333,13 +438,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item5 = file.Remove(10, file.Length - 10);
-                string item5PART1 = item5.Remove(0, 2);
-                item5PART1 = item5PART1.Remove(2, 6);
-                string item5PART2 = item5.Remove(2, 8);
-                string realitem5 = item5PART1 + item5PART2;
-                int item5id = Convert.ToInt32(realitem5, 16);
-                textBox28.Text = item5id.ToString();
+                try
+                {
+                    string item5 = file.Remove(10, file.Length - 10);
+                    string item5PART1 = item5.Remove(0, 2);
+                    item5PART1 = item5PART1.Remove(2, 6);
+                    string item5PART2 = item5.Remove(2, 8);
+                    string realitem5 = item5PART1 + item5PART2;
+                    int item5id = Convert.ToInt32(realitem5, 16);
+                    pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item5id + ".png");
+                    textBox28.Text = item5id.ToString();
+                }
+                catch
+                {
+                    pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             } 
 
@@ -351,13 +464,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item6 = file.Remove(10, file.Length - 10);
-                string item6PART1 = item6.Remove(0, 2);
-                item6PART1 = item6PART1.Remove(2, 6);
-                string item6PART2 = item6.Remove(2, 8);
-                string realitem6 = item6PART1 + item6PART2;
-                int item6id = Convert.ToInt32(realitem6, 16);
-                textBox29.Text = item6id.ToString();
+                try
+                {
+                    string item6 = file.Remove(10, file.Length - 10);
+                    string item6PART1 = item6.Remove(0, 2);
+                    item6PART1 = item6PART1.Remove(2, 6);
+                    string item6PART2 = item6.Remove(2, 8);
+                    string realitem6 = item6PART1 + item6PART2;
+                    int item6id = Convert.ToInt32(realitem6, 16);
+                    pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item6id + ".png");
+                    textBox29.Text = item6id.ToString();
+                }
+                catch
+                {
+                    pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -369,13 +490,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item7 = file.Remove(10, file.Length - 10);
-                string item7PART1 = item7.Remove(0, 2);
-                item7PART1 = item7PART1.Remove(2, 6);
-                string item7PART2 = item7.Remove(2, 8);
-                string realitem7 = item7PART1 + item7PART2;
-                int item7id = Convert.ToInt32(realitem7, 16);
-                textBox30.Text = item7id.ToString();
+                try
+                {
+                    string item7 = file.Remove(10, file.Length - 10);
+                    string item7PART1 = item7.Remove(0, 2);
+                    item7PART1 = item7PART1.Remove(2, 6);
+                    string item7PART2 = item7.Remove(2, 8);
+                    string realitem7 = item7PART1 + item7PART2;
+                    int item7id = Convert.ToInt32(realitem7, 16);
+                    pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item7id + ".png");
+                    textBox30.Text = item7id.ToString();
+                }
+                catch
+                {
+                    pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             } 
 
@@ -387,13 +516,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item8 = file.Remove(10, file.Length - 10);
-                string item8PART1 = item8.Remove(0, 2);
-                item8PART1 = item8PART1.Remove(2, 6);
-                string item8PART2 = item8.Remove(2, 8);
-                string realitem8 = item8PART1 + item8PART2;
-                int item8id = Convert.ToInt32(realitem8, 16);
-                textBox31.Text = item8id.ToString();
+                try
+                {
+                    string item8 = file.Remove(10, file.Length - 10);
+                    string item8PART1 = item8.Remove(0, 2);
+                    item8PART1 = item8PART1.Remove(2, 6);
+                    string item8PART2 = item8.Remove(2, 8);
+                    string realitem8 = item8PART1 + item8PART2;
+                    int item8id = Convert.ToInt32(realitem8, 16);
+                    pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item8id + ".png");
+                    textBox31.Text = item8id.ToString();
+                }
+                catch
+                {
+                    pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             } 
 
@@ -405,13 +542,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item9 = file.Remove(10, file.Length - 10);
-                string item9PART1 = item9.Remove(0, 2);
-                item9PART1 = item9PART1.Remove(2, 6);
-                string item9PART2 = item9.Remove(2, 8);
-                string realitem9 = item9PART1 + item9PART2;
-                int item9id = Convert.ToInt32(realitem9, 16);
-                textBox32.Text = item9id.ToString();
+                try
+                {
+                    string item9 = file.Remove(10, file.Length - 10);
+                    string item9PART1 = item9.Remove(0, 2);
+                    item9PART1 = item9PART1.Remove(2, 6);
+                    string item9PART2 = item9.Remove(2, 8);
+                    string realitem9 = item9PART1 + item9PART2;
+                    int item9id = Convert.ToInt32(realitem9, 16);
+                    pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item9id + ".png");
+                    textBox32.Text = item9id.ToString();
+                }
+                catch
+                {
+                    pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -423,13 +568,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item10 = file.Remove(10, file.Length - 10);
-                string item10PART1 = item10.Remove(0, 2);
-                item10PART1 = item10PART1.Remove(2, 6);
-                string item10PART2 = item10.Remove(2, 8);
-                string realitem10 = item10PART1 + item10PART2;
-                int item10id = Convert.ToInt32(realitem10, 16);
-                textBox33.Text = item10id.ToString();
+                try
+                {
+                    string item10 = file.Remove(10, file.Length - 10);
+                    string item10PART1 = item10.Remove(0, 2);
+                    item10PART1 = item10PART1.Remove(2, 6);
+                    string item10PART2 = item10.Remove(2, 8);
+                    string realitem10 = item10PART1 + item10PART2;
+                    int item10id = Convert.ToInt32(realitem10, 16);
+                    pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item10id + ".png");
+                    textBox33.Text = item10id.ToString();
+                }
+                catch
+                {
+                    pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }  
 
@@ -441,13 +594,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item11 = file.Remove(10, file.Length - 10);
-                string item11PART1 = item11.Remove(0, 2);
-                item11PART1 = item11PART1.Remove(2, 6);
-                string item11PART2 = item11.Remove(2, 8);
-                string realitem11 = item11PART1 + item11PART2;
-                int item11id = Convert.ToInt32(realitem11, 16);
-                textBox34.Text = item11id.ToString();
+                try
+                {
+                    string item11 = file.Remove(10, file.Length - 10);
+                    string item11PART1 = item11.Remove(0, 2);
+                    item11PART1 = item11PART1.Remove(2, 6);
+                    string item11PART2 = item11.Remove(2, 8);
+                    string realitem11 = item11PART1 + item11PART2;
+                    int item11id = Convert.ToInt32(realitem11, 16);
+                    pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item11id + ".png");
+                    textBox34.Text = item11id.ToString();
+                }
+                catch
+                {
+                    pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }  
 
@@ -459,13 +620,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item12 = file.Remove(10, file.Length - 10);
-                string item12PART1 = item12.Remove(0, 2);
-                item12PART1 = item12PART1.Remove(2, 6);
-                string item12PART2 = item12.Remove(2, 8);
-                string realitem12 = item12PART1 + item12PART2;
-                int item12id = Convert.ToInt32(realitem12, 16);
-                textBox35.Text = item12id.ToString();
+                try
+                {
+                    string item12 = file.Remove(10, file.Length - 10);
+                    string item12PART1 = item12.Remove(0, 2);
+                    item12PART1 = item12PART1.Remove(2, 6);
+                    string item12PART2 = item12.Remove(2, 8);
+                    string realitem12 = item12PART1 + item12PART2;
+                    int item12id = Convert.ToInt32(realitem12, 16);
+                    pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item12id + ".png");
+                    textBox35.Text = item12id.ToString();
+                }
+                catch
+                {
+                    pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -477,13 +646,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item13 = file.Remove(10, file.Length - 10);
-                string item13PART1 = item13.Remove(0, 2);
-                item13PART1 = item13PART1.Remove(2, 6);
-                string item13PART2 = item13.Remove(2, 8);
-                string realitem13 = item13PART1 + item13PART2;
-                int item13id = Convert.ToInt32(realitem13, 16);
-                textBox36.Text = item13id.ToString();
+                try
+                {
+                    string item13 = file.Remove(10, file.Length - 10);
+                    string item13PART1 = item13.Remove(0, 2);
+                    item13PART1 = item13PART1.Remove(2, 6);
+                    string item13PART2 = item13.Remove(2, 8);
+                    string realitem13 = item13PART1 + item13PART2;
+                    int item13id = Convert.ToInt32(realitem13, 16);
+                    pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item13id + ".png");
+                    textBox36.Text = item13id.ToString();
+                }
+                catch
+                {
+                    pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -495,13 +672,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item14 = file.Remove(10, file.Length - 10);
-                string item14PART1 = item14.Remove(0, 2);
-                item14PART1 = item14PART1.Remove(2, 6);
-                string item14PART2 = item14.Remove(2, 8);
-                string realitem14 = item14PART1 + item14PART2;
-                int item14id = Convert.ToInt32(realitem14, 16);
-                textBox37.Text = item14id.ToString();
+                try
+                {
+                    string item14 = file.Remove(10, file.Length - 10);
+                    string item14PART1 = item14.Remove(0, 2);
+                    item14PART1 = item14PART1.Remove(2, 6);
+                    string item14PART2 = item14.Remove(2, 8);
+                    string realitem14 = item14PART1 + item14PART2;
+                    int item14id = Convert.ToInt32(realitem14, 16);
+                    pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item14id + ".png");
+                    textBox37.Text = item14id.ToString();
+                }
+                catch
+                {
+                    pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -513,13 +698,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item15 = file.Remove(10, file.Length - 10);
-                string item15PART1 = item15.Remove(0, 2);
-                item15PART1 = item15PART1.Remove(2, 6);
-                string item15PART2 = item15.Remove(2, 8);
-                string realitem15 = item15PART1 + item15PART2;
-                int item15id = Convert.ToInt32(realitem15, 16);
-                textBox38.Text = item15id.ToString();
+                try
+                {
+                    string item15 = file.Remove(10, file.Length - 10);
+                    string item15PART1 = item15.Remove(0, 2);
+                    item15PART1 = item15PART1.Remove(2, 6);
+                    string item15PART2 = item15.Remove(2, 8);
+                    string realitem15 = item15PART1 + item15PART2;
+                    int item15id = Convert.ToInt32(realitem15, 16);
+                    pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item15id + ".png");
+                    textBox38.Text = item15id.ToString();
+                }
+                catch
+                {
+                    pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -531,13 +725,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item16 = file.Remove(10, file.Length - 10);
-                string item16PART1 = item16.Remove(0, 2);
-                item16PART1 = item16PART1.Remove(2, 6);
-                string item16PART2 = item16.Remove(2, 8);
-                string realitem16 = item16PART1 + item16PART2;
-                int item16id = Convert.ToInt32(realitem16, 16);
-                textBox39.Text = item16id.ToString();
+                try
+                {
+                    string item16 = file.Remove(10, file.Length - 10);
+                    string item16PART1 = item16.Remove(0, 2);
+                    item16PART1 = item16PART1.Remove(2, 6);
+                    string item16PART2 = item16.Remove(2, 8);
+                    string realitem16 = item16PART1 + item16PART2;
+                    int item16id = Convert.ToInt32(realitem16, 16);
+                    pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item16id + ".png");
+                    textBox39.Text = item16id.ToString();
+                }
+                catch
+                {
+                    pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -549,13 +752,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item17 = file.Remove(10, file.Length - 10);
-                string item17PART1 = item17.Remove(0, 2);
-                item17PART1 = item17PART1.Remove(2, 6);
-                string item17PART2 = item17.Remove(2, 8);
-                string realitem17 = item17PART1 + item17PART2;
-                int item17id = Convert.ToInt32(realitem17, 16);
-                textBox40.Text = item17id.ToString();
+                try
+                {
+                    string item17 = file.Remove(10, file.Length - 10);
+                    string item17PART1 = item17.Remove(0, 2);
+                    item17PART1 = item17PART1.Remove(2, 6);
+                    string item17PART2 = item17.Remove(2, 8);
+                    string realitem17 = item17PART1 + item17PART2;
+                    int item17id = Convert.ToInt32(realitem17, 16);
+                    pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item17id + ".png");
+                    textBox40.Text = item17id.ToString();
+                }
+                catch
+                {
+                    pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -567,13 +778,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item18 = file.Remove(10, file.Length - 10);
-                string item18PART1 = item18.Remove(0, 2);
-                item18PART1 = item18PART1.Remove(2, 6);
-                string item18PART2 = item18.Remove(2, 8);
-                string realitem18 = item18PART1 + item18PART2;
-                int item18id = Convert.ToInt32(realitem18, 16);
-                textBox41.Text = item18id.ToString();
+                try
+                {
+                    string item18 = file.Remove(10, file.Length - 10);
+                    string item18PART1 = item18.Remove(0, 2);
+                    item18PART1 = item18PART1.Remove(2, 6);
+                    string item18PART2 = item18.Remove(2, 8);
+                    string realitem18 = item18PART1 + item18PART2;
+                    int item18id = Convert.ToInt32(realitem18, 16);
+                    pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item18id + ".png");
+                    textBox41.Text = item18id.ToString();
+                }
+                catch
+                {
+                    pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -585,13 +804,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item19 = file.Remove(10, file.Length - 10);
-                string item19PART1 = item19.Remove(0, 2);
-                item19PART1 = item19PART1.Remove(2, 6);
-                string item19PART2 = item19.Remove(2, 8);
-                string realitem19 = item19PART1 + item19PART2;
-                int item19id = Convert.ToInt32(realitem19, 16);
-                textBox42.Text = item19id.ToString();
+                try
+                {
+                    string item19 = file.Remove(10, file.Length - 10);
+                    string item19PART1 = item19.Remove(0, 2);
+                    item19PART1 = item19PART1.Remove(2, 6);
+                    string item19PART2 = item19.Remove(2, 8);
+                    string realitem19 = item19PART1 + item19PART2;
+                    int item19id = Convert.ToInt32(realitem19, 16);
+                    pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item19id + ".png");
+                    textBox42.Text = item19id.ToString();
+                }
+                catch
+                {
+                    pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -603,13 +830,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item20 = file.Remove(10, file.Length - 10);
-                string item20PART1 = item20.Remove(0, 2);
-                item20PART1 = item20PART1.Remove(2, 6);
-                string item20PART2 = item20.Remove(2, 8);
-                string realitem20 = item20PART1 + item20PART2;
-                int item20id = Convert.ToInt32(realitem20, 16);
-                textBox43.Text = item20id.ToString();
+                try
+                {
+                    string item20 = file.Remove(10, file.Length - 10);
+                    string item20PART1 = item20.Remove(0, 2);
+                    item20PART1 = item20PART1.Remove(2, 6);
+                    string item20PART2 = item20.Remove(2, 8);
+                    string realitem20 = item20PART1 + item20PART2;
+                    int item20id = Convert.ToInt32(realitem20, 16);
+                    pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item20id + ".png");
+                    textBox43.Text = item20id.ToString();
+                }
+                catch
+                {
+                    pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -621,13 +856,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item21 = file.Remove(10, file.Length - 10);
-                string item21PART1 = item21.Remove(0, 2);
-                item21PART1 = item21PART1.Remove(2, 6);
-                string item21PART2 = item21.Remove(2, 8);
-                string realitem21 = item21PART1 + item21PART2;
-                int item21id = Convert.ToInt32(realitem21, 16);
-                textBox44.Text = item21id.ToString();
+                try
+                {
+                    string item21 = file.Remove(10, file.Length - 10);
+                    string item21PART1 = item21.Remove(0, 2);
+                    item21PART1 = item21PART1.Remove(2, 6);
+                    string item21PART2 = item21.Remove(2, 8);
+                    string realitem21 = item21PART1 + item21PART2;
+                    int item21id = Convert.ToInt32(realitem21, 16);
+                    pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item21id + ".png");
+                    textBox44.Text = item21id.ToString();
+                }
+                catch
+                {
+                    pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -639,13 +882,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item22 = file.Remove(10, file.Length - 10);
-                string item22PART1 = item22.Remove(0, 2);
-                item22PART1 = item22PART1.Remove(2, 6);
-                string item22PART2 = item22.Remove(2, 8);
-                string realitem22 = item22PART1 + item22PART2;
-                int item22id = Convert.ToInt32(realitem22, 16);
-                textBox45.Text = item22id.ToString();
+                try
+                {
+                    string item22 = file.Remove(10, file.Length - 10);
+                    string item22PART1 = item22.Remove(0, 2);
+                    item22PART1 = item22PART1.Remove(2, 6);
+                    string item22PART2 = item22.Remove(2, 8);
+                    string realitem22 = item22PART1 + item22PART2;
+                    int item22id = Convert.ToInt32(realitem22, 16);
+                    pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item22id + ".png");
+                    textBox45.Text = item22id.ToString();
+                }
+                catch
+                {
+                    pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -657,13 +908,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item23 = file.Remove(10, file.Length - 10);
-                string item23PART1 = item23.Remove(0, 2);
-                item23PART1 = item23PART1.Remove(2, 6);
-                string item23PART2 = item23.Remove(2, 8);
-                string realitem23 = item23PART1 + item23PART2;
-                int item23id = Convert.ToInt32(realitem23, 16);
-                textBox46.Text = item23id.ToString();
+                try
+                {
+                    string item23 = file.Remove(10, file.Length - 10);
+                    string item23PART1 = item23.Remove(0, 2);
+                    item23PART1 = item23PART1.Remove(2, 6);
+                    string item23PART2 = item23.Remove(2, 8);
+                    string realitem23 = item23PART1 + item23PART2;
+                    int item23id = Convert.ToInt32(realitem23, 16);
+                    pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item23id + ".png");
+                    textBox46.Text = item23id.ToString();
+                }
+                catch
+                {
+                    pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -675,13 +934,23 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item24 = file.Remove(10, file.Length - 10);
-                string item24PART1 = item24.Remove(0, 2);
-                item24PART1 = item24PART1.Remove(2, 6);
-                string item24PART2 = item24.Remove(2, 8);
-                string realitem24 = item24PART1 + item24PART2;
-                int item24id = Convert.ToInt32(realitem24, 16);
-                textBox47.Text = item24id.ToString();
+                try
+                {
+                    string item24 = file.Remove(10, file.Length - 10);
+                    string item24PART1 = item24.Remove(0, 2);
+                    item24PART1 = item24PART1.Remove(2, 6);
+                    string item24PART2 = item24.Remove(2, 8);
+                    string realitem24 = item24PART1 + item24PART2;
+                    int item24id = Convert.ToInt32(realitem24, 16);
+                    pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item24id + ".png");
+                    textBox47.Text = item24id.ToString();
+                    
+                }
+                catch
+                {
+                    pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+
                 file = file.Remove(0, 10);
             }
 
@@ -693,13 +962,21 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item25 = file.Remove(10, file.Length - 10);
-                string item25PART1 = item25.Remove(0, 2);
-                item25PART1 = item25PART1.Remove(2, 6);
-                string item25PART2 = item25.Remove(2, 8);
-                string realitem25 = item25PART1 + item25PART2;
-                int item25id = Convert.ToInt32(realitem25, 16);
-                textBox48.Text = item25id.ToString();
+                try
+                {
+                    string item25 = file.Remove(10, file.Length - 10);
+                    string item25PART1 = item25.Remove(0, 2);
+                    item25PART1 = item25PART1.Remove(2, 6);
+                    string item25PART2 = item25.Remove(2, 8);
+                    string realitem25 = item25PART1 + item25PART2;
+                    int item25id = Convert.ToInt32(realitem25, 16);
+                    pictureBox25.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item25id + ".png");
+                    textBox48.Text = item25id.ToString();
+                }
+                catch
+                {
+                    pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
                 file = file.Remove(0, 10);
             }
 
@@ -711,13 +988,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item26 = file.Remove(10, file.Length - 10);
-                string item26PART1 = item26.Remove(0, 2);
-                item26PART1 = item26PART1.Remove(2, 6);
-                string item26PART2 = item26.Remove(2, 8);
-                string realitem26 = item26PART1 + item26PART2;
-                int item26id = Convert.ToInt32(realitem26, 16);
-                textBox49.Text = item26id.ToString();
+                try
+                {
+                    string item26 = file.Remove(10, file.Length - 10);
+                    string item26PART1 = item26.Remove(0, 2);
+                    item26PART1 = item26PART1.Remove(2, 6);
+                    string item26PART2 = item26.Remove(2, 8);
+                    string realitem26 = item26PART1 + item26PART2;
+                    int item26id = Convert.ToInt32(realitem26, 16);
+                    pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item26id + ".png");
+                    textBox49.Text = item26id.ToString();
+                }
+                catch
+                {
+                    pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -729,13 +1015,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item27 = file.Remove(10, file.Length - 10);
-                string item27PART1 = item27.Remove(0, 2);
-                item27PART1 = item27PART1.Remove(2, 6);
-                string item27PART2 = item27.Remove(2, 8);
-                string realitem27 = item27PART1 + item27PART2;
-                int item27id = Convert.ToInt32(realitem27, 16);
-                textBox50.Text = item27id.ToString();
+                try
+                {
+                    string item27 = file.Remove(10, file.Length - 10);
+                    string item27PART1 = item27.Remove(0, 2);
+                    item27PART1 = item27PART1.Remove(2, 6);
+                    string item27PART2 = item27.Remove(2, 8);
+                    string realitem27 = item27PART1 + item27PART2;
+                    int item27id = Convert.ToInt32(realitem27, 16);
+                    pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item27id + ".png");
+                    textBox50.Text = item27id.ToString();
+                }
+                catch
+                {
+                    pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -747,13 +1042,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item28 = file.Remove(10, file.Length - 10);
-                string item28PART1 = item28.Remove(0, 2);
-                item28PART1 = item28PART1.Remove(2, 6);
-                string item28PART2 = item28.Remove(2, 8);
-                string realitem28 = item28PART1 + item28PART2;
-                int item28id = Convert.ToInt32(realitem28, 16);
-                textBox51.Text = item28id.ToString();
+                try
+                {
+                    string item28 = file.Remove(10, file.Length - 10);
+                    string item28PART1 = item28.Remove(0, 2);
+                    item28PART1 = item28PART1.Remove(2, 6);
+                    string item28PART2 = item28.Remove(2, 8);
+                    string realitem28 = item28PART1 + item28PART2;
+                    int item28id = Convert.ToInt32(realitem28, 16);
+                    pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item28id + ".png");
+                    textBox51.Text = item28id.ToString();
+                }
+                catch
+                {
+                    pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -765,13 +1069,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item29 = file.Remove(10, file.Length - 10);
-                string item29PART1 = item29.Remove(0, 2);
-                item29PART1 = item29PART1.Remove(2, 6);
-                string item29PART2 = item29.Remove(2, 8);
-                string realitem29 = item29PART1 + item29PART2;
-                int item29id = Convert.ToInt32(realitem29, 16);
-                textBox52.Text = item29id.ToString();
+                try
+                {
+                    string item29 = file.Remove(10, file.Length - 10);
+                    string item29PART1 = item29.Remove(0, 2);
+                    item29PART1 = item29PART1.Remove(2, 6);
+                    string item29PART2 = item29.Remove(2, 8);
+                    string realitem29 = item29PART1 + item29PART2;
+                    int item29id = Convert.ToInt32(realitem29, 16);
+                    pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item29id + ".png");
+                    textBox52.Text = item29id.ToString();
+                }
+                catch
+                {
+                    pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -783,13 +1096,22 @@ namespace TerrariaVitaEditor
             }
             else
             {
-                string item30 = file.Remove(10, file.Length - 10);
-                string item30PART1 = item30.Remove(0, 2);
-                item30PART1 = item30PART1.Remove(2, 6);
-                string item30PART2 = item30.Remove(2, 8);
-                string realitem30 = item30PART1 + item30PART2;
-                int item30id = Convert.ToInt32(realitem30, 16);
-                textBox53.Text = item30id.ToString();
+                try
+                {
+                    string item30 = file.Remove(10, file.Length - 10);
+                    string item30PART1 = item30.Remove(0, 2);
+                    item30PART1 = item30PART1.Remove(2, 6);
+                    string item30PART2 = item30.Remove(2, 8);
+                    string realitem30 = item30PART1 + item30PART2;
+                    int item30id = Convert.ToInt32(realitem30, 16);
+                    pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item30id + ".png");
+                    textBox53.Text = item30id.ToString();
+                }
+                catch
+                {
+                    pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1590,6 +1912,11 @@ namespace TerrariaVitaEditor
             {
                 return stringg;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
