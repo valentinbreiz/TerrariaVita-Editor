@@ -149,6 +149,11 @@ namespace TerrariaVitaEditor
 
             fs.Close();
 
+            groupBox8.Enabled = true;
+            groupBox9.Enabled = true;
+            groupBox10.Enabled = true;
+
+
             textBox2.Text = file;
 
             Interpreter(file);
