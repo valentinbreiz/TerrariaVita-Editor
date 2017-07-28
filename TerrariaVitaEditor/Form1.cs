@@ -10,6 +10,59 @@ namespace TerrariaVitaEditor
 {
     public partial class Form1 : Form
     {
+
+
+        string itemID1;
+        string itemID2;
+        string itemID3;
+        string itemID4;
+        string itemID5;
+        string itemID6;
+        string itemID7;
+        string itemID8;
+        string itemID9;
+        string itemID10;
+        string itemID11;
+        string itemID12;
+        string itemID13;
+        string itemID14;
+        string itemID15;
+        string itemID16;
+        string itemID17;
+        string itemID18;
+        string itemID19;
+        string itemID20;
+        string itemID21;
+        string itemID22;
+        string itemID23;
+        string itemID24;
+        string itemID25;
+        string itemID26;
+        string itemID27;
+        string itemID28;
+        string itemID29;
+        string itemID30;
+        string itemID31;
+        string itemID32;
+        string itemID33;
+        string itemID34;
+        string itemID35;
+        string itemID36;
+        string itemID37;
+        string itemID38;
+        string itemID39;
+        string itemID40;
+
+        string itemID41;
+        string itemID42;
+        string itemID43;
+        string itemID44;
+
+        string itemID45;
+        string itemID46;
+        string itemID47;
+        string itemID48;
+
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +76,54 @@ namespace TerrariaVitaEditor
 
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox25.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox31.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox32.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox33.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox34.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox36.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox37.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox38.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox39.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox40.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+            pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
 
             openFileDialog1.ShowDialog();
             path = openFileDialog1.FileName;
@@ -110,7 +211,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox64.Text = "0";
+                itemID41 = "0";
             }
             else
             {
@@ -122,8 +223,8 @@ namespace TerrariaVitaEditor
                     string ammo1PART2 = ammo1.Remove(2, 8);
                     string realammo1 = ammo1PART1 + ammo1PART2;
                     int ammo1id = Convert.ToInt32(realammo1, 16);
+                    itemID41 = ammo1id.ToString();
                     pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo1id + ".png");
-                    textBox64.Text = ammo1id.ToString();
                 }
                 catch
                 {
@@ -136,7 +237,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox65.Text = "0";
+                itemID42 = "0";
             }
             else
             {
@@ -148,8 +249,8 @@ namespace TerrariaVitaEditor
                     string ammo2PART2 = ammo2.Remove(2, 8);
                     string realammo2 = ammo2PART1 + ammo2PART2;
                     int ammo2id = Convert.ToInt32(realammo2, 16);
+                    itemID42 = ammo2id.ToString();
                     pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo2id + ".png");
-                    textBox65.Text = ammo2id.ToString();
                 }
                 catch
                 {
@@ -162,7 +263,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox66.Text = "0";
+                itemID43 = "0";
             }
             else
             {
@@ -174,8 +275,8 @@ namespace TerrariaVitaEditor
                     string ammo3PART2 = ammo3.Remove(2, 8);
                     string realammo3 = ammo3PART1 + ammo3PART2;
                     int ammo3id = Convert.ToInt32(realammo3, 16);
+                    itemID43 = ammo3id.ToString();
                     pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo3id + ".png");
-                    textBox66.Text = ammo3id.ToString();
                 }
                 catch
                 {
@@ -188,7 +289,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox67.Text = "0";
+                itemID44 = "0";
             }
             else
             {
@@ -200,8 +301,8 @@ namespace TerrariaVitaEditor
                     string ammo4PART2 = ammo4.Remove(2, 8);
                     string realammo4 = ammo4PART1 + ammo4PART2;
                     int ammo4id = Convert.ToInt32(realammo4, 16);
+                    itemID44 = ammo4id.ToString();
                     pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo4id + ".png");
-                    textBox67.Text = ammo4id.ToString();
                 }
                 catch
                 {
@@ -219,7 +320,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox68.Text = "0";
+                itemID45 = "0";
             }
             else
             {
@@ -231,8 +332,8 @@ namespace TerrariaVitaEditor
                     string coin1PART2 = coin1.Remove(2, 8);
                     string realcoin1 = coin1PART1 + coin1PART2;
                     int coin1id = Convert.ToInt32(realcoin1, 16);
+                    itemID45 = coin1id.ToString();
                     pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin1id + ".png");
-                    textBox68.Text = coin1id.ToString();
                 }
                 catch
                 {
@@ -245,7 +346,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox69.Text = "0";
+                itemID46 = "0";
             }
             else
             {
@@ -257,8 +358,8 @@ namespace TerrariaVitaEditor
                     string coin2PART2 = coin2.Remove(2, 8);
                     string realcoin2 = coin2PART1 + coin2PART2;
                     int coin2id = Convert.ToInt32(realcoin2, 16);
+                    itemID46 = coin2id.ToString();
                     pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin2id + ".png");
-                    textBox69.Text = coin2id.ToString();
                 }
                 catch
                 {
@@ -271,7 +372,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox70.Text = "0";
+                itemID47 = "0";
             }
             else
             {
@@ -283,8 +384,8 @@ namespace TerrariaVitaEditor
                     string coin3PART2 = coin3.Remove(2, 8);
                     string realcoin3 = coin3PART1 + coin3PART2;
                     int coin3id = Convert.ToInt32(realcoin3, 16);
+                    itemID47 = coin3id.ToString();
                     pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin3id + ".png");
-                    textBox70.Text = coin3id.ToString();
                 }
                 catch
                 {
@@ -297,7 +398,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox71.Text = "0";
+                itemID48 = "0";
             }
             else
             {
@@ -309,8 +410,8 @@ namespace TerrariaVitaEditor
                     string coin4PART2 = coin4.Remove(2, 8);
                     string realcoin4 = coin4PART1 + coin4PART2;
                     int coin4id = Convert.ToInt32(realcoin4, 16);
+                    itemID48 = coin4id.ToString();
                     pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + coin4id + ".png");
-                    textBox71.Text = coin4id.ToString();
                 }
                 catch
                 {
@@ -331,7 +432,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox24.Text = "0";
+                itemID1 = "0";
             }
             else
             {
@@ -343,13 +444,15 @@ namespace TerrariaVitaEditor
                     string item1PART2 = item1.Remove(2, 8);
                     string realitem1 = item1PART1 + item1PART2;
                     int item1id = Convert.ToInt32(realitem1, 16);
+                    itemID1 = item1id.ToString();
                     pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item1id + ".png");
+
                 }
                 catch
                 {
                     pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
                 }
-                
+
                 file = file.Remove(0, 10);
             }
 
@@ -357,7 +460,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox25.Text = "0";
+                itemID2 = "0";
             }
             else
             {
@@ -369,6 +472,7 @@ namespace TerrariaVitaEditor
                     string item2PART2 = item2.Remove(2, 8);
                     string realitem2 = item2PART1 + item2PART2;
                     int item2id = Convert.ToInt32(realitem2, 16);
+                    itemID2 = item2id.ToString();
                     pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item2id + ".png");
                 }
                 catch
@@ -382,7 +486,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox26.Text = "0";
+                itemID3 = "0";
             }
             else
             {
@@ -394,8 +498,8 @@ namespace TerrariaVitaEditor
                     string item3PART2 = item3.Remove(2, 8);
                     string realitem3 = item3PART1 + item3PART2;
                     int item3id = Convert.ToInt32(realitem3, 16);
+                    itemID3 = item3id.ToString();
                     pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item3id + ".png");
-                    textBox26.Text = item3id.ToString();
                 }
                 catch
                 {
@@ -408,7 +512,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox27.Text = "0";
+                itemID4 = "0";
             }
             else
             {
@@ -420,8 +524,8 @@ namespace TerrariaVitaEditor
                     string item4PART2 = item4.Remove(2, 8);
                     string realitem4 = item4PART1 + item4PART2;
                     int item4id = Convert.ToInt32(realitem4, 16);
+                    itemID4 = item4id.ToString();
                     pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item4id + ".png");
-                    textBox27.Text = item4id.ToString();
                 }
                 catch
                 {
@@ -434,7 +538,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox28.Text = "0";
+                itemID5 = "0";
             }
             else
             {
@@ -446,8 +550,8 @@ namespace TerrariaVitaEditor
                     string item5PART2 = item5.Remove(2, 8);
                     string realitem5 = item5PART1 + item5PART2;
                     int item5id = Convert.ToInt32(realitem5, 16);
+                    itemID5 = item5id.ToString();
                     pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item5id + ".png");
-                    textBox28.Text = item5id.ToString();
                 }
                 catch
                 {
@@ -460,7 +564,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox29.Text = "0";
+                itemID6 = "0";
             }
             else
             {
@@ -472,8 +576,8 @@ namespace TerrariaVitaEditor
                     string item6PART2 = item6.Remove(2, 8);
                     string realitem6 = item6PART1 + item6PART2;
                     int item6id = Convert.ToInt32(realitem6, 16);
+                    itemID6 = item6id.ToString();
                     pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item6id + ".png");
-                    textBox29.Text = item6id.ToString();
                 }
                 catch
                 {
@@ -486,7 +590,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox30.Text = "0";
+                itemID7 = "0";
             }
             else
             {
@@ -498,8 +602,8 @@ namespace TerrariaVitaEditor
                     string item7PART2 = item7.Remove(2, 8);
                     string realitem7 = item7PART1 + item7PART2;
                     int item7id = Convert.ToInt32(realitem7, 16);
+                    itemID7 = item7id.ToString();
                     pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item7id + ".png");
-                    textBox30.Text = item7id.ToString();
                 }
                 catch
                 {
@@ -512,7 +616,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox31.Text = "0";
+                itemID8 = "0";
             }
             else
             {
@@ -524,8 +628,8 @@ namespace TerrariaVitaEditor
                     string item8PART2 = item8.Remove(2, 8);
                     string realitem8 = item8PART1 + item8PART2;
                     int item8id = Convert.ToInt32(realitem8, 16);
+                    itemID8 = item8id.ToString();
                     pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item8id + ".png");
-                    textBox31.Text = item8id.ToString();
                 }
                 catch
                 {
@@ -538,7 +642,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox32.Text = "0";
+                itemID9 = "0";
             }
             else
             {
@@ -550,8 +654,8 @@ namespace TerrariaVitaEditor
                     string item9PART2 = item9.Remove(2, 8);
                     string realitem9 = item9PART1 + item9PART2;
                     int item9id = Convert.ToInt32(realitem9, 16);
+                    itemID9 = item9id.ToString();
                     pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item9id + ".png");
-                    textBox32.Text = item9id.ToString();
                 }
                 catch
                 {
@@ -564,7 +668,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox33.Text = "0";
+                itemID10 = "0";
             }
             else
             {
@@ -576,8 +680,8 @@ namespace TerrariaVitaEditor
                     string item10PART2 = item10.Remove(2, 8);
                     string realitem10 = item10PART1 + item10PART2;
                     int item10id = Convert.ToInt32(realitem10, 16);
+                    itemID10 = item10id.ToString();
                     pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item10id + ".png");
-                    textBox33.Text = item10id.ToString();
                 }
                 catch
                 {
@@ -590,7 +694,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox34.Text = "0";
+                itemID11 = "0";
             }
             else
             {
@@ -602,8 +706,8 @@ namespace TerrariaVitaEditor
                     string item11PART2 = item11.Remove(2, 8);
                     string realitem11 = item11PART1 + item11PART2;
                     int item11id = Convert.ToInt32(realitem11, 16);
+                    itemID11 = item11id.ToString();
                     pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item11id + ".png");
-                    textBox34.Text = item11id.ToString();
                 }
                 catch
                 {
@@ -616,7 +720,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox35.Text = "0";
+                itemID12 = "0";
             }
             else
             {
@@ -628,8 +732,8 @@ namespace TerrariaVitaEditor
                     string item12PART2 = item12.Remove(2, 8);
                     string realitem12 = item12PART1 + item12PART2;
                     int item12id = Convert.ToInt32(realitem12, 16);
+                    itemID12 = item12id.ToString();
                     pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item12id + ".png");
-                    textBox35.Text = item12id.ToString();
                 }
                 catch
                 {
@@ -642,7 +746,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox36.Text = "0";
+                itemID13 = "0";
             }
             else
             {
@@ -654,8 +758,8 @@ namespace TerrariaVitaEditor
                     string item13PART2 = item13.Remove(2, 8);
                     string realitem13 = item13PART1 + item13PART2;
                     int item13id = Convert.ToInt32(realitem13, 16);
+                    itemID13 = item13id.ToString();
                     pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item13id + ".png");
-                    textBox36.Text = item13id.ToString();
                 }
                 catch
                 {
@@ -668,7 +772,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox37.Text = "0";
+                itemID14 = "0";
             }
             else
             {
@@ -680,8 +784,8 @@ namespace TerrariaVitaEditor
                     string item14PART2 = item14.Remove(2, 8);
                     string realitem14 = item14PART1 + item14PART2;
                     int item14id = Convert.ToInt32(realitem14, 16);
+                    itemID14 = item14id.ToString();
                     pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item14id + ".png");
-                    textBox37.Text = item14id.ToString();
                 }
                 catch
                 {
@@ -694,7 +798,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox38.Text = "0";
+                itemID15 = "0";
             }
             else
             {
@@ -706,8 +810,8 @@ namespace TerrariaVitaEditor
                     string item15PART2 = item15.Remove(2, 8);
                     string realitem15 = item15PART1 + item15PART2;
                     int item15id = Convert.ToInt32(realitem15, 16);
+                    itemID15 = item15id.ToString();
                     pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item15id + ".png");
-                    textBox38.Text = item15id.ToString();
                 }
                 catch
                 {
@@ -721,7 +825,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox39.Text = "0";
+                itemID16 = "0";
             }
             else
             {
@@ -733,8 +837,8 @@ namespace TerrariaVitaEditor
                     string item16PART2 = item16.Remove(2, 8);
                     string realitem16 = item16PART1 + item16PART2;
                     int item16id = Convert.ToInt32(realitem16, 16);
+                    itemID16 = item16id.ToString();
                     pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item16id + ".png");
-                    textBox39.Text = item16id.ToString();
                 }
                 catch
                 {
@@ -748,7 +852,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox40.Text = "0";
+                itemID17 = "0";
             }
             else
             {
@@ -760,8 +864,8 @@ namespace TerrariaVitaEditor
                     string item17PART2 = item17.Remove(2, 8);
                     string realitem17 = item17PART1 + item17PART2;
                     int item17id = Convert.ToInt32(realitem17, 16);
+                    itemID17 = item17id.ToString();
                     pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item17id + ".png");
-                    textBox40.Text = item17id.ToString();
                 }
                 catch
                 {
@@ -774,7 +878,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox41.Text = "0";
+                itemID18 = "0";
             }
             else
             {
@@ -786,8 +890,8 @@ namespace TerrariaVitaEditor
                     string item18PART2 = item18.Remove(2, 8);
                     string realitem18 = item18PART1 + item18PART2;
                     int item18id = Convert.ToInt32(realitem18, 16);
+                    itemID18 = item18id.ToString();
                     pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item18id + ".png");
-                    textBox41.Text = item18id.ToString();
                 }
                 catch
                 {
@@ -800,7 +904,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox42.Text = "0";
+                itemID19 = "0";
             }
             else
             {
@@ -812,8 +916,8 @@ namespace TerrariaVitaEditor
                     string item19PART2 = item19.Remove(2, 8);
                     string realitem19 = item19PART1 + item19PART2;
                     int item19id = Convert.ToInt32(realitem19, 16);
+                    itemID19 = item19id.ToString();
                     pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item19id + ".png");
-                    textBox42.Text = item19id.ToString();
                 }
                 catch
                 {
@@ -826,7 +930,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox43.Text = "0";
+                itemID20 = "0";
             }
             else
             {
@@ -838,8 +942,8 @@ namespace TerrariaVitaEditor
                     string item20PART2 = item20.Remove(2, 8);
                     string realitem20 = item20PART1 + item20PART2;
                     int item20id = Convert.ToInt32(realitem20, 16);
+                    itemID20 = item20id.ToString();
                     pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item20id + ".png");
-                    textBox43.Text = item20id.ToString();
                 }
                 catch
                 {
@@ -852,7 +956,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox44.Text = "0";
+                itemID21 = "0";
             }
             else
             {
@@ -864,8 +968,8 @@ namespace TerrariaVitaEditor
                     string item21PART2 = item21.Remove(2, 8);
                     string realitem21 = item21PART1 + item21PART2;
                     int item21id = Convert.ToInt32(realitem21, 16);
+                    itemID21 = item21id.ToString();
                     pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item21id + ".png");
-                    textBox44.Text = item21id.ToString();
                 }
                 catch
                 {
@@ -878,7 +982,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox45.Text = "0";
+                itemID22 = "0";
             }
             else
             {
@@ -890,8 +994,8 @@ namespace TerrariaVitaEditor
                     string item22PART2 = item22.Remove(2, 8);
                     string realitem22 = item22PART1 + item22PART2;
                     int item22id = Convert.ToInt32(realitem22, 16);
+                    itemID22 = item22id.ToString();
                     pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item22id + ".png");
-                    textBox45.Text = item22id.ToString();
                 }
                 catch
                 {
@@ -904,7 +1008,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox46.Text = "0";
+                itemID23 = "0";
             }
             else
             {
@@ -916,8 +1020,8 @@ namespace TerrariaVitaEditor
                     string item23PART2 = item23.Remove(2, 8);
                     string realitem23 = item23PART1 + item23PART2;
                     int item23id = Convert.ToInt32(realitem23, 16);
+                    itemID23 = item23id.ToString();
                     pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item23id + ".png");
-                    textBox46.Text = item23id.ToString();
                 }
                 catch
                 {
@@ -930,7 +1034,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox47.Text = "0";
+                itemID24 = "0";
             }
             else
             {
@@ -942,8 +1046,8 @@ namespace TerrariaVitaEditor
                     string item24PART2 = item24.Remove(2, 8);
                     string realitem24 = item24PART1 + item24PART2;
                     int item24id = Convert.ToInt32(realitem24, 16);
+                    itemID24 = item24id.ToString();
                     pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item24id + ".png");
-                    textBox47.Text = item24id.ToString();
                     
                 }
                 catch
@@ -958,7 +1062,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox48.Text = "0";
+                itemID25 = "0";
             }
             else
             {
@@ -970,8 +1074,8 @@ namespace TerrariaVitaEditor
                     string item25PART2 = item25.Remove(2, 8);
                     string realitem25 = item25PART1 + item25PART2;
                     int item25id = Convert.ToInt32(realitem25, 16);
+                    itemID25 = item25id.ToString();
                     pictureBox25.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item25id + ".png");
-                    textBox48.Text = item25id.ToString();
                 }
                 catch
                 {
@@ -984,7 +1088,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox49.Text = "0";
+                itemID26 = "0";
             }
             else
             {
@@ -996,8 +1100,8 @@ namespace TerrariaVitaEditor
                     string item26PART2 = item26.Remove(2, 8);
                     string realitem26 = item26PART1 + item26PART2;
                     int item26id = Convert.ToInt32(realitem26, 16);
+                    itemID26 = item26id.ToString();
                     pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item26id + ".png");
-                    textBox49.Text = item26id.ToString();
                 }
                 catch
                 {
@@ -1011,7 +1115,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox50.Text = "0";
+                itemID27 = "0";
             }
             else
             {
@@ -1023,8 +1127,8 @@ namespace TerrariaVitaEditor
                     string item27PART2 = item27.Remove(2, 8);
                     string realitem27 = item27PART1 + item27PART2;
                     int item27id = Convert.ToInt32(realitem27, 16);
+                    itemID27 = item27id.ToString();
                     pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item27id + ".png");
-                    textBox50.Text = item27id.ToString();
                 }
                 catch
                 {
@@ -1038,7 +1142,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox51.Text = "0";
+                itemID28 = "0";
             }
             else
             {
@@ -1050,8 +1154,8 @@ namespace TerrariaVitaEditor
                     string item28PART2 = item28.Remove(2, 8);
                     string realitem28 = item28PART1 + item28PART2;
                     int item28id = Convert.ToInt32(realitem28, 16);
+                    itemID28 = item28id.ToString();
                     pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item28id + ".png");
-                    textBox51.Text = item28id.ToString();
                 }
                 catch
                 {
@@ -1065,7 +1169,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox52.Text = "0";
+                itemID29 = "0";
             }
             else
             {
@@ -1077,8 +1181,8 @@ namespace TerrariaVitaEditor
                     string item29PART2 = item29.Remove(2, 8);
                     string realitem29 = item29PART1 + item29PART2;
                     int item29id = Convert.ToInt32(realitem29, 16);
+                    itemID29 = item29id.ToString();
                     pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item29id + ".png");
-                    textBox52.Text = item29id.ToString();
                 }
                 catch
                 {
@@ -1092,7 +1196,7 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox53.Text = "0";
+                itemID30 = "0";
             }
             else
             {
@@ -1104,8 +1208,8 @@ namespace TerrariaVitaEditor
                     string item30PART2 = item30.Remove(2, 8);
                     string realitem30 = item30PART1 + item30PART2;
                     int item30id = Convert.ToInt32(realitem30, 16);
+                    itemID30 = item30id.ToString();
                     pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item30id + ".png");
-                    textBox53.Text = item30id.ToString();
                 }
                 catch
                 {
@@ -1119,17 +1223,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox54.Text = "0";
+                itemID31 = "0";
             }
             else
             {
-                string item31 = file.Remove(10, file.Length - 10);
-                string item31PART1 = item31.Remove(0, 2);
-                item31PART1 = item31PART1.Remove(2, 6);
-                string item31PART2 = item31.Remove(2, 8);
-                string realitem31 = item31PART1 + item31PART2;
-                int item31id = Convert.ToInt32(realitem31, 16);
-                textBox54.Text = item31id.ToString();
+                try
+                {
+                    string item31 = file.Remove(10, file.Length - 10);
+                    string item31PART1 = item31.Remove(0, 2);
+                    item31PART1 = item31PART1.Remove(2, 6);
+                    string item31PART2 = item31.Remove(2, 8);
+                    string realitem31 = item31PART1 + item31PART2;
+                    int item31id = Convert.ToInt32(realitem31, 16);
+                    itemID31 = item31id.ToString();
+                    pictureBox31.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item31id + ".png");
+                }
+                catch
+                {
+                    pictureBox31.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1137,17 +1250,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox55.Text = "0";
+                itemID32 = "0";
             }
             else
             {
-                string item32 = file.Remove(10, file.Length - 10);
-                string item32PART1 = item32.Remove(0, 2);
-                item32PART1 = item32PART1.Remove(2, 6);
-                string item32PART2 = item32.Remove(2, 8);
-                string realitem32 = item32PART1 + item32PART2;
-                int item32id = Convert.ToInt32(realitem32, 16);
-                textBox55.Text = item32id.ToString();
+                try
+                {
+                    string item32 = file.Remove(10, file.Length - 10);
+                    string item32PART1 = item32.Remove(0, 2);
+                    item32PART1 = item32PART1.Remove(2, 6);
+                    string item32PART2 = item32.Remove(2, 8);
+                    string realitem32 = item32PART1 + item32PART2;
+                    int item32id = Convert.ToInt32(realitem32, 16);
+                    itemID32 = item32id.ToString();
+                    pictureBox32.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item32id + ".png");
+                }
+                catch
+                {
+                    pictureBox32.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1155,17 +1277,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox56.Text = "0";
+                itemID33 = "0";
             }
             else
             {
-                string item33 = file.Remove(10, file.Length - 10);
-                string item33PART1 = item33.Remove(0, 2);
-                item33PART1 = item33PART1.Remove(2, 6);
-                string item33PART2 = item33.Remove(2, 8);
-                string realitem33 = item33PART1 + item33PART2;
-                int item33id = Convert.ToInt32(realitem33, 16);
-                textBox56.Text = item33id.ToString();
+                try
+                {
+                    string item33 = file.Remove(10, file.Length - 10);
+                    string item33PART1 = item33.Remove(0, 2);
+                    item33PART1 = item33PART1.Remove(2, 6);
+                    string item33PART2 = item33.Remove(2, 8);
+                    string realitem33 = item33PART1 + item33PART2;
+                    int item33id = Convert.ToInt32(realitem33, 16);
+                    itemID33 = item33id.ToString();
+                    pictureBox33.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item33id + ".png");
+                }
+                catch
+                {
+                    pictureBox33.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1173,17 +1304,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox57.Text = "0";
+                itemID34 = "0";
             }
             else
             {
-                string item34 = file.Remove(10, file.Length - 10);
-                string item34PART1 = item34.Remove(0, 2);
-                item34PART1 = item34PART1.Remove(2, 6);
-                string item34PART2 = item34.Remove(2, 8);
-                string realitem34 = item34PART1 + item34PART2;
-                int item34id = Convert.ToInt32(realitem34, 16);
-                textBox57.Text = item34id.ToString();
+                try
+                {
+                    string item34 = file.Remove(10, file.Length - 10);
+                    string item34PART1 = item34.Remove(0, 2);
+                    item34PART1 = item34PART1.Remove(2, 6);
+                    string item34PART2 = item34.Remove(2, 8);
+                    string realitem34 = item34PART1 + item34PART2;
+                    int item34id = Convert.ToInt32(realitem34, 16);
+                    itemID34 = item34id.ToString();
+                    pictureBox34.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item34id + ".png");
+                }
+                catch
+                {
+                    pictureBox34.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1191,17 +1331,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox58.Text = "0";
+                itemID35 = "0";
             }
             else
             {
-                string item35 = file.Remove(10, file.Length - 10);
-                string item35PART1 = item35.Remove(0, 2);
-                item35PART1 = item35PART1.Remove(2, 6);
-                string item35PART2 = item35.Remove(2, 8);
-                string realitem35 = item35PART1 + item35PART2;
-                int item35id = Convert.ToInt32(realitem35, 16);
-                textBox58.Text = item35id.ToString();
+                try
+                {
+                    string item35 = file.Remove(10, file.Length - 10);
+                    string item35PART1 = item35.Remove(0, 2);
+                    item35PART1 = item35PART1.Remove(2, 6);
+                    string item35PART2 = item35.Remove(2, 8);
+                    string realitem35 = item35PART1 + item35PART2;
+                    int item35id = Convert.ToInt32(realitem35, 16);
+                    item35 = item35id.ToString();
+                    pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item35id + ".png");
+                }
+                catch
+                {
+                    pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1209,17 +1358,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox59.Text = "0";
+                itemID36 = "0";
             }
             else
             {
-                string item36 = file.Remove(10, file.Length - 10);
-                string item36PART1 = item36.Remove(0, 2);
-                item36PART1 = item36PART1.Remove(2, 6);
-                string item36PART2 = item36.Remove(2, 8);
-                string realitem36 = item36PART1 + item36PART2;
-                int item36id = Convert.ToInt32(realitem36, 16);
-                textBox59.Text = item36id.ToString();
+                try
+                {
+                    string item36 = file.Remove(10, file.Length - 10);
+                    string item36PART1 = item36.Remove(0, 2);
+                    item36PART1 = item36PART1.Remove(2, 6);
+                    string item36PART2 = item36.Remove(2, 8);
+                    string realitem36 = item36PART1 + item36PART2;
+                    int item36id = Convert.ToInt32(realitem36, 16);
+                    itemID36 = item36id.ToString();
+                    pictureBox36.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item36id + ".png");
+                }
+                catch
+                {
+                    pictureBox36.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1227,17 +1385,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox60.Text = "0";
+                itemID37 = "0";
             }
             else
             {
-                string item37 = file.Remove(10, file.Length - 10);
-                string item37PART1 = item37.Remove(0, 2);
-                item37PART1 = item37PART1.Remove(2, 6);
-                string item37PART2 = item37.Remove(2, 8);
-                string realitem37 = item37PART1 + item37PART2;
-                int item37id = Convert.ToInt32(realitem37, 16);
-                textBox60.Text = item37id.ToString();
+                try
+                {
+                    string item37 = file.Remove(10, file.Length - 10);
+                    string item37PART1 = item37.Remove(0, 2);
+                    item37PART1 = item37PART1.Remove(2, 6);
+                    string item37PART2 = item37.Remove(2, 8);
+                    string realitem37 = item37PART1 + item37PART2;
+                    int item37id = Convert.ToInt32(realitem37, 16);
+                    itemID37 = item37id.ToString();
+                    pictureBox37.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item37id + ".png");
+                }
+                catch
+                {
+                    pictureBox37.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1245,17 +1412,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox61.Text = "0";
+                itemID38 = "0";
             }
             else
             {
-                string item38 = file.Remove(10, file.Length - 10);
-                string item38PART1 = item38.Remove(0, 2);
-                item38PART1 = item38PART1.Remove(2, 6);
-                string item38PART2 = item38.Remove(2, 8);
-                string realitem38 = item38PART1 + item38PART2;
-                int item38id = Convert.ToInt32(realitem38, 16);
-                textBox61.Text = item38id.ToString();
+                try
+                {
+                    string item38 = file.Remove(10, file.Length - 10);
+                    string item38PART1 = item38.Remove(0, 2);
+                    item38PART1 = item38PART1.Remove(2, 6);
+                    string item38PART2 = item38.Remove(2, 8);
+                    string realitem38 = item38PART1 + item38PART2;
+                    int item38id = Convert.ToInt32(realitem38, 16);
+                    itemID38 = item38id.ToString();
+                    pictureBox38.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item38id + ".png");
+                }
+                catch
+                {
+                    pictureBox38.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
 
@@ -1263,17 +1439,27 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox62.Text = "0";
+                itemID39 = "0";
             }
             else
             {
-                string item39 = file.Remove(10, file.Length - 10);
-                string item39PART1 = item39.Remove(0, 2);
-                item39PART1 = item39PART1.Remove(2, 6);
-                string item39PART2 = item39.Remove(2, 8);
-                string realitem39 = item39PART1 + item39PART2;
-                int item39id = Convert.ToInt32(realitem39, 16);
-                textBox62.Text = item39id.ToString();
+                try
+                {
+                    string item39 = file.Remove(10, file.Length - 10);
+                    string item39PART1 = item39.Remove(0, 2);
+                    item39PART1 = item39PART1.Remove(2, 6);
+                    string item39PART2 = item39.Remove(2, 8);
+                    string realitem39 = item39PART1 + item39PART2;
+                    int item39id = Convert.ToInt32(realitem39, 16);
+                    itemID39 = item39id.ToString();
+                    pictureBox39.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item39id + ".png");
+                    
+                }
+                catch
+                {
+                    pictureBox39.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
             
@@ -1281,17 +1467,26 @@ namespace TerrariaVitaEditor
             if (file.StartsWith("0000"))
             {
                 file = file.Remove(0, 4);
-                textBox63.Text = "0";
+                itemID40 = "0";
             }
             else
             {
-                string item40 = file.Remove(10, file.Length - 10);
-                string item40PART1 = item40.Remove(0, 2);
-                item40PART1 = item40PART1.Remove(2, 6);
-                string item40PART2 = item40.Remove(2, 8);
-                string realitem40 = item40PART1 + item40PART2;
-                int item40id = Convert.ToInt32(realitem40, 16);
-                textBox63.Text = item40id.ToString();
+                try
+                {
+                    string item40 = file.Remove(10, file.Length - 10);
+                    string item40PART1 = item40.Remove(0, 2);
+                    item40PART1 = item40PART1.Remove(2, 6);
+                    string item40PART2 = item40.Remove(2, 8);
+                    string realitem40 = item40PART1 + item40PART2;
+                    int item40id = Convert.ToInt32(realitem40, 16);
+                    itemID40 = item40id.ToString();
+                    pictureBox40.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item40id + ".png");
+                }
+                catch
+                {
+                    pictureBox40.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+                
                 file = file.Remove(0, 10);
             }
             
@@ -1914,9 +2109,1115 @@ namespace TerrariaVitaEditor
             }
         }
 
+        PictureBox lastselected;
+        int currentpcturebox;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox1;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID1;
+            currentpcturebox = 1;
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None;}
+            catch{ }
+            lastselected = pictureBox2;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID2;
+            currentpcturebox = 2;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox3;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID3;
+            currentpcturebox = 3;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox4;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID4;
+            currentpcturebox = 4;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox5;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID5;
+            currentpcturebox = 5;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox6;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID6;
+            currentpcturebox = 6;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox7;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID7;
+            currentpcturebox = 7;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            pictureBox8.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox8;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID8;
+            currentpcturebox = 8;
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            pictureBox9.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox9;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID9;
+            currentpcturebox = 9;
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            pictureBox10.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox10;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID10;
+            currentpcturebox = 10;
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            pictureBox11.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox11;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID11;
+            currentpcturebox = 11;
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            pictureBox12.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox12;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID12;
+            currentpcturebox = 12;
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            pictureBox13.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox13;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID13;
+            currentpcturebox = 13;
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            pictureBox14.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox14;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID14;
+            currentpcturebox = 14;
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            pictureBox15.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox15;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID15;
+            currentpcturebox = 15;
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            pictureBox16.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox16;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID16;
+            currentpcturebox = 16;
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            pictureBox17.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox17;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID17;
+            currentpcturebox = 17;
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            pictureBox18.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox18;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID18;
+            currentpcturebox = 18;
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            pictureBox19.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox19;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID19;
+            currentpcturebox = 19;
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            pictureBox20.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox20;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID20;
+            currentpcturebox = 20;
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            pictureBox21.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox21;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID21;
+            currentpcturebox = 21;
+        }
+
+        private void pictureBox22_Click(object sender, EventArgs e)
+        {
+            pictureBox22.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox22;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID22;
+            currentpcturebox = 22;
+        }
+
+        private void pictureBox23_Click(object sender, EventArgs e)
+        {
+            pictureBox23.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox23;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID23;
+            currentpcturebox = 23;
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            pictureBox24.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox24;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID24;
+            currentpcturebox = 24;
+        }
+
+        private void pictureBox25_Click(object sender, EventArgs e)
+        {
+            pictureBox25.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox25;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID25;
+            currentpcturebox = 25;
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            pictureBox26.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox26;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID26;
+            currentpcturebox = 26;
+        }
+
+        private void pictureBox27_Click(object sender, EventArgs e)
+        {
+            pictureBox27.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox27;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID27;
+            currentpcturebox = 27;
+        }
+
+        private void pictureBox29_Click(object sender, EventArgs e)
+        {
+            pictureBox29.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox29;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID29;
+            currentpcturebox = 29;
+        }
+
+        private void pictureBox28_Click(object sender, EventArgs e)
+        {
+            pictureBox28.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox28;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID28;
+            currentpcturebox = 28;
+        }
+
+        private void pictureBox30_Click(object sender, EventArgs e)
+        {
+            pictureBox30.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox30;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID30;
+            currentpcturebox = 30;
+        }
+
+        private void pictureBox31_Click(object sender, EventArgs e)
+        {
+            pictureBox31.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox31;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID31;
+            currentpcturebox = 31;
+        }
+
+        private void pictureBox32_Click(object sender, EventArgs e)
+        {
+            pictureBox32.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox32;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID32;
+            currentpcturebox = 32;
+        }
+
+        private void pictureBox33_Click(object sender, EventArgs e)
+        {
+            pictureBox33.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox33;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID33;
+            currentpcturebox = 33;
+        }
+
+        private void pictureBox34_Click(object sender, EventArgs e)
+        {
+            pictureBox34.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox34;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID34;
+            currentpcturebox = 34;
+        }
+
+        private void pictureBox35_Click(object sender, EventArgs e)
+        {
+            pictureBox35.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox35;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID35;
+            currentpcturebox = 35;
+        }
+
+        private void pictureBox36_Click(object sender, EventArgs e)
+        {
+            pictureBox36.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox36;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID36;
+            currentpcturebox = 36;
+        }
+
+        private void pictureBox37_Click(object sender, EventArgs e)
+        {
+            pictureBox37.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox37;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID37;
+            currentpcturebox = 37;
+        }
+
+        private void pictureBox38_Click(object sender, EventArgs e)
+        {
+            pictureBox38.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox38;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID38;
+            currentpcturebox = 38;
+        }
+
+        private void pictureBox39_Click(object sender, EventArgs e)
+        {
+            pictureBox39.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox39;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID39;
+            currentpcturebox = 39;
+        }
+
+        private void pictureBox40_Click(object sender, EventArgs e)
+        {
+            pictureBox40.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox40;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID40;
+            currentpcturebox = 40;
+        }
+
+        private void pictureBox41_Click(object sender, EventArgs e)
+        {
+            pictureBox41.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox41;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID41;
+            currentpcturebox = 41;
+        }
+
+        private void pictureBox42_Click(object sender, EventArgs e)
+        {
+            pictureBox42.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox42;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID42;
+            currentpcturebox = 42;
+        }
+
+        private void pictureBox43_Click(object sender, EventArgs e)
+        {
+            pictureBox43.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox43;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID43;
+            currentpcturebox = 43;
+        }
+
+        private void pictureBox44_Click(object sender, EventArgs e)
+        {
+            pictureBox44.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox44;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID44;
+            currentpcturebox = 44;
+        }
+
+        private void pictureBox45_Click(object sender, EventArgs e)
+        {
+            pictureBox45.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox45;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID45;
+            currentpcturebox = 45;
+        }
+
+        private void pictureBox46_Click(object sender, EventArgs e)
+        {
+            pictureBox46.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox46;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID46;
+            currentpcturebox = 46;
+        }
+
+        private void pictureBox47_Click(object sender, EventArgs e)
+        {
+            pictureBox47.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox47;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID47;
+            currentpcturebox = 47;
+        }
+
+        private void pictureBox48_Click(object sender, EventArgs e)
+        {
+            pictureBox48.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox48;
+            groupBox11.Enabled = true;
+            textBox84.Text = itemID48;
+            currentpcturebox = 48;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (currentpcturebox == 1)
+            {
+                try
+                {
+                    itemID1 = textBox84.Text;
+                    pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 2)
+            {
+                try
+                {
+                    itemID2 = textBox84.Text;
+                    pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 3)
+            {
+                try
+                {
+                    itemID3 = textBox84.Text;
+                    pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 4)
+            {
+                try
+                {
+                    itemID4 = textBox84.Text;
+                    pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 5)
+            {
+                try
+                {
+                    itemID5 = textBox84.Text;
+                    pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 6)
+            {
+                try
+                {
+                    itemID6 = textBox84.Text;
+                    pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 7)
+            {
+                try
+                {
+                    itemID7 = textBox84.Text;
+                    pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 8)
+            {
+                try
+                {
+                    itemID8 = textBox84.Text;
+                    pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 9)
+            {
+                try
+                {
+                    itemID9 = textBox84.Text;
+                    pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 10)
+            {
+                try
+                {
+                    itemID10 = textBox84.Text;
+                    pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 11)
+            {
+                try
+                {
+                    itemID11 = textBox84.Text;
+                    pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 12)
+            {
+                try
+                {
+                    itemID12 = textBox84.Text;
+                    pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 13)
+            {
+                try
+                {
+                    itemID13 = textBox84.Text;
+                    pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 14)
+            {
+                try
+                {
+                    itemID14 = textBox84.Text;
+                    pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 15)
+            {
+                try
+                {
+                    itemID15 = textBox84.Text;
+                    pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 16)
+            {
+                try
+                {
+                    itemID16 = textBox84.Text;
+                    pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 17)
+            {
+                try
+                {
+                    itemID17 = textBox84.Text;
+                    pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 18)
+            {
+                try
+                {
+                    itemID18 = textBox84.Text;
+                    pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 19)
+            {
+                try
+                {
+                    itemID19 = textBox84.Text;
+                    pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 20)
+            {
+                try
+                {
+                    itemID20 = textBox84.Text;
+                    pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 21)
+            {
+                try
+                {
+                    itemID21 = textBox84.Text;
+                    pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 22)
+            {
+                try
+                {
+                    itemID22 = textBox84.Text;
+                    pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 23)
+            {
+                try
+                {
+                    itemID23 = textBox84.Text;
+                    pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 24)
+            {
+                try
+                {
+                    itemID24 = textBox84.Text;
+                    pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 25)
+            {
+                try
+                {
+                    itemID25 = textBox84.Text;
+                    pictureBox25.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox25.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 26)
+            {
+                try
+                {
+                    itemID26 = textBox84.Text;
+                    pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 27)
+            {
+                try
+                {
+                    itemID27 = textBox84.Text;
+                    pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 28)
+            {
+                try
+                {
+                    itemID28 = textBox84.Text;
+                    pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 29)
+            {
+                try
+                {
+                    itemID29 = textBox84.Text;
+                    pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 30)
+            {
+                try
+                {
+                    itemID30 = textBox84.Text;
+                    pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 31)
+            {
+                try
+                {
+                    itemID31 = textBox84.Text;
+                    pictureBox31.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox31.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 32)
+            {
+                try
+                {
+                    itemID32 = textBox84.Text;
+                    pictureBox32.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox32.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 33)
+            {
+                try
+                {
+                    itemID33 = textBox84.Text;
+                    pictureBox33.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox33.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 34)
+            {
+                try
+                {
+                    itemID34 = textBox84.Text;
+                    pictureBox34.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox34.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 35)
+            {
+                try
+                {
+                    itemID35 = textBox84.Text;
+                    pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 36)
+            {
+                try
+                {
+                    itemID36 = textBox84.Text;
+                    pictureBox36.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox36.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 37)
+            {
+                try
+                {
+                    itemID37 = textBox84.Text;
+                    pictureBox37.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox37.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 38)
+            {
+                try
+                {
+                    itemID38 = textBox84.Text;
+                    pictureBox38.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox38.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 39)
+            {
+                try
+                {
+                    itemID39 = textBox84.Text;
+                    pictureBox39.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox39.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 40)
+            {
+                try
+                {
+                    itemID40 = textBox84.Text;
+                    pictureBox40.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox40.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 41)
+            {
+                try
+                {
+                    itemID41 = textBox84.Text;
+                    pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 42)
+            {
+                try
+                {
+                    itemID42 = textBox84.Text;
+                    pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 43)
+            {
+                try
+                {
+                    itemID43 = textBox84.Text;
+                    pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 44)
+            {
+                try
+                {
+                    itemID44 = textBox84.Text;
+                    pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 45)
+            {
+                try
+                {
+                    itemID45 = textBox84.Text;
+                    pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 46)
+            {
+                try
+                {
+                    itemID46 = textBox84.Text;
+                    pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 47)
+            {
+                try
+                {
+                    itemID47 = textBox84.Text;
+                    pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 48)
+            {
+                try
+                {
+                    itemID48 = textBox84.Text;
+                    pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
         }
     }
 }
