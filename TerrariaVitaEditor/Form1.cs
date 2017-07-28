@@ -71,7 +71,7 @@ namespace TerrariaVitaEditor
                     
                     file = file.Remove(0, 16); //TODO (Helth + Mana)
 
-                    file = ColorPlayer(file); //Everything works so far! 
+                    file = ColorPlayer(file);
 
                     file = EquippedArmor(file);
 
@@ -983,12 +983,19 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexequippedhelmet = hexequippedhelmet.Remove(4, 2);
+
             string hexequippedhelmetPART1 = hexequippedhelmet.Remove(0, 2);
-            string hexequippedhelmetPART2 = hexequippedhelmet.Remove(2, 2);
+            hexequippedhelmetPART1 = hexequippedhelmetPART1.Remove(2, 2);
+            string hexequippedhelmetPART2 = hexequippedhelmet.Remove(2, 4);
+            string hexequippedhelmetPART3 = hexequippedhelmet.Remove(0, 4);
+
             string realhexequippedhelmet = hexequippedhelmetPART1 + hexequippedhelmetPART2;
             int equippedhelmetid = Convert.ToInt32(realhexequippedhelmet, 16);
+            int equippedhelmetprefixid = Convert.ToInt32(hexequippedhelmetPART3, 16);
+
             textBox21.Text = equippedhelmetid.ToString();
+            textBox76.Text = equippedhelmetprefixid.ToString();
+
             file = file.Remove(0, 6);
 
             string hexequippedchest = file.Remove(6, file.Length - 6);
@@ -996,12 +1003,16 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexequippedchest = hexequippedchest.Remove(4, 2);
+
             string hexequippedchestPART1 = hexequippedchest.Remove(0, 2);
-            string hexequippedchestPART2 = hexequippedchest.Remove(2, 2);
+            hexequippedchestPART1 = hexequippedchestPART1.Remove(2, 2);
+            string hexequippedchestPART2 = hexequippedchest.Remove(2, 4);
+            string hexequippedchestPART3 = hexequippedchest.Remove(0, 4);
             string realhexequippedchest = hexequippedchestPART1 + hexequippedchestPART2;
             int equippedchestid = Convert.ToInt32(realhexequippedchest, 16);
+            int equippedchestprefixid = Convert.ToInt32(hexequippedchestPART3, 16);
             textBox22.Text = equippedchestid.ToString();
+            textBox77.Text = equippedchestprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexequippedboots = file.Remove(6, file.Length - 6);
@@ -1009,12 +1020,17 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexequippedboots = hexequippedboots.Remove(4, 2);
+
             string hexequippedbootsPART1 = hexequippedboots.Remove(0, 2);
-            string hexequippedbootsPART2 = hexequippedboots.Remove(2, 2);
+            hexequippedbootsPART1 = hexequippedbootsPART1.Remove(2,2);
+            string hexequippedbootsPART2 = hexequippedboots.Remove(2, 4);
+            string hexequippedbootsPART3 = hexequippedboots.Remove(0, 4);
+
             string realhexequippedboots = hexequippedbootsPART1 + hexequippedbootsPART2;
             int equippedbootsid = Convert.ToInt32(realhexequippedboots, 16);
+            int equippedbootsprefixid = Convert.ToInt32(hexequippedbootsPART3, 16);
             textBox23.Text = equippedbootsid.ToString();
+            textBox78.Text = equippedbootsprefixid.ToString();
 
             file = file.Remove(0, 6);
 
@@ -1028,12 +1044,17 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexone = hexone.Remove(4, 2);
+
             string hexonePART1 = hexone.Remove(0, 2);
-            string hexonePART2 = hexone.Remove(2, 2);
+            hexonePART1 = hexonePART1.Remove(2, 2);
+            string hexonePART2 = hexone.Remove(2, 4);
+            string hexonePART3 = hexone.Remove(0, 4);
+
             string realhexequippedone = hexonePART1 + hexonePART2;
             int equippedoneid = Convert.ToInt32(realhexequippedone, 16);
+            int equippedoneprefixid = Convert.ToInt32(hexonePART3, 16);
             textBox16.Text = equippedoneid.ToString();
+            textBox79.Text = equippedoneprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hextwo = file.Remove(6, file.Length - 6);
@@ -1041,12 +1062,16 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hextwo = hextwo.Remove(4, 2);
+
             string hextwoPART1 = hextwo.Remove(0, 2);
-            string hextwoPART2 = hextwo.Remove(2, 2);
+            hextwoPART1 = hextwoPART1.Remove(2, 2);
+            string hextwoPART2 = hextwo.Remove(2, 4);
+            string hextwoPART3 = hextwo.Remove(0, 4);
             string realhexequippedtwo = hextwoPART1 + hextwoPART2;
             int equippedtwoid = Convert.ToInt32(realhexequippedtwo, 16);
+            int equippedtwoprefixid = Convert.ToInt32(hextwoPART3, 16);
             textBox17.Text = equippedtwoid.ToString();
+            textBox80.Text = equippedtwoprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexthree = file.Remove(6, file.Length - 6);
@@ -1054,12 +1079,15 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexthree = hexthree.Remove(4, 2);
             string hexthreePART1 = hexthree.Remove(0, 2);
-            string hexthreePART2 = hexthree.Remove(2, 2);
+            hexthreePART1 = hexthreePART1.Remove(2, 2);
+            string hexthreePART2 = hexthree.Remove(2, 4);
+            string hexthreePART3 = hexthree.Remove(0, 4);
             string realhexequippedthree = hexthreePART1 + hexthreePART2;
             int equippedthreeid = Convert.ToInt32(realhexequippedthree, 16);
+            int equippedthreeprefixid = Convert.ToInt32(hexthreePART3, 16);
             textBox18.Text = equippedthreeid.ToString();
+            textBox81.Text = equippedthreeprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexfour = file.Remove(6, file.Length - 6);
@@ -1067,12 +1095,16 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexfour = hexfour.Remove(4, 2);
+
             string hexfourPART1 = hexfour.Remove(0, 2);
-            string hexfourPART2 = hexfour.Remove(2, 2);
+            hexfourPART1 = hexfourPART1.Remove(2, 2);
+            string hexfourPART2 = hexfour.Remove(2, 4);
+            string hexfourPART3 = hexfour.Remove(0, 4);
             string realhexequippedfour = hexfourPART1 + hexfourPART2;
             int equippedfourid = Convert.ToInt32(realhexequippedfour, 16);
+            int equippedfourprefixid = Convert.ToInt32(hexfourPART3, 16);
             textBox19.Text = equippedfourid.ToString();
+            textBox82.Text = equippedfourprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexfive = file.Remove(6, file.Length - 6);
@@ -1080,12 +1112,16 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexfive = hexfive.Remove(4, 2);
+
             string hexfivePART1 = hexfive.Remove(0, 2);
-            string hexfivePART2 = hexfive.Remove(2, 2);
+            hexfivePART1 = hexfivePART1.Remove(2, 2);
+            string hexfivePART2 = hexfive.Remove(2, 4);
+            string hexfivePART3 = hexfive.Remove(0, 4);
             string realhexequippedfive = hexfivePART1 + hexfivePART2;
             int equippedfiveid = Convert.ToInt32(realhexequippedfive, 16);
+            int equippedfiveprefixid = Convert.ToInt32(hexfivePART3, 16);
             textBox20.Text = equippedfiveid.ToString();
+            textBox83.Text = equippedfiveprefixid.ToString();
             file = file.Remove(0, 6);
 
             return file;
@@ -1099,12 +1135,21 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexequippedhelmet = hexequippedhelmet.Remove(4, 2);
+
             string hexequippedhelmetPART1 = hexequippedhelmet.Remove(0, 2);
-            string hexequippedhelmetPART2 = hexequippedhelmet.Remove(2, 2);
+            hexequippedhelmetPART1 = hexequippedhelmetPART1.Remove(2, 2);
+
+            string hexequippedhelmetPART2 = hexequippedhelmet.Remove(2, 4);
+
+            string hexequippedhelmetPART3 = hexequippedhelmet.Remove(0, 4);
+
             string realhexequippedhelmet = hexequippedhelmetPART1 + hexequippedhelmetPART2;
+
             int equippedhelmetid = Convert.ToInt32(realhexequippedhelmet, 16);
+            int equippedhelmetprefixid = Convert.ToInt32(hexequippedhelmetPART3, 16);
+
             textBox13.Text = equippedhelmetid.ToString();
+            textBox5.Text = equippedhelmetprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexequippedchest = file.Remove(6, file.Length - 6);
@@ -1112,12 +1157,17 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexequippedchest = hexequippedchest.Remove(4, 2);
+
             string hexequippedchestPART1 = hexequippedchest.Remove(0, 2);
-            string hexequippedchestPART2 = hexequippedchest.Remove(2, 2);
+            hexequippedchestPART1 = hexequippedchestPART1.Remove(2, 2);
+            string hexequippedchestPART2 = hexequippedchest.Remove(2, 4);
+            string hexequippedchestPART3 = hexequippedchest.Remove(0, 4);
+
             string realhexequippedchest = hexequippedchestPART1 + hexequippedchestPART2;
             int equippedchestid = Convert.ToInt32(realhexequippedchest, 16);
+            int equippedchestprefixid = Convert.ToInt32(hexequippedchestPART3, 16);
             textBox14.Text = equippedchestid.ToString();
+            textBox74.Text = equippedchestprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexequippedboots = file.Remove(6, file.Length - 6);
@@ -1125,12 +1175,19 @@ namespace TerrariaVitaEditor
             {
                 file = "00" + file;
             }
-            hexequippedboots = hexequippedboots.Remove(4, 2);
+
             string hexequippedbootsPART1 = hexequippedboots.Remove(0, 2);
-            string hexequippedbootsPART2 = hexequippedboots.Remove(2, 2);
+            hexequippedbootsPART1 = hexequippedbootsPART1.Remove(2, 2);
+            string hexequippedbootsPART2 = hexequippedboots.Remove(2, 4);
+            string hexequippedbootsPART3 = hexequippedchest.Remove(0, 4);
+
             string realhexequippedboots = hexequippedbootsPART1 + hexequippedbootsPART2;
             int equippedbootsid = Convert.ToInt32(realhexequippedboots, 16);
+            int equippedbootsprefixid = Convert.ToInt32(hexequippedbootsPART3, 16);
+
             textBox15.Text = equippedbootsid.ToString();
+            textBox75.Text = equippedbootsprefixid.ToString();
+
             file = file.Remove(0, 6);
 
             return file;
@@ -1364,11 +1421,110 @@ namespace TerrariaVitaEditor
 
             file = file + textBox6.Text + textBox7.Text + textBox8.Text + textBox9.Text + textBox10.Text + textBox11.Text + textBox12.Text;
 
-            string equipedhelmet = StringToHex(textBox13.Text);
-            string equipedchest = StringToHex(textBox14.Text);
-            string equipedboots = StringToHex(textBox15.Text);
+            string equipedhelmet = HexFromIDspecial3b(Int32.Parse(textBox13.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox5.Text)));
+            string equipedchest = HexFromIDspecial3b(Int32.Parse(textBox14.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox74.Text)));
+            string equipedboots = HexFromIDspecial3b(Int32.Parse(textBox15.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox75.Text)));
 
-            MessageBox.Show(equipedhelmet);
+            if (equipedhelmet.Length == 5)
+            {
+                file = file + equipedhelmet + "0";
+            }
+            else
+            {
+                file = file + equipedhelmet;
+            }
+            if (equipedchest.Length == 5)
+            {
+                file = file + equipedchest + "0";
+            }
+            else
+            {
+                file = file + equipedchest;
+            }
+            if (equipedboots.Length == 5)
+            {
+                file = file + equipedboots + "0";
+            }
+            else
+            {
+                file = file + equipedboots;
+            }
+
+            string equippedaccessorie1 = HexFromIDspecial3b(Int32.Parse(textBox16.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox79.Text)));
+            string equippedaccessorie2 = HexFromIDspecial3b(Int32.Parse(textBox17.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox80.Text)));
+            string equippedaccessorie3 = HexFromIDspecial3b(Int32.Parse(textBox18.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox81.Text)));
+            string equippedaccessorie4 = HexFromIDspecial3b(Int32.Parse(textBox19.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox82.Text)));
+            string equippedaccessorie5 = HexFromIDspecial3b(Int32.Parse(textBox20.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox83.Text)));
+
+            if (equippedaccessorie1.Length == 5)
+            {
+                file = file + equippedaccessorie1 + "0";
+            }
+            else
+            {
+                file = file + equippedaccessorie1;
+            }
+            if (equippedaccessorie2.Length == 5)
+            {
+                file = file + equippedaccessorie2 + "0";
+            }
+            else
+            {
+                file = file + equippedaccessorie2;
+            }
+            if (equippedaccessorie3.Length == 5)
+            {
+                file = file + equippedaccessorie3 + "0";
+            }
+            else
+            {
+                file = file + equippedaccessorie3;
+            }
+            if (equippedaccessorie4.Length == 5)
+            {
+                file = file + equippedaccessorie4 + "0";
+            }
+            else
+            {
+                file = file + equippedaccessorie4;
+            }
+            if (equippedaccessorie5.Length == 5)
+            {
+                file = file + equippedaccessorie5 + "0";
+            }
+            else
+            {
+                file = file + equippedaccessorie5;
+            }
+
+            string vanityhelmet = HexFromIDspecial3b(Int32.Parse(textBox21.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox76.Text)));
+            string vanitychest = HexFromIDspecial3b(Int32.Parse(textBox22.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox77.Text)));
+            string vanityboots = HexFromIDspecial3b(Int32.Parse(textBox23.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox78.Text)));
+
+            if (vanityhelmet.Length == 5)
+            {
+                file = file + vanityhelmet + "0";
+            }
+            else
+            {
+                file = file + vanityhelmet;
+            }
+            if (vanitychest.Length == 5)
+            {
+                file = file + vanitychest + "0";
+            }
+            else
+            {
+                file = file + vanitychest;
+            }
+            if (vanityboots.Length == 5)
+            {
+                file = file + vanityboots + "0";
+            }
+            else
+            {
+                file = file + vanityboots;
+            }
 
             textBox3.Text = file;
         }
@@ -1376,6 +1532,44 @@ namespace TerrariaVitaEditor
         private string HexFromID(int ID)
         {
             return ID.ToString("X");
+        }
+
+        private string HexFromPrefixID(int ID)
+        {
+            string hexid = ID.ToString("X");
+            if (hexid.Length == 1)
+            {
+                hexid = "0" + hexid;
+                return hexid;
+            }
+            else
+            {
+                return hexid;
+            }
+        }
+
+        private string HexFromIDspecial3b(int ID)
+        {
+            string hexid = ID.ToString("X");
+            if (hexid.Length == 1)
+            {
+                hexid = "000" + hexid;
+            }
+            else if (hexid.Length == 2)
+            {
+                hexid = "00" + hexid;
+            }
+            else if (hexid.Length == 3)
+            {
+                hexid = "0" + hexid;
+            }
+
+            string hexidPART1 = hexid.Remove(0, 2);
+            string hexidPART2 = hexid.Remove(2, 2);
+            string realhexid = hexidPART1 + hexidPART2;
+
+            return realhexid;
+
         }
 
         private string StringToHex(string hexstring)
@@ -1397,6 +1591,5 @@ namespace TerrariaVitaEditor
                 return stringg;
             }
         }
-
     }
 }
