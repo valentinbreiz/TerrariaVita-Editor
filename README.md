@@ -5,7 +5,7 @@ Screenshots:
 
 First tab:
 
-![alt text](https://image.noelshack.com/fichiers/2017/30/6/1501281016-tce1.png)
+![alt text](https://image.noelshack.com/fichiers/2017/30/6/1501281201-tce1.png)
 
 Second tab:
 
