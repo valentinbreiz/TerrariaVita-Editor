@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace TerrariaVitaEditor
     public partial class Form1 : Form
     {
 
-
+        //INVENTORY
         string itemID1;
         string itemID2;
         string itemID3;
@@ -53,15 +54,47 @@ namespace TerrariaVitaEditor
         string itemID39;
         string itemID40;
 
+        //COINS
         string itemID41;
         string itemID42;
         string itemID43;
         string itemID44;
 
+        //AMMOS
         string itemID45;
         string itemID46;
         string itemID47;
         string itemID48;
+
+        //EQUIPEDARMOR
+        string armorhelmetid;
+        string armorchestid;
+        string armorbootsid;
+
+        string armorhelmetprefixid;
+        string armorchestprefixid;
+        string armorbootsprefixid;
+
+        //EQUIPEDVANITY
+        string vanityhelmetid;
+        string vanitychestid;
+        string vanityrbootsid;
+
+        string vanityhelmetprefixid;
+        string vanitychestprefixid;
+        string vanityrbootsprefixid;
+
+        //EQUIPEDACCESSORIES
+        string accessoriesoneid;
+        string accessoriesoneprefixid;
+        string accessoriestwoid;
+        string accessoriestwoprefixid;
+        string accessoriesthreeid;
+        string accessoriesthreeprefixid;
+        string accessoriesfourid;
+        string accessoriesfourprefixid;
+        string accessoriesfiveid;
+        string accessoriesfiveprefixid;
 
         public Form1()
         {
@@ -129,6 +162,8 @@ namespace TerrariaVitaEditor
             path = openFileDialog1.FileName;
             Text = openFileDialog1.FileName;
 
+            try
+            {
             FileStream fs = new FileStream(path, FileMode.Open);
             int hexIn;
             string hex = null;
@@ -149,14 +184,22 @@ namespace TerrariaVitaEditor
 
             fs.Close();
 
-            groupBox8.Enabled = true;
+                groupBox1.Enabled = true;
+                groupBox8.Enabled = true;
             groupBox9.Enabled = true;
             groupBox10.Enabled = true;
+
+            groupBox5.Enabled = true;
+            groupBox6.Enabled = true;
+            groupBox7.Enabled = true;
 
 
             textBox2.Text = file;
 
             Interpreter(file);
+            }
+            catch {}
+
         }
 
         private void Interpreter(string file)
@@ -429,8 +472,12 @@ namespace TerrariaVitaEditor
             return file;
         }
 
+        string unknwonone;
+
         private string Inventory(string file)
         {
+            unknwonone = file.Remove(54, file.Length - 54);
+
             file = file.Remove(0, 54);
 
             //ITEM 1
@@ -1514,9 +1561,18 @@ namespace TerrariaVitaEditor
             string realhexequippedhelmet = hexequippedhelmetPART1 + hexequippedhelmetPART2;
             int equippedhelmetid = Convert.ToInt32(realhexequippedhelmet, 16);
             int equippedhelmetprefixid = Convert.ToInt32(hexequippedhelmetPART3, 16);
+            
+            try
+            {
+                pictureBox52.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedhelmetid + ".png");
+            }
+            catch
+            {
+                pictureBox52.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
 
-            textBox21.Text = equippedhelmetid.ToString();
-            textBox76.Text = equippedhelmetprefixid.ToString();
+            vanityhelmetid = equippedhelmetid.ToString();
+            vanityhelmetprefixid = equippedhelmetprefixid.ToString();
 
             file = file.Remove(0, 6);
 
@@ -1533,8 +1589,18 @@ namespace TerrariaVitaEditor
             string realhexequippedchest = hexequippedchestPART1 + hexequippedchestPART2;
             int equippedchestid = Convert.ToInt32(realhexequippedchest, 16);
             int equippedchestprefixid = Convert.ToInt32(hexequippedchestPART3, 16);
-            textBox22.Text = equippedchestid.ToString();
-            textBox77.Text = equippedchestprefixid.ToString();
+
+            try
+            {
+                pictureBox53.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedchestid + ".png");
+            }
+            catch
+            {
+                pictureBox53.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            vanitychestid = equippedchestid.ToString();
+            vanitychestprefixid = equippedchestprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexequippedboots = file.Remove(6, file.Length - 6);
@@ -1551,8 +1617,18 @@ namespace TerrariaVitaEditor
             string realhexequippedboots = hexequippedbootsPART1 + hexequippedbootsPART2;
             int equippedbootsid = Convert.ToInt32(realhexequippedboots, 16);
             int equippedbootsprefixid = Convert.ToInt32(hexequippedbootsPART3, 16);
-            textBox23.Text = equippedbootsid.ToString();
-            textBox78.Text = equippedbootsprefixid.ToString();
+
+            try
+            {
+                pictureBox54.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedbootsid + ".png");
+            }
+            catch
+            {
+                pictureBox54.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            vanityrbootsid = equippedbootsid.ToString();
+            vanityrbootsprefixid = equippedbootsprefixid.ToString();
 
             file = file.Remove(0, 6);
 
@@ -1575,8 +1651,18 @@ namespace TerrariaVitaEditor
             string realhexequippedone = hexonePART1 + hexonePART2;
             int equippedoneid = Convert.ToInt32(realhexequippedone, 16);
             int equippedoneprefixid = Convert.ToInt32(hexonePART3, 16);
-            textBox16.Text = equippedoneid.ToString();
-            textBox79.Text = equippedoneprefixid.ToString();
+
+            try
+            {
+                pictureBox55.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedoneid + ".png");
+            }
+            catch
+            {
+                pictureBox55.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            accessoriesoneid = equippedoneid.ToString();
+            accessoriesoneprefixid = equippedoneprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hextwo = file.Remove(6, file.Length - 6);
@@ -1592,8 +1678,18 @@ namespace TerrariaVitaEditor
             string realhexequippedtwo = hextwoPART1 + hextwoPART2;
             int equippedtwoid = Convert.ToInt32(realhexequippedtwo, 16);
             int equippedtwoprefixid = Convert.ToInt32(hextwoPART3, 16);
-            textBox17.Text = equippedtwoid.ToString();
-            textBox80.Text = equippedtwoprefixid.ToString();
+
+            try
+            {
+                pictureBox56.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedtwoid + ".png");
+            }
+            catch
+            {
+                pictureBox56.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            accessoriestwoid = equippedtwoid.ToString();
+            accessoriestwoprefixid = equippedtwoprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexthree = file.Remove(6, file.Length - 6);
@@ -1608,8 +1704,18 @@ namespace TerrariaVitaEditor
             string realhexequippedthree = hexthreePART1 + hexthreePART2;
             int equippedthreeid = Convert.ToInt32(realhexequippedthree, 16);
             int equippedthreeprefixid = Convert.ToInt32(hexthreePART3, 16);
-            textBox18.Text = equippedthreeid.ToString();
-            textBox81.Text = equippedthreeprefixid.ToString();
+
+            try
+            {
+                pictureBox57.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedthreeid + ".png");
+            }
+            catch
+            {
+                pictureBox57.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            accessoriesthreeid = equippedthreeid.ToString();
+            accessoriesthreeprefixid = equippedthreeprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexfour = file.Remove(6, file.Length - 6);
@@ -1625,8 +1731,18 @@ namespace TerrariaVitaEditor
             string realhexequippedfour = hexfourPART1 + hexfourPART2;
             int equippedfourid = Convert.ToInt32(realhexequippedfour, 16);
             int equippedfourprefixid = Convert.ToInt32(hexfourPART3, 16);
-            textBox19.Text = equippedfourid.ToString();
-            textBox82.Text = equippedfourprefixid.ToString();
+
+            try
+            {
+                pictureBox58.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedfourid + ".png");
+            }
+            catch
+            {
+                pictureBox58.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            accessoriesfourid = equippedfourid.ToString();
+            accessoriesfourprefixid = equippedfourprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexfive = file.Remove(6, file.Length - 6);
@@ -1642,8 +1758,18 @@ namespace TerrariaVitaEditor
             string realhexequippedfive = hexfivePART1 + hexfivePART2;
             int equippedfiveid = Convert.ToInt32(realhexequippedfive, 16);
             int equippedfiveprefixid = Convert.ToInt32(hexfivePART3, 16);
-            textBox20.Text = equippedfiveid.ToString();
-            textBox83.Text = equippedfiveprefixid.ToString();
+
+            try
+            {
+                pictureBox59.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedfiveid + ".png");
+            }
+            catch
+            {
+                pictureBox59.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            accessoriesfiveid = equippedfiveid.ToString();
+            accessoriesfiveprefixid = equippedfiveprefixid.ToString();
             file = file.Remove(0, 6);
 
             return file;
@@ -1670,8 +1796,18 @@ namespace TerrariaVitaEditor
             int equippedhelmetid = Convert.ToInt32(realhexequippedhelmet, 16);
             int equippedhelmetprefixid = Convert.ToInt32(hexequippedhelmetPART3, 16);
 
-            textBox13.Text = equippedhelmetid.ToString();
-            textBox5.Text = equippedhelmetprefixid.ToString();
+            try
+            {
+                pictureBox49.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedhelmetid + ".png");
+            }
+            catch
+            {
+                pictureBox49.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            armorhelmetid = equippedhelmetid.ToString();
+            armorhelmetprefixid = equippedhelmetprefixid.ToString();
+
             file = file.Remove(0, 6);
 
             string hexequippedchest = file.Remove(6, file.Length - 6);
@@ -1688,8 +1824,18 @@ namespace TerrariaVitaEditor
             string realhexequippedchest = hexequippedchestPART1 + hexequippedchestPART2;
             int equippedchestid = Convert.ToInt32(realhexequippedchest, 16);
             int equippedchestprefixid = Convert.ToInt32(hexequippedchestPART3, 16);
-            textBox14.Text = equippedchestid.ToString();
-            textBox74.Text = equippedchestprefixid.ToString();
+
+            try
+            {
+                pictureBox50.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedchestid + ".png");
+            }
+            catch
+            {
+                pictureBox50.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            armorchestid = equippedchestid.ToString();
+            armorchestprefixid = equippedchestprefixid.ToString();
             file = file.Remove(0, 6);
 
             string hexequippedboots = file.Remove(6, file.Length - 6);
@@ -1707,8 +1853,17 @@ namespace TerrariaVitaEditor
             int equippedbootsid = Convert.ToInt32(realhexequippedboots, 16);
             int equippedbootsprefixid = Convert.ToInt32(hexequippedbootsPART3, 16);
 
-            textBox15.Text = equippedbootsid.ToString();
-            textBox75.Text = equippedbootsprefixid.ToString();
+            try
+            {
+                pictureBox51.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + equippedbootsid + ".png");
+            }
+            catch
+            {
+                pictureBox51.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+            }
+
+            armorbootsid = equippedbootsid.ToString();
+            armorbootsprefixid = equippedbootsprefixid.ToString();
 
             file = file.Remove(0, 6);
 
@@ -1853,7 +2008,7 @@ namespace TerrariaVitaEditor
 
         private void àProposToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Terraria Editor for PSVita v0.1\nBy valentinbreiz from CustomProtocol.com");
+            MessageBox.Show("Terraria Character Editor for PS Vita v0.1\nBy valentinbreiz from CustomProtocol.com");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -1943,9 +2098,9 @@ namespace TerrariaVitaEditor
 
             file = file + textBox6.Text + textBox7.Text + textBox8.Text + textBox9.Text + textBox10.Text + textBox11.Text + textBox12.Text;
 
-            string equipedhelmet = HexFromIDspecial3b(Int32.Parse(textBox13.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox5.Text)));
-            string equipedchest = HexFromIDspecial3b(Int32.Parse(textBox14.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox74.Text)));
-            string equipedboots = HexFromIDspecial3b(Int32.Parse(textBox15.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox75.Text)));
+            string equipedhelmet = HexFromIDspecial3b(Int32.Parse(armorhelmetid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorhelmetprefixid)));
+            string equipedchest = HexFromIDspecial3b(Int32.Parse(armorchestid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorchestprefixid)));
+            string equipedboots = HexFromIDspecial3b(Int32.Parse(armorbootsid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorbootsprefixid)));
 
             if (equipedhelmet.Length == 5)
             {
@@ -1972,11 +2127,11 @@ namespace TerrariaVitaEditor
                 file = file + equipedboots;
             }
 
-            string equippedaccessorie1 = HexFromIDspecial3b(Int32.Parse(textBox16.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox79.Text)));
-            string equippedaccessorie2 = HexFromIDspecial3b(Int32.Parse(textBox17.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox80.Text)));
-            string equippedaccessorie3 = HexFromIDspecial3b(Int32.Parse(textBox18.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox81.Text)));
-            string equippedaccessorie4 = HexFromIDspecial3b(Int32.Parse(textBox19.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox82.Text)));
-            string equippedaccessorie5 = HexFromIDspecial3b(Int32.Parse(textBox20.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox83.Text)));
+            string equippedaccessorie1 = HexFromIDspecial3b(Int32.Parse(accessoriesoneid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesoneprefixid)));
+            string equippedaccessorie2 = HexFromIDspecial3b(Int32.Parse(accessoriestwoid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriestwoprefixid)));
+            string equippedaccessorie3 = HexFromIDspecial3b(Int32.Parse(accessoriesthreeid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesthreeprefixid)));
+            string equippedaccessorie4 = HexFromIDspecial3b(Int32.Parse(accessoriesfourid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesfourprefixid)));
+            string equippedaccessorie5 = HexFromIDspecial3b(Int32.Parse(accessoriesfiveid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesfiveprefixid)));
 
             if (equippedaccessorie1.Length == 5)
             {
@@ -2019,9 +2174,9 @@ namespace TerrariaVitaEditor
                 file = file + equippedaccessorie5;
             }
 
-            string vanityhelmet = HexFromIDspecial3b(Int32.Parse(textBox21.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox76.Text)));
-            string vanitychest = HexFromIDspecial3b(Int32.Parse(textBox22.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox77.Text)));
-            string vanityboots = HexFromIDspecial3b(Int32.Parse(textBox23.Text)) + Int32.Parse(HexFromPrefixID(Int32.Parse(textBox78.Text)));
+            string vanityhelmet = HexFromIDspecial3b(Int32.Parse(vanityhelmetid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanityhelmetprefixid)));
+            string vanitychest = HexFromIDspecial3b(Int32.Parse(vanitychestid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanitychestprefixid)));
+            string vanityboots = HexFromIDspecial3b(Int32.Parse(vanityrbootsid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanityrbootsprefixid)));
 
             if (vanityhelmet.Length == 5)
             {
@@ -2047,6 +2202,8 @@ namespace TerrariaVitaEditor
             {
                 file = file + vanityboots;
             }
+
+            file = file + unknwonone;
 
             textBox3.Text = file;
         }
@@ -3221,6 +3378,290 @@ namespace TerrariaVitaEditor
                 catch
                 {
                     pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+        }
+
+        private void pictureBox49_Click(object sender, EventArgs e)
+        {
+            pictureBox49.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox49;
+            groupBox4.Enabled = true;
+            textBox26.Text = armorhelmetid;
+            textBox24.Text = armorhelmetprefixid;
+            currentpcturebox = 49;
+        }
+
+        private void pictureBox50_Click(object sender, EventArgs e)
+        {
+            pictureBox50.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox50;
+            groupBox4.Enabled = true;
+            textBox26.Text = armorchestid;
+            textBox24.Text = armorchestprefixid;
+            currentpcturebox = 50;
+        }
+
+        private void pictureBox51_Click(object sender, EventArgs e)
+        {
+            pictureBox51.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox51;
+            groupBox4.Enabled = true;
+            textBox26.Text = armorbootsid;
+            textBox24.Text = armorbootsprefixid;
+            currentpcturebox = 51;
+        }
+
+        private void pictureBox52_Click(object sender, EventArgs e)
+        {
+            pictureBox52.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox52;
+            groupBox4.Enabled = true;
+            textBox26.Text = vanityhelmetid;
+            textBox24.Text = vanityhelmetprefixid;
+            currentpcturebox = 52;
+        }
+
+        private void pictureBox53_Click(object sender, EventArgs e)
+        {
+            pictureBox53.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox53;
+            groupBox4.Enabled = true;
+            textBox26.Text = vanitychestid;
+            textBox24.Text = vanitychestprefixid;
+            currentpcturebox = 53;
+        }
+
+        private void pictureBox54_Click(object sender, EventArgs e)
+        {
+            pictureBox54.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox54;
+            groupBox4.Enabled = true;
+            textBox26.Text = vanityrbootsid;
+            textBox24.Text = vanityrbootsprefixid;
+            currentpcturebox = 54;
+        }
+
+        private void pictureBox55_Click(object sender, EventArgs e)
+        {
+            pictureBox55.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox55;
+            groupBox4.Enabled = true;
+            textBox26.Text = accessoriesoneid;
+            textBox24.Text = accessoriesoneprefixid;
+            currentpcturebox = 55;
+        }
+
+        private void pictureBox56_Click(object sender, EventArgs e)
+        {
+            pictureBox56.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox56;
+            groupBox4.Enabled = true;
+            textBox26.Text = accessoriestwoid;
+            textBox24.Text = accessoriestwoprefixid;
+            currentpcturebox = 56;
+        }
+
+        private void pictureBox57_Click(object sender, EventArgs e)
+        {
+            pictureBox57.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox57;
+            groupBox4.Enabled = true;
+            textBox26.Text = accessoriesthreeid;
+            textBox24.Text = accessoriesthreeprefixid;
+            currentpcturebox = 57;
+        }
+
+        private void pictureBox58_Click(object sender, EventArgs e)
+        {
+            pictureBox58.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox58;
+            groupBox4.Enabled = true;
+            textBox26.Text = accessoriesfourid;
+            textBox24.Text = accessoriesfourprefixid;
+            currentpcturebox = 58;
+        }
+
+        private void pictureBox59_Click(object sender, EventArgs e)
+        {
+            pictureBox59.BorderStyle = BorderStyle.FixedSingle;
+            try { lastselected.BorderStyle = BorderStyle.None; }
+            catch { }
+            lastselected = pictureBox59;
+            groupBox4.Enabled = true;
+            textBox26.Text = accessoriesfiveid;
+            textBox24.Text = accessoriesfiveprefixid;
+            currentpcturebox = 59;
+        }
+
+        private void pictureBox60_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://www.customprotocol.com");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (currentpcturebox == 49)
+            {
+                try
+                {
+                    armorhelmetid = textBox26.Text;
+                    armorhelmetprefixid = textBox24.Text;
+                    pictureBox49.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox49.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 50)
+            {
+                try
+                {
+                    armorchestid = textBox26.Text;
+                    armorchestprefixid = textBox24.Text;
+                    pictureBox50.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox50.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 51)
+            {
+                try
+                {
+                    armorbootsid = textBox26.Text;
+                    armorbootsprefixid = textBox24.Text;
+                    pictureBox51.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox51.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 52)
+            {
+                try
+                {
+                    vanityhelmetid = textBox26.Text;
+                    vanityhelmetprefixid = textBox24.Text;
+                    pictureBox52.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox52.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 53)
+            {
+                try
+                {
+                    vanitychestid = textBox26.Text;
+                    vanitychestprefixid = textBox24.Text;
+                    pictureBox53.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox53.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 54)
+            {
+                try
+                {
+                    vanityrbootsid = textBox26.Text;
+                    vanityrbootsprefixid = textBox24.Text;
+                    pictureBox54.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox54.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 55)
+            {
+                try
+                {
+                    accessoriesoneid = textBox26.Text;
+                    accessoriesoneprefixid = textBox24.Text;
+                    pictureBox55.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox55.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 56)
+            {
+                try
+                {
+                    accessoriestwoid = textBox26.Text;
+                    accessoriestwoprefixid = textBox24.Text;
+                    pictureBox56.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox56.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 57)
+            {
+                try
+                {
+                    accessoriesthreeid = textBox26.Text;
+                    accessoriesthreeprefixid = textBox24.Text;
+                    pictureBox57.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox57.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 58)
+            {
+                try
+                {
+                    accessoriesfourid = textBox26.Text;
+                    accessoriesfourprefixid = textBox24.Text;
+                    pictureBox58.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox58.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
+                }
+            }
+            else if (currentpcturebox == 59)
+            {
+                try
+                {
+                    accessoriesfiveid = textBox26.Text;
+                    accessoriesfiveprefixid = textBox24.Text;
+                    pictureBox59.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox26.Text + ".png");
+                }
+                catch
+                {
+                    pictureBox59.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
                 }
             }
         }
