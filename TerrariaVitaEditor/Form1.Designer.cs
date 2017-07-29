@@ -299,7 +299,7 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ouvrirToolStripMenuItem.Text = "Open";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
@@ -477,44 +477,44 @@
             this.label66.AutoSize = true;
             this.label66.BackColor = System.Drawing.Color.Transparent;
             this.label66.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(27, 188);
+            this.label66.Location = new System.Drawing.Point(6, 186);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(17, 12);
+            this.label66.Size = new System.Drawing.Size(11, 12);
             this.label66.TabIndex = 144;
-            this.label66.Text = "00";
+            this.label66.Text = "0";
             // 
             // label75
             // 
             this.label75.AutoSize = true;
             this.label75.BackColor = System.Drawing.Color.Transparent;
             this.label75.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(27, 141);
+            this.label75.Location = new System.Drawing.Point(6, 139);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(17, 12);
+            this.label75.Size = new System.Drawing.Size(11, 12);
             this.label75.TabIndex = 143;
-            this.label75.Text = "00";
+            this.label75.Text = "0";
             // 
             // label74
             // 
             this.label74.AutoSize = true;
             this.label74.BackColor = System.Drawing.Color.Transparent;
             this.label74.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(27, 95);
+            this.label74.Location = new System.Drawing.Point(6, 93);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(17, 12);
+            this.label74.Size = new System.Drawing.Size(11, 12);
             this.label74.TabIndex = 142;
-            this.label74.Text = "00";
+            this.label74.Text = "0";
             // 
             // label73
             // 
             this.label73.AutoSize = true;
             this.label73.BackColor = System.Drawing.Color.Transparent;
             this.label73.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(29, 49);
+            this.label73.Location = new System.Drawing.Point(6, 47);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(17, 12);
+            this.label73.Size = new System.Drawing.Size(11, 12);
             this.label73.TabIndex = 141;
-            this.label73.Text = "00";
+            this.label73.Text = "0";
             // 
             // pictureBox48
             // 
@@ -583,44 +583,44 @@
             this.label72.AutoSize = true;
             this.label72.BackColor = System.Drawing.Color.Transparent;
             this.label72.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(27, 188);
+            this.label72.Location = new System.Drawing.Point(6, 186);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(17, 12);
+            this.label72.Size = new System.Drawing.Size(11, 12);
             this.label72.TabIndex = 140;
-            this.label72.Text = "00";
+            this.label72.Text = "0";
             // 
             // label71
             // 
             this.label71.AutoSize = true;
             this.label71.BackColor = System.Drawing.Color.Transparent;
             this.label71.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(27, 141);
+            this.label71.Location = new System.Drawing.Point(6, 139);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(17, 12);
+            this.label71.Size = new System.Drawing.Size(11, 12);
             this.label71.TabIndex = 139;
-            this.label71.Text = "00";
+            this.label71.Text = "0";
             // 
             // label70
             // 
             this.label70.AutoSize = true;
             this.label70.BackColor = System.Drawing.Color.Transparent;
             this.label70.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(27, 95);
+            this.label70.Location = new System.Drawing.Point(6, 93);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(17, 12);
+            this.label70.Size = new System.Drawing.Size(11, 12);
             this.label70.TabIndex = 138;
-            this.label70.Text = "00";
+            this.label70.Text = "0";
             // 
             // label69
             // 
             this.label69.AutoSize = true;
             this.label69.BackColor = System.Drawing.Color.Transparent;
             this.label69.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(22, 30);
+            this.label69.Location = new System.Drawing.Point(6, 47);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(17, 12);
+            this.label69.Size = new System.Drawing.Size(11, 12);
             this.label69.TabIndex = 137;
-            this.label69.Text = "00";
+            this.label69.Text = "0";
             // 
             // pictureBox44
             // 
@@ -761,440 +761,440 @@
             this.label68.AutoSize = true;
             this.label68.BackColor = System.Drawing.Color.Transparent;
             this.label68.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(441, 188);
+            this.label68.Location = new System.Drawing.Point(420, 186);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(17, 12);
+            this.label68.Size = new System.Drawing.Size(11, 12);
             this.label68.TabIndex = 136;
-            this.label68.Text = "00";
+            this.label68.Text = "0";
             // 
             // label67
             // 
             this.label67.AutoSize = true;
             this.label67.BackColor = System.Drawing.Color.Transparent;
             this.label67.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(395, 188);
+            this.label67.Location = new System.Drawing.Point(374, 186);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(17, 12);
+            this.label67.Size = new System.Drawing.Size(11, 12);
             this.label67.TabIndex = 135;
-            this.label67.Text = "00";
+            this.label67.Text = "0";
             // 
             // label65
             // 
             this.label65.AutoSize = true;
             this.label65.BackColor = System.Drawing.Color.Transparent;
             this.label65.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(348, 188);
+            this.label65.Location = new System.Drawing.Point(327, 186);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(17, 12);
+            this.label65.Size = new System.Drawing.Size(11, 12);
             this.label65.TabIndex = 134;
-            this.label65.Text = "00";
+            this.label65.Text = "0";
             // 
             // label64
             // 
             this.label64.AutoSize = true;
             this.label64.BackColor = System.Drawing.Color.Transparent;
             this.label64.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(305, 188);
+            this.label64.Location = new System.Drawing.Point(284, 186);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(17, 12);
+            this.label64.Size = new System.Drawing.Size(11, 12);
             this.label64.TabIndex = 133;
-            this.label64.Text = "00";
+            this.label64.Text = "0";
             // 
             // label63
             // 
             this.label63.AutoSize = true;
             this.label63.BackColor = System.Drawing.Color.Transparent;
             this.label63.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(257, 188);
+            this.label63.Location = new System.Drawing.Point(236, 186);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(17, 12);
+            this.label63.Size = new System.Drawing.Size(11, 12);
             this.label63.TabIndex = 132;
-            this.label63.Text = "00";
+            this.label63.Text = "0";
             // 
             // label62
             // 
             this.label62.AutoSize = true;
             this.label62.BackColor = System.Drawing.Color.Transparent;
             this.label62.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(211, 188);
+            this.label62.Location = new System.Drawing.Point(190, 186);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(17, 12);
+            this.label62.Size = new System.Drawing.Size(11, 12);
             this.label62.TabIndex = 131;
-            this.label62.Text = "00";
+            this.label62.Text = "0";
             // 
             // label61
             // 
             this.label61.AutoSize = true;
             this.label61.BackColor = System.Drawing.Color.Transparent;
             this.label61.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(165, 188);
+            this.label61.Location = new System.Drawing.Point(144, 186);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(17, 12);
+            this.label61.Size = new System.Drawing.Size(11, 12);
             this.label61.TabIndex = 130;
-            this.label61.Text = "00";
+            this.label61.Text = "0";
             // 
             // label60
             // 
             this.label60.AutoSize = true;
             this.label60.BackColor = System.Drawing.Color.Transparent;
             this.label60.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(119, 188);
+            this.label60.Location = new System.Drawing.Point(98, 186);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(17, 12);
+            this.label60.Size = new System.Drawing.Size(11, 12);
             this.label60.TabIndex = 129;
-            this.label60.Text = "00";
+            this.label60.Text = "0";
             // 
             // label59
             // 
             this.label59.AutoSize = true;
             this.label59.BackColor = System.Drawing.Color.Transparent;
             this.label59.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(73, 188);
+            this.label59.Location = new System.Drawing.Point(52, 186);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(17, 12);
+            this.label59.Size = new System.Drawing.Size(11, 12);
             this.label59.TabIndex = 128;
-            this.label59.Text = "00";
+            this.label59.Text = "0";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
             this.label58.BackColor = System.Drawing.Color.Transparent;
             this.label58.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(27, 188);
+            this.label58.Location = new System.Drawing.Point(6, 186);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(17, 12);
+            this.label58.Size = new System.Drawing.Size(11, 12);
             this.label58.TabIndex = 127;
-            this.label58.Text = "00";
+            this.label58.Text = "0";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
             this.label57.BackColor = System.Drawing.Color.Transparent;
             this.label57.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(443, 141);
+            this.label57.Location = new System.Drawing.Point(422, 139);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(17, 12);
+            this.label57.Size = new System.Drawing.Size(11, 12);
             this.label57.TabIndex = 126;
-            this.label57.Text = "00";
+            this.label57.Text = "0";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(395, 141);
+            this.label56.Location = new System.Drawing.Point(374, 139);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(17, 12);
+            this.label56.Size = new System.Drawing.Size(11, 12);
             this.label56.TabIndex = 125;
-            this.label56.Text = "00";
+            this.label56.Text = "0";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.BackColor = System.Drawing.Color.Transparent;
             this.label55.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(348, 141);
+            this.label55.Location = new System.Drawing.Point(327, 139);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(17, 12);
+            this.label55.Size = new System.Drawing.Size(11, 12);
             this.label55.TabIndex = 124;
-            this.label55.Text = "00";
+            this.label55.Text = "0";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
             this.label54.BackColor = System.Drawing.Color.Transparent;
             this.label54.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(305, 141);
+            this.label54.Location = new System.Drawing.Point(284, 139);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(17, 12);
+            this.label54.Size = new System.Drawing.Size(11, 12);
             this.label54.TabIndex = 123;
-            this.label54.Text = "00";
+            this.label54.Text = "0";
             // 
             // label53
             // 
             this.label53.AutoSize = true;
             this.label53.BackColor = System.Drawing.Color.Transparent;
             this.label53.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(257, 141);
+            this.label53.Location = new System.Drawing.Point(236, 139);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(17, 12);
+            this.label53.Size = new System.Drawing.Size(11, 12);
             this.label53.TabIndex = 122;
-            this.label53.Text = "00";
+            this.label53.Text = "0";
             // 
             // label52
             // 
             this.label52.AutoSize = true;
             this.label52.BackColor = System.Drawing.Color.Transparent;
             this.label52.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(211, 141);
+            this.label52.Location = new System.Drawing.Point(190, 139);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(17, 12);
+            this.label52.Size = new System.Drawing.Size(11, 12);
             this.label52.TabIndex = 121;
-            this.label52.Text = "00";
+            this.label52.Text = "0";
             // 
             // label51
             // 
             this.label51.AutoSize = true;
             this.label51.BackColor = System.Drawing.Color.Transparent;
             this.label51.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(165, 141);
+            this.label51.Location = new System.Drawing.Point(144, 139);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(17, 12);
+            this.label51.Size = new System.Drawing.Size(11, 12);
             this.label51.TabIndex = 120;
-            this.label51.Text = "00";
+            this.label51.Text = "0";
             // 
             // label50
             // 
             this.label50.AutoSize = true;
             this.label50.BackColor = System.Drawing.Color.Transparent;
             this.label50.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(119, 141);
+            this.label50.Location = new System.Drawing.Point(98, 139);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(17, 12);
+            this.label50.Size = new System.Drawing.Size(11, 12);
             this.label50.TabIndex = 119;
-            this.label50.Text = "00";
+            this.label50.Text = "0";
             // 
             // label49
             // 
             this.label49.AutoSize = true;
             this.label49.BackColor = System.Drawing.Color.Transparent;
             this.label49.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(73, 141);
+            this.label49.Location = new System.Drawing.Point(52, 139);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(17, 12);
+            this.label49.Size = new System.Drawing.Size(11, 12);
             this.label49.TabIndex = 118;
-            this.label49.Text = "00";
+            this.label49.Text = "0";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
             this.label48.BackColor = System.Drawing.Color.Transparent;
             this.label48.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(27, 141);
+            this.label48.Location = new System.Drawing.Point(6, 139);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(17, 12);
+            this.label48.Size = new System.Drawing.Size(11, 12);
             this.label48.TabIndex = 117;
-            this.label48.Text = "00";
+            this.label48.Text = "0";
             // 
             // label47
             // 
             this.label47.AutoSize = true;
             this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(441, 95);
+            this.label47.Location = new System.Drawing.Point(420, 93);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(17, 12);
+            this.label47.Size = new System.Drawing.Size(11, 12);
             this.label47.TabIndex = 116;
-            this.label47.Text = "00";
+            this.label47.Text = "0";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.BackColor = System.Drawing.Color.Transparent;
             this.label46.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(395, 95);
+            this.label46.Location = new System.Drawing.Point(374, 93);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(17, 12);
+            this.label46.Size = new System.Drawing.Size(11, 12);
             this.label46.TabIndex = 115;
-            this.label46.Text = "00";
+            this.label46.Text = "0";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(349, 95);
+            this.label45.Location = new System.Drawing.Point(328, 93);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(17, 12);
+            this.label45.Size = new System.Drawing.Size(11, 12);
             this.label45.TabIndex = 114;
-            this.label45.Text = "00";
+            this.label45.Text = "0";
             // 
             // label44
             // 
             this.label44.AutoSize = true;
             this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(305, 95);
+            this.label44.Location = new System.Drawing.Point(284, 93);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(17, 12);
+            this.label44.Size = new System.Drawing.Size(11, 12);
             this.label44.TabIndex = 113;
-            this.label44.Text = "00";
+            this.label44.Text = "0";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
             this.label43.BackColor = System.Drawing.Color.Transparent;
             this.label43.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(257, 95);
+            this.label43.Location = new System.Drawing.Point(236, 93);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(17, 12);
+            this.label43.Size = new System.Drawing.Size(11, 12);
             this.label43.TabIndex = 112;
-            this.label43.Text = "00";
+            this.label43.Text = "0";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
             this.label42.BackColor = System.Drawing.Color.Transparent;
             this.label42.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(211, 95);
+            this.label42.Location = new System.Drawing.Point(190, 93);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(17, 12);
+            this.label42.Size = new System.Drawing.Size(11, 12);
             this.label42.TabIndex = 111;
-            this.label42.Text = "00";
+            this.label42.Text = "0";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(165, 95);
+            this.label41.Location = new System.Drawing.Point(144, 93);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(17, 12);
+            this.label41.Size = new System.Drawing.Size(11, 12);
             this.label41.TabIndex = 110;
-            this.label41.Text = "00";
+            this.label41.Text = "0";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.BackColor = System.Drawing.Color.Transparent;
             this.label40.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(119, 95);
+            this.label40.Location = new System.Drawing.Point(98, 93);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(17, 12);
+            this.label40.Size = new System.Drawing.Size(11, 12);
             this.label40.TabIndex = 109;
-            this.label40.Text = "00";
+            this.label40.Text = "0";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(27, 95);
+            this.label38.Location = new System.Drawing.Point(6, 93);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(17, 12);
+            this.label38.Size = new System.Drawing.Size(11, 12);
             this.label38.TabIndex = 107;
-            this.label38.Text = "00";
+            this.label38.Text = "0";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
             this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(73, 95);
+            this.label39.Location = new System.Drawing.Point(52, 93);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(17, 12);
+            this.label39.Size = new System.Drawing.Size(11, 12);
             this.label39.TabIndex = 108;
-            this.label39.Text = "00";
+            this.label39.Text = "0";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(441, 49);
+            this.label37.Location = new System.Drawing.Point(420, 47);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(17, 12);
+            this.label37.Size = new System.Drawing.Size(11, 12);
             this.label37.TabIndex = 106;
-            this.label37.Text = "00";
+            this.label37.Text = "0";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(395, 49);
+            this.label36.Location = new System.Drawing.Point(374, 47);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(17, 12);
+            this.label36.Size = new System.Drawing.Size(11, 12);
             this.label36.TabIndex = 105;
-            this.label36.Text = "00";
+            this.label36.Text = "0";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(349, 49);
+            this.label35.Location = new System.Drawing.Point(328, 47);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(17, 12);
+            this.label35.Size = new System.Drawing.Size(11, 12);
             this.label35.TabIndex = 104;
-            this.label35.Text = "00";
+            this.label35.Text = "0";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(303, 49);
+            this.label34.Location = new System.Drawing.Point(282, 47);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(17, 12);
+            this.label34.Size = new System.Drawing.Size(11, 12);
             this.label34.TabIndex = 103;
-            this.label34.Text = "00";
+            this.label34.Text = "0";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(257, 49);
+            this.label33.Location = new System.Drawing.Point(236, 47);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(17, 12);
+            this.label33.Size = new System.Drawing.Size(11, 12);
             this.label33.TabIndex = 102;
-            this.label33.Text = "00";
+            this.label33.Text = "0";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(211, 49);
+            this.label32.Location = new System.Drawing.Point(190, 47);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(17, 12);
+            this.label32.Size = new System.Drawing.Size(11, 12);
             this.label32.TabIndex = 101;
-            this.label32.Text = "00";
+            this.label32.Text = "0";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(165, 49);
+            this.label31.Location = new System.Drawing.Point(144, 47);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(17, 12);
+            this.label31.Size = new System.Drawing.Size(11, 12);
             this.label31.TabIndex = 100;
-            this.label31.Text = "00";
+            this.label31.Text = "0";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(119, 49);
+            this.label30.Location = new System.Drawing.Point(98, 47);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(17, 12);
+            this.label30.Size = new System.Drawing.Size(11, 12);
             this.label30.TabIndex = 99;
-            this.label30.Text = "00";
+            this.label30.Text = "0";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(73, 49);
+            this.label29.Location = new System.Drawing.Point(52, 47);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(17, 12);
+            this.label29.Size = new System.Drawing.Size(11, 12);
             this.label29.TabIndex = 98;
-            this.label29.Text = "00";
+            this.label29.Text = "0";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Caladea", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(27, 49);
+            this.label28.Location = new System.Drawing.Point(6, 47);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(17, 12);
+            this.label28.Size = new System.Drawing.Size(11, 12);
             this.label28.TabIndex = 97;
-            this.label28.Text = "00";
+            this.label28.Text = "0";
             // 
             // pictureBox40
             // 
