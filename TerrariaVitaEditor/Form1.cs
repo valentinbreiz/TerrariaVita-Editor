@@ -394,7 +394,6 @@ namespace TerrariaVitaEditor
                 try
                 {
                     string ammo2 = file.Remove(10, file.Length - 10);
-                    MessageBox.Show(ammo2);
                     string ammo2PART1 = ammo2.Remove(0, 2);
                     ammo2PART1 = ammo2PART1.Remove(2, 6);
                     string ammo2PART2 = ammo2.Remove(2, 8);
@@ -540,7 +539,6 @@ namespace TerrariaVitaEditor
                 try
                 {
                     string ammo2 = file.Remove(10, file.Length - 10);
-                    MessageBox.Show(ammo2);
                     string ammo2PART1 = ammo2.Remove(0, 2);
                     ammo2PART1 = ammo2PART1.Remove(2, 6);
                     string ammo2PART2 = ammo2.Remove(2, 8);
@@ -2708,7 +2706,7 @@ namespace TerrariaVitaEditor
 
         private void àProposToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Terraria Character Editor for PS Vita v0.1\nBy valentinbreiz from CustomProtocol.com");
+            MessageBox.Show("Terraria Character Editor for PS Vita v1\nBy valentinbreiz from CustomProtocol.com");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -2737,11 +2735,13 @@ namespace TerrariaVitaEditor
         private void button3_Click(object sender, EventArgs e)
         {
             Make();
-            MessageBox.Show("Done!");
         }
 
         private void Make()
         {
+            try
+            {
+
             #region begin
 
             string file = "1500";
@@ -3032,11 +3032,85 @@ namespace TerrariaVitaEditor
 
             #region inventory
 
-
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID1, this.itemCOUNT1, this.itemPREFIXID1, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID2, this.itemCOUNT2, this.itemPREFIXID2, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID3, this.itemCOUNT3, this.itemPREFIXID3, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID4, this.itemCOUNT4, this.itemPREFIXID4, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID5, this.itemCOUNT5, this.itemPREFIXID5, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID6, this.itemCOUNT6, this.itemPREFIXID6, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID7, this.itemCOUNT7, this.itemPREFIXID7, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID8, this.itemCOUNT8, this.itemPREFIXID8, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID9, this.itemCOUNT9, this.itemPREFIXID9, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID10, this.itemCOUNT10, this.itemPREFIXID10, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID11, this.itemCOUNT11, this.itemPREFIXID11, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID12, this.itemCOUNT12, this.itemPREFIXID12, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID13, this.itemCOUNT13, this.itemPREFIXID13, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID14, this.itemCOUNT14, this.itemPREFIXID14, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID15, this.itemCOUNT15, this.itemPREFIXID15, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID16, this.itemCOUNT16, this.itemPREFIXID16, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID17, this.itemCOUNT17, this.itemPREFIXID17, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID18, this.itemCOUNT18, this.itemPREFIXID18, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID19, this.itemCOUNT19, this.itemPREFIXID19, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID20, this.itemCOUNT20, this.itemPREFIXID20, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID21, this.itemCOUNT21, this.itemPREFIXID21, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID22, this.itemCOUNT22, this.itemPREFIXID22, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID23, this.itemCOUNT23, this.itemPREFIXID23, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID24, this.itemCOUNT24, this.itemPREFIXID24, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID25, this.itemCOUNT25, this.itemPREFIXID25, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID26, this.itemCOUNT26, this.itemPREFIXID26, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID27, this.itemCOUNT27, this.itemPREFIXID27, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID28, this.itemCOUNT28, this.itemPREFIXID28, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID29, this.itemCOUNT29, this.itemPREFIXID29, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID30, this.itemCOUNT30, this.itemPREFIXID30, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID31, this.itemCOUNT31, this.itemPREFIXID31, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID32, this.itemCOUNT32, this.itemPREFIXID32, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID33, this.itemCOUNT33, this.itemPREFIXID33, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID34, this.itemCOUNT34, this.itemPREFIXID34, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID35, this.itemCOUNT35, this.itemPREFIXID35, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID36, this.itemCOUNT36, this.itemPREFIXID36, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID37, this.itemCOUNT37, this.itemPREFIXID37, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID38, this.itemCOUNT38, this.itemPREFIXID38, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID39, this.itemCOUNT39, this.itemPREFIXID39, file);
+            file = this.HexFromIDCOUNTPREFIXID(this.itemID40, this.itemCOUNT40, this.itemPREFIXID40, file);
 
             #endregion
 
-            textBox3.Text = file;
+            #region coin
+
+            string itemPREFIXID45 = "0";
+            string itemPREFIXID46 = "0";
+            string itemPREFIXID47 = "0";
+            string itemPREFIXID48 = "0";
+            file = HexFromIDCOUNTPREFIXID(itemID45, itemCOUNT45, itemPREFIXID45, file);
+            file = HexFromIDCOUNTPREFIXID(itemID46, itemCOUNT46, itemPREFIXID46, file);
+            file = HexFromIDCOUNTPREFIXID(itemID47, itemCOUNT47, itemPREFIXID47, file);
+            file = HexFromIDCOUNTPREFIXID(itemID48, itemCOUNT48, itemPREFIXID48, file);
+
+            #endregion
+
+            #region ammos
+
+            string itemPREFIXID49 = "0";
+            string itemPREFIXID50 = "0";
+            string itemPREFIXID51 = "0";
+            string itemPREFIXID52 = "0";
+            file = HexFromIDCOUNTPREFIXID(itemID41, itemCOUNT41, itemPREFIXID49, file);
+            file = HexFromIDCOUNTPREFIXID(itemID42, itemCOUNT42, itemPREFIXID50, file);
+            file = HexFromIDCOUNTPREFIXID(itemID43, itemCOUNT43, itemPREFIXID51, file);
+            file = HexFromIDCOUNTPREFIXID(itemID44, itemCOUNT44, itemPREFIXID52, file);
+
+            #endregion
+
+            file += endfile;
+
+            File.WriteAllBytes(path, StringToByteArray(file));
+            MessageBox.Show("Success!");
+
+            }
+            catch
+            {
+                MessageBox.Show("Error!");
+            }
         }
 
         private string HexFromID(int ID)
@@ -3056,6 +3130,81 @@ namespace TerrariaVitaEditor
             {
                 return hexid;
             }
+        }
+
+        private string HexFromIDCOUNTPREFIXID(string ID, string count, string PREFIXID, string file)
+        {
+            bool flag = ID == "0";
+            string result;
+            if (flag)
+            {
+                file += "0000";
+                result = file;
+            }
+            else
+            {
+                int decID = int.Parse(ID);
+                string hexID = HexFromID(decID);
+                bool flag2 = hexID.Length == 1;
+                if (flag2)
+                {
+                    hexID = "000" + hexID;
+                }
+                else
+                {
+                    bool flag3 = hexID.Length == 2;
+                    if (flag3)
+                    {
+                        hexID = "00" + hexID;
+                    }
+                    else
+                    {
+                        bool flag4 = hexID.Length == 3;
+                        if (flag4)
+                        {
+                            hexID = "0" + hexID;
+                        }
+                    }
+                }
+                string hexidPART = hexID.Remove(0, 2);
+                string hexidPART2 = hexID.Remove(2, 2);
+                hexID = hexidPART + hexidPART2;
+                string hexCOUNT = this.HexFromID(int.Parse(count));
+                bool flag5 = hexCOUNT.Length == 1;
+                if (flag5)
+                {
+                    hexCOUNT = "000" + hexCOUNT;
+                }
+                else
+                {
+                    bool flag6 = hexCOUNT.Length == 2;
+                    if (flag6)
+                    {
+                        hexCOUNT = "00" + hexCOUNT;
+                    }
+                    else
+                    {
+                        bool flag7 = hexCOUNT.Length == 3;
+                        if (flag7)
+                        {
+                            hexCOUNT = "0" + hexCOUNT;
+                        }
+                    }
+                }
+                string hexcountPART = hexCOUNT.Remove(0, 2);
+                string hexcountPART2 = hexCOUNT.Remove(2, 2);
+                hexCOUNT = hexcountPART + hexcountPART2;
+                string hexPREFIXID = HexFromID(int.Parse(PREFIXID));
+                bool flag8 = hexPREFIXID.Length == 1;
+                if (flag8)
+                {
+                    hexPREFIXID = "0" + hexPREFIXID;
+                }
+                string item = hexID + hexCOUNT + hexPREFIXID;
+                file += item;
+                result = file;
+            }
+            return result;
         }
 
         private string HexFromIDspecial3b(int ID)
@@ -3087,7 +3236,6 @@ namespace TerrariaVitaEditor
             StringBuilder sb = new StringBuilder();
             foreach (char t in hexstring)
             {
-                //Note: X for upper, x for lower case letters
                 sb.Append(Convert.ToInt32(t).ToString("x"));
             }
             string stringg = sb.ToString().ToUpper();

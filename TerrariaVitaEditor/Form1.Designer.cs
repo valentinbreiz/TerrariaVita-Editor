@@ -35,7 +35,6 @@
             this.àProposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
@@ -299,7 +298,7 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.ouvrirToolStripMenuItem.Text = "Open";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
@@ -324,13 +323,6 @@
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(254, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(287, 20);
-            this.textBox3.TabIndex = 3;
             // 
             // tabPage2
             // 
@@ -1946,7 +1938,7 @@
             // 
             this.pictureBox59.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox59.BackgroundImage")));
             this.pictureBox59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox59.Location = new System.Drawing.Point(30, 135);
+            this.pictureBox59.Location = new System.Drawing.Point(30, 138);
             this.pictureBox59.Name = "pictureBox59";
             this.pictureBox59.Size = new System.Drawing.Size(40, 40);
             this.pictureBox59.TabIndex = 30;
@@ -1957,7 +1949,7 @@
             // 
             this.pictureBox58.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox58.BackgroundImage")));
             this.pictureBox58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox58.Location = new System.Drawing.Point(52, 89);
+            this.pictureBox58.Location = new System.Drawing.Point(52, 92);
             this.pictureBox58.Name = "pictureBox58";
             this.pictureBox58.Size = new System.Drawing.Size(40, 40);
             this.pictureBox58.TabIndex = 29;
@@ -1968,7 +1960,7 @@
             // 
             this.pictureBox57.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox57.BackgroundImage")));
             this.pictureBox57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox57.Location = new System.Drawing.Point(6, 89);
+            this.pictureBox57.Location = new System.Drawing.Point(6, 92);
             this.pictureBox57.Name = "pictureBox57";
             this.pictureBox57.Size = new System.Drawing.Size(40, 40);
             this.pictureBox57.TabIndex = 28;
@@ -1979,7 +1971,7 @@
             // 
             this.pictureBox56.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox56.BackgroundImage")));
             this.pictureBox56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox56.Location = new System.Drawing.Point(52, 43);
+            this.pictureBox56.Location = new System.Drawing.Point(52, 46);
             this.pictureBox56.Name = "pictureBox56";
             this.pictureBox56.Size = new System.Drawing.Size(40, 40);
             this.pictureBox56.TabIndex = 27;
@@ -1990,7 +1982,7 @@
             // 
             this.pictureBox55.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox55.BackgroundImage")));
             this.pictureBox55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox55.Location = new System.Drawing.Point(6, 43);
+            this.pictureBox55.Location = new System.Drawing.Point(6, 46);
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.Size = new System.Drawing.Size(40, 40);
             this.pictureBox55.TabIndex = 26;
@@ -2017,7 +2009,7 @@
             // 
             this.pictureBox52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox52.BackgroundImage")));
             this.pictureBox52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox52.Location = new System.Drawing.Point(49, 48);
+            this.pictureBox52.Location = new System.Drawing.Point(49, 46);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(40, 40);
             this.pictureBox52.TabIndex = 27;
@@ -2028,7 +2020,7 @@
             // 
             this.pictureBox53.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox53.BackgroundImage")));
             this.pictureBox53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox53.Location = new System.Drawing.Point(49, 94);
+            this.pictureBox53.Location = new System.Drawing.Point(49, 92);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(40, 40);
             this.pictureBox53.TabIndex = 26;
@@ -2039,7 +2031,7 @@
             // 
             this.pictureBox54.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox54.BackgroundImage")));
             this.pictureBox54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox54.Location = new System.Drawing.Point(49, 140);
+            this.pictureBox54.Location = new System.Drawing.Point(49, 138);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(40, 40);
             this.pictureBox54.TabIndex = 25;
@@ -2049,7 +2041,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 66);
+            this.label20.Location = new System.Drawing.Point(6, 64);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(43, 13);
             this.label20.TabIndex = 14;
@@ -2058,7 +2050,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 110);
+            this.label19.Location = new System.Drawing.Point(6, 108);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(37, 13);
             this.label19.TabIndex = 15;
@@ -2067,7 +2059,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 150);
+            this.label18.Location = new System.Drawing.Point(6, 148);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(37, 13);
             this.label18.TabIndex = 16;
@@ -2093,7 +2085,7 @@
             // 
             this.pictureBox51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox51.BackgroundImage")));
             this.pictureBox51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox51.Location = new System.Drawing.Point(49, 140);
+            this.pictureBox51.Location = new System.Drawing.Point(49, 138);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(40, 40);
             this.pictureBox51.TabIndex = 16;
@@ -2104,7 +2096,7 @@
             // 
             this.pictureBox50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox50.BackgroundImage")));
             this.pictureBox50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox50.Location = new System.Drawing.Point(49, 94);
+            this.pictureBox50.Location = new System.Drawing.Point(49, 92);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(40, 40);
             this.pictureBox50.TabIndex = 15;
@@ -2115,7 +2107,7 @@
             // 
             this.pictureBox49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox49.BackgroundImage")));
             this.pictureBox49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox49.Location = new System.Drawing.Point(49, 48);
+            this.pictureBox49.Location = new System.Drawing.Point(49, 46);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(40, 40);
             this.pictureBox49.TabIndex = 14;
@@ -2125,7 +2117,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 66);
+            this.label15.Location = new System.Drawing.Point(6, 64);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(43, 13);
             this.label15.TabIndex = 3;
@@ -2134,7 +2126,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 110);
+            this.label16.Location = new System.Drawing.Point(6, 108);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(37, 13);
             this.label16.TabIndex = 4;
@@ -2143,7 +2135,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 150);
+            this.label17.Location = new System.Drawing.Point(6, 148);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(37, 13);
             this.label17.TabIndex = 5;
@@ -2178,7 +2170,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(702, 270);
             this.Controls.Add(this.pictureBox60);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
@@ -2288,7 +2279,6 @@
         private System.Windows.Forms.ToolStripMenuItem àProposToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button2;
