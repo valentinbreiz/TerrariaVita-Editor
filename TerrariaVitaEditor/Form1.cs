@@ -54,17 +54,27 @@ namespace TerrariaVitaEditor
         string itemID39;
         string itemID40;
 
-        //COINS
+        //AMMOS
         string itemID41;
         string itemID42;
         string itemID43;
         string itemID44;
 
-        //AMMOS
+        string itemCOUNT41;
+        string itemCOUNT42;
+        string itemCOUNT43;
+        string itemCOUNT44;
+
+        //COINS
         string itemID45;
         string itemID46;
         string itemID47;
         string itemID48;
+
+        string itemCOUNT45;
+        string itemCOUNT46;
+        string itemCOUNT47;
+        string itemCOUNT48;
 
         //EQUIPEDARMOR
         string armorhelmetid;
@@ -99,6 +109,9 @@ namespace TerrariaVitaEditor
         public Form1()
         {
             InitializeComponent();
+
+            label69.Parent = pictureBox41;
+            label69.BackColor = Color.Transparent;
         }
 
         public string path;
@@ -184,8 +197,8 @@ namespace TerrariaVitaEditor
 
             fs.Close();
 
-                groupBox1.Enabled = true;
-                groupBox8.Enabled = true;
+            groupBox1.Enabled = true;
+            groupBox8.Enabled = true;
             groupBox9.Enabled = true;
             groupBox10.Enabled = true;
 
@@ -271,7 +284,15 @@ namespace TerrariaVitaEditor
                     string ammo1PART2 = ammo1.Remove(2, 8);
                     string realammo1 = ammo1PART1 + ammo1PART2;
                     int ammo1id = Convert.ToInt32(realammo1, 16);
+
+                    itemCOUNT41 = ammo1.Remove(0 , 4);
+                    itemCOUNT41 = itemCOUNT41.Remove(4, 2);
+                    string itemCOUNT41PART1 = itemCOUNT41.Remove(0, 2);
+                    string itemCOUNT41PART2 = itemCOUNT41.Remove(2, 2);
+                    itemCOUNT41 = Convert.ToInt32(itemCOUNT41PART1 + itemCOUNT41PART2, 16).ToString();
+                    label69.Text = itemCOUNT41;
                     itemID41 = ammo1id.ToString();
+
                     pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + ammo1id + ".png");
                 }
                 catch
@@ -292,6 +313,7 @@ namespace TerrariaVitaEditor
                 try
                 {
                     string ammo2 = file.Remove(10, file.Length - 10);
+                    MessageBox.Show(ammo2);
                     string ammo2PART1 = ammo2.Remove(0, 2);
                     ammo2PART1 = ammo2PART1.Remove(2, 6);
                     string ammo2PART2 = ammo2.Remove(2, 8);
@@ -1547,11 +1569,12 @@ namespace TerrariaVitaEditor
 
         private string EquippedVanity(string file)
         {
-            string hexequippedhelmet = file.Remove(6, file.Length - 6);
-            if (hexequippedhelmet.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexequippedhelmet = file.Remove(6, file.Length - 6);
 
             string hexequippedhelmetPART1 = hexequippedhelmet.Remove(0, 2);
             hexequippedhelmetPART1 = hexequippedhelmetPART1.Remove(2, 2);
@@ -1576,11 +1599,12 @@ namespace TerrariaVitaEditor
 
             file = file.Remove(0, 6);
 
-            string hexequippedchest = file.Remove(6, file.Length - 6);
-            if (hexequippedchest.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexequippedchest = file.Remove(6, file.Length - 6);
 
             string hexequippedchestPART1 = hexequippedchest.Remove(0, 2);
             hexequippedchestPART1 = hexequippedchestPART1.Remove(2, 2);
@@ -1603,11 +1627,12 @@ namespace TerrariaVitaEditor
             vanitychestprefixid = equippedchestprefixid.ToString();
             file = file.Remove(0, 6);
 
-            string hexequippedboots = file.Remove(6, file.Length - 6);
-            if (hexequippedboots.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexequippedboots = file.Remove(6, file.Length - 6);
 
             string hexequippedbootsPART1 = hexequippedboots.Remove(0, 2);
             hexequippedbootsPART1 = hexequippedbootsPART1.Remove(2,2);
@@ -1637,11 +1662,12 @@ namespace TerrariaVitaEditor
 
         private string EquippedAccessories(string file)
         {
-            string hexone = file.Remove(6, file.Length - 6);
-            if (hexone.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexone = file.Remove(6, file.Length - 6);
 
             string hexonePART1 = hexone.Remove(0, 2);
             hexonePART1 = hexonePART1.Remove(2, 2);
@@ -1665,11 +1691,12 @@ namespace TerrariaVitaEditor
             accessoriesoneprefixid = equippedoneprefixid.ToString();
             file = file.Remove(0, 6);
 
-            string hextwo = file.Remove(6, file.Length - 6);
-            if (hextwo.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hextwo = file.Remove(6, file.Length - 6);
 
             string hextwoPART1 = hextwo.Remove(0, 2);
             hextwoPART1 = hextwoPART1.Remove(2, 2);
@@ -1692,11 +1719,13 @@ namespace TerrariaVitaEditor
             accessoriestwoprefixid = equippedtwoprefixid.ToString();
             file = file.Remove(0, 6);
 
-            string hexthree = file.Remove(6, file.Length - 6);
-            if (hexthree.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexthree = file.Remove(6, file.Length - 6);
+
             string hexthreePART1 = hexthree.Remove(0, 2);
             hexthreePART1 = hexthreePART1.Remove(2, 2);
             string hexthreePART2 = hexthree.Remove(2, 4);
@@ -1718,11 +1747,12 @@ namespace TerrariaVitaEditor
             accessoriesthreeprefixid = equippedthreeprefixid.ToString();
             file = file.Remove(0, 6);
 
-            string hexfour = file.Remove(6, file.Length - 6);
-            if (hexfour.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexfour = file.Remove(6, file.Length - 6);
 
             string hexfourPART1 = hexfour.Remove(0, 2);
             hexfourPART1 = hexfourPART1.Remove(2, 2);
@@ -1745,11 +1775,12 @@ namespace TerrariaVitaEditor
             accessoriesfourprefixid = equippedfourprefixid.ToString();
             file = file.Remove(0, 6);
 
-            string hexfive = file.Remove(6, file.Length - 6);
-            if (hexfive.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexfive = file.Remove(6, file.Length - 6);
 
             string hexfivePART1 = hexfive.Remove(0, 2);
             hexfivePART1 = hexfivePART1.Remove(2, 2);
@@ -1777,12 +1808,13 @@ namespace TerrariaVitaEditor
 
         private string EquippedArmor(string file)
         {
-            
-            string hexequippedhelmet = file.Remove(6, file.Length - 6);
-            if (hexequippedhelmet.StartsWith("0000"))
+
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexequippedhelmet = file.Remove(6, file.Length - 6);
 
             string hexequippedhelmetPART1 = hexequippedhelmet.Remove(0, 2);
             hexequippedhelmetPART1 = hexequippedhelmetPART1.Remove(2, 2);
@@ -1810,11 +1842,12 @@ namespace TerrariaVitaEditor
 
             file = file.Remove(0, 6);
 
-            string hexequippedchest = file.Remove(6, file.Length - 6);
-            if (hexequippedchest.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexequippedchest = file.Remove(6, file.Length - 6);
 
             string hexequippedchestPART1 = hexequippedchest.Remove(0, 2);
             hexequippedchestPART1 = hexequippedchestPART1.Remove(2, 2);
@@ -1836,13 +1869,16 @@ namespace TerrariaVitaEditor
 
             armorchestid = equippedchestid.ToString();
             armorchestprefixid = equippedchestprefixid.ToString();
+
+
             file = file.Remove(0, 6);
 
-            string hexequippedboots = file.Remove(6, file.Length - 6);
-            if (hexequippedboots.StartsWith("0000"))
+            if (file.StartsWith("0000"))
             {
                 file = "00" + file;
             }
+
+            string hexequippedboots = file.Remove(6, file.Length - 6);
 
             string hexequippedbootsPART1 = hexequippedboots.Remove(0, 2);
             hexequippedbootsPART1 = hexequippedbootsPART1.Remove(2, 2);
@@ -2042,7 +2078,14 @@ namespace TerrariaVitaEditor
 
         private void Make()
         {
+            #region begin
+
             string file = "1500";
+
+            #endregion
+
+            #region pseudolenght
+
             int pseudolenght = textBox1.TextLength;
             string pseudolenghta = HexFromID(pseudolenght);
 
@@ -2055,7 +2098,15 @@ namespace TerrariaVitaEditor
                 file = file + pseudolenghta;
             }
 
+            #endregion
+
+            #region pseudo
+
             file = file + StringToHex(textBox1.Text);
+
+            #endregion
+
+            #region diffuclty
 
             if (comboBox1.Text == "Easy (Normal)")
             {
@@ -2070,6 +2121,10 @@ namespace TerrariaVitaEditor
                 file = file + "02";
             }
 
+            #endregion
+
+            #region hairstyle
+
             int dechairstyle = Int32.Parse(textBox4.Text);
 
             if (dechairstyle > 134 || dechairstyle < 1)
@@ -2083,7 +2138,15 @@ namespace TerrariaVitaEditor
                 file = file + HexFromID(value);
             }
 
+            #endregion
+
+            #region unknown1
+
             file = file + "0000";
+
+            #endregion
+
+            #region sex
 
             if (comboBox2.Text == "Female")
             {
@@ -2094,116 +2157,220 @@ namespace TerrariaVitaEditor
                 file = file + "01";
             }
 
+            #endregion
+
+            #region HPMANA
+
             file = file + HPMANA;
+
+            #endregion
+
+            #region charactercolor
 
             file = file + textBox6.Text + textBox7.Text + textBox8.Text + textBox9.Text + textBox10.Text + textBox11.Text + textBox12.Text;
 
-            string equipedhelmet = HexFromIDspecial3b(Int32.Parse(armorhelmetid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorhelmetprefixid)));
-            string equipedchest = HexFromIDspecial3b(Int32.Parse(armorchestid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorchestprefixid)));
-            string equipedboots = HexFromIDspecial3b(Int32.Parse(armorbootsid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorbootsprefixid)));
+            #endregion
 
-            if (equipedhelmet.Length == 5)
-            {
-                file = file + equipedhelmet + "0";
+            #region equipedarmor
+            if (armorhelmetid == "0") {
+                file = file + "0000";
             }
             else
             {
-                file = file + equipedhelmet;
+                string equipedhelmet = HexFromIDspecial3b(Int32.Parse(armorhelmetid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorhelmetprefixid)));
+                if (equipedhelmet.Length == 5)
+                {
+                    file = file + equipedhelmet + "0";
+                }
+                else
+                {
+                    file = file + equipedhelmet;
+                }
             }
-            if (equipedchest.Length == 5)
+            if (armorchestid == "0")
             {
-                file = file + equipedchest + "0";
+                file = file + "0000";
             }
             else
             {
-                file = file + equipedchest;
+                string equipedchest = HexFromIDspecial3b(Int32.Parse(armorchestid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorchestprefixid)));
+                if (equipedchest.Length == 5)
+                {
+                    file = file + equipedchest + "0";
+                }
+                else
+                {
+                    file = file + equipedchest;
+                }
             }
-            if (equipedboots.Length == 5)
+            if (armorbootsid == "0")
             {
-                file = file + equipedboots + "0";
+                file = file + "0000";
             }
             else
             {
-                file = file + equipedboots;
+                string equipedboots = HexFromIDspecial3b(Int32.Parse(armorbootsid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(armorbootsprefixid)));
+                if (equipedboots.Length == 5)
+                {
+                    file = file + equipedboots + "0";
+                }
+                else
+                {
+                    file = file + equipedboots;
+                }
             }
+            #endregion
 
-            string equippedaccessorie1 = HexFromIDspecial3b(Int32.Parse(accessoriesoneid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesoneprefixid)));
-            string equippedaccessorie2 = HexFromIDspecial3b(Int32.Parse(accessoriestwoid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriestwoprefixid)));
-            string equippedaccessorie3 = HexFromIDspecial3b(Int32.Parse(accessoriesthreeid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesthreeprefixid)));
-            string equippedaccessorie4 = HexFromIDspecial3b(Int32.Parse(accessoriesfourid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesfourprefixid)));
-            string equippedaccessorie5 = HexFromIDspecial3b(Int32.Parse(accessoriesfiveid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesfiveprefixid)));
+            #region equipedaccessories
 
-            if (equippedaccessorie1.Length == 5)
+            if (accessoriesoneid == "0")
             {
-                file = file + equippedaccessorie1 + "0";
+                file = file + "0000";
             }
             else
             {
-                file = file + equippedaccessorie1;
-            }
-            if (equippedaccessorie2.Length == 5)
-            {
-                file = file + equippedaccessorie2 + "0";
-            }
-            else
-            {
-                file = file + equippedaccessorie2;
-            }
-            if (equippedaccessorie3.Length == 5)
-            {
-                file = file + equippedaccessorie3 + "0";
-            }
-            else
-            {
-                file = file + equippedaccessorie3;
-            }
-            if (equippedaccessorie4.Length == 5)
-            {
-                file = file + equippedaccessorie4 + "0";
-            }
-            else
-            {
-                file = file + equippedaccessorie4;
-            }
-            if (equippedaccessorie5.Length == 5)
-            {
-                file = file + equippedaccessorie5 + "0";
-            }
-            else
-            {
-                file = file + equippedaccessorie5;
+                string equippedaccessorie1 = HexFromIDspecial3b(Int32.Parse(accessoriesoneid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesoneprefixid)));
+                if (equippedaccessorie1.Length == 5)
+                {
+                    file = file + equippedaccessorie1 + "0";
+                }
+                else
+                {
+                    file = file + equippedaccessorie1;
+                }
             }
 
-            string vanityhelmet = HexFromIDspecial3b(Int32.Parse(vanityhelmetid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanityhelmetprefixid)));
-            string vanitychest = HexFromIDspecial3b(Int32.Parse(vanitychestid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanitychestprefixid)));
-            string vanityboots = HexFromIDspecial3b(Int32.Parse(vanityrbootsid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanityrbootsprefixid)));
+            if (accessoriestwoid == "0")
+            {
+                file = file + "0000";
+            }
+            else
+            {
+                string equippedaccessorie2 = HexFromIDspecial3b(Int32.Parse(accessoriestwoid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriestwoprefixid)));
+                if (equippedaccessorie2.Length == 5)
+                {
+                    file = file + equippedaccessorie2 + "0";
+                }
+                else
+                {
+                    file = file + equippedaccessorie2;
+                }
+            }
 
-            if (vanityhelmet.Length == 5)
-            {
-                file = file + vanityhelmet + "0";
+            if (accessoriesthreeid == "0") {
+                file = file + "0000";
             }
             else
             {
-                file = file + vanityhelmet;
+                string equippedaccessorie3 = HexFromIDspecial3b(Int32.Parse(accessoriesthreeid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesthreeprefixid)));
+                if (equippedaccessorie3.Length == 5)
+                {
+                    file = file + equippedaccessorie3 + "0";
+                }
+                else
+                {
+                    file = file + equippedaccessorie3;
+                }
             }
-            if (vanitychest.Length == 5)
+
+            if (accessoriesfourid == "0")
             {
-                file = file + vanitychest + "0";
+                file = file + "0000";
             }
             else
             {
-                file = file + vanitychest;
+                string equippedaccessorie4 = HexFromIDspecial3b(Int32.Parse(accessoriesfourid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesfourprefixid)));
+                if (equippedaccessorie4.Length == 5)
+                {
+                    file = file + equippedaccessorie4 + "0";
+                }
+                else
+                {
+                    file = file + equippedaccessorie4;
+                }
             }
-            if (vanityboots.Length == 5)
-            {
-                file = file + vanityboots + "0";
+
+            if (accessoriesfiveid == "0") {
+                file = file + "0000";
             }
             else
             {
-                file = file + vanityboots;
+                string equippedaccessorie5 = HexFromIDspecial3b(Int32.Parse(accessoriesfiveid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(accessoriesfiveprefixid)));
+                if (equippedaccessorie5.Length == 5)
+                {
+                    file = file + equippedaccessorie5 + "0";
+                }
+                else
+                {
+                    file = file + equippedaccessorie5;
+                }
             }
+            #endregion
+
+            #region equipedvanity
+
+            if (vanityhelmetid == "0")
+            {
+                file = file + "0000";
+            }
+            else
+            {
+                string vanityhelmet = HexFromIDspecial3b(Int32.Parse(vanityhelmetid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanityhelmetprefixid)));
+                if (vanityhelmet.Length == 5)
+                {
+                    file = file + vanityhelmet + "0";
+                }
+                else
+                {
+                    file = file + vanityhelmet;
+                }
+            }
+
+            if (vanitychestid == "0") {
+                file = file + "0000";
+            }
+            else
+            {
+                string vanitychest = HexFromIDspecial3b(Int32.Parse(vanitychestid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanitychestprefixid)));
+                if (vanitychest.Length == 5)
+                {
+                    file = file + vanitychest + "0";
+                }
+                else
+                {
+                    file = file + vanitychest;
+                }
+            }
+
+            if (vanityrbootsid == "0") {
+                file = file + "0000";
+            }
+            else
+            {
+                string vanityboots = HexFromIDspecial3b(Int32.Parse(vanityrbootsid)) + Int32.Parse(HexFromPrefixID(Int32.Parse(vanityrbootsprefixid)));
+                if (vanityboots.Length == 5)
+                {
+                    file = file + vanityboots + "0";
+                }
+                else
+                {
+                    file = file + vanityboots;
+                }
+            }
+
+            #endregion
+
+            #region unknown2
 
             file = file + unknwonone;
+
+            #endregion
+
+            #region inventory
+
+
+
+            #endregion
 
             textBox3.Text = file;
         }
@@ -2722,6 +2889,7 @@ namespace TerrariaVitaEditor
             lastselected = pictureBox41;
             groupBox11.Enabled = true;
             textBox84.Text = itemID41;
+            textBox85.Text = itemCOUNT41;
             currentpcturebox = 41;
         }
 
@@ -3288,13 +3456,15 @@ namespace TerrariaVitaEditor
             {
                 try
                 {
-                    itemID41 = textBox84.Text;
                     pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + textBox84.Text + ".png");
                 }
                 catch
                 {
                     pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
                 }
+                itemID41 = textBox84.Text;
+                itemCOUNT41 = textBox85.Text;
+                label69.Text = itemCOUNT41;
             }
             else if (currentpcturebox == 42)
             {
