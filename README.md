@@ -16,6 +16,8 @@ Transfer the 'ux0:data/savegames/PCSE00317/SLOTX' folder from [VitaShell](https:
 
 You can now edit your player and your inventory! (Select an item, edit the ID, the number and the PrefixID and click 'Validate'). Then click 'Save' and if it's done you will have a 'Success!' message box !
 
+Now transfer your modified PLAYERX.PLR to your Vita (in the same place where you took it) launch Vita Save Manager and restore the modified backup. Finally, launch Terraria and Happy Gaming!
+
 Please, if you have an exclamation mark on an item, you can create an issue on this Github repository and indicate the ID of the item, I will be grateful!
 
 I think you will need:
