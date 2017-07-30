@@ -14,7 +14,7 @@ First, download and install [Vita Save Manager](https://github.com/d3m3vilurr/vi
 
 Transfer the 'ux0:data/savegames/PCSE00317/SLOTX' folder from [VitaShell](https://github.com/TheOfficialFloW/VitaShell/releases) to your PC. Open Terraria Character Editor. Click 'file', 'open' and select your PLAYERX.PLR file!
 
-You can now edit your player and your inventory!
+You can now edit your player and your inventory! (Select an item, edit the ID, the number and the PrefixID and click 'Validate')
 
 Please, if you have an exclamation mark on an item, you can create an issue on this Github repository and indicate the ID of the item, I will be grateful!
 
