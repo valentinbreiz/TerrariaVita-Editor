@@ -327,6 +327,8 @@ namespace TerrariaVitaEditor
                     groupBox6.Enabled = true;
                     groupBox7.Enabled = true;
 
+                    button3.Enabled = true;
+
                 }
                 catch (Exception ex)
                 {
@@ -3317,6 +3319,8 @@ namespace TerrariaVitaEditor
             lastselected = pictureBox7;
             groupBox11.Enabled = true;
             textBox84.Text = itemID7;
+            textBox85.Text = itemCOUNT7;
+            textBox86.Text = itemPREFIXID7;
             currentpcturebox = 7;
         }
 
