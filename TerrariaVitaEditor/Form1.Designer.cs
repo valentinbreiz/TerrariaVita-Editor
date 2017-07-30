@@ -294,7 +294,7 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.ouvrirToolStripMenuItem.Text = "Open";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 

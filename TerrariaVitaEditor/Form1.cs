@@ -227,8 +227,8 @@ namespace TerrariaVitaEditor
             }
 
             fs.Close();
-
             Interpreter(file);
+
             }
             catch {}
 
@@ -382,7 +382,7 @@ namespace TerrariaVitaEditor
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error while loading PLR file.\n" + ex);
+                    MessageBox.Show("Error while loading PLR file.");
                 }
             }
             else
@@ -2059,7 +2059,7 @@ namespace TerrariaVitaEditor
                     itemPREFIXID35 = item35.Remove(0, 8);
                     itemPREFIXID35 = Convert.ToInt32(itemPREFIXID35, 16).ToString();
 
-                    item35 = item35id.ToString();
+                    itemID35 = item35id.ToString();
                     pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_" + item35id + ".png");
                 }
                 catch
@@ -2761,14 +2761,10 @@ namespace TerrariaVitaEditor
 
         private void Make()
         {
-            try
-            {
-
-            #region begin
-
             string file = "1500";
 
-            #endregion
+            try
+            {
 
             #region pseudolenght
 
@@ -2821,7 +2817,15 @@ namespace TerrariaVitaEditor
             {
                 int value = Int32.Parse(textBox4.Text);
                 value = value - 1;
-                file = file + HexFromID(value);
+
+                    if (value.ToString().Length == 1)
+                    {
+                        file = file + "0" + HexFromID(value);
+                    }
+                    else {
+                        file = file + HexFromID(value);
+                    }
+                
             }
 
             #endregion
@@ -3125,23 +3129,22 @@ namespace TerrariaVitaEditor
 
             file += endfile;
 
-            var stream = new FileStream(
-            path,
-            FileMode.Create,
-            FileAccess.ReadWrite);
+            File.WriteAllBytes(path, StringToByteArray(file));
 
-            WriteHexStringToFile(file, stream);
-
-            stream.Close();
-
-            //File.WriteAllBytes(path, file);
             MessageBox.Show("Success!");
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error!\n" + ex);
             }
+        }
+
+        public static byte[] StringToByteArray(string hex)
+        {
+            return Enumerable.Range(0, hex.Length)
+                             .Where(x => x % 2 == 0)
+                             .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
+                             .ToArray();
         }
 
         private void WriteHexStringToFile(string hexString, FileStream stream)
@@ -3154,7 +3157,7 @@ namespace TerrariaVitaEditor
 
                 if (twoCharacterBuffer.Length == 2)
                 {
-                    oneByte[0] = (byte)Convert.ToByte(twoCharacterBuffer.ToString(), 16);
+                    oneByte[0] = Convert.ToByte(twoCharacterBuffer.ToString(), 16);
                     stream.Write(oneByte, 0, 1);
                     twoCharacterBuffer.Clear();
                 }
