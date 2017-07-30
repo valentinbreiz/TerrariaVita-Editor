@@ -188,6 +188,14 @@ namespace TerrariaVitaEditor
         string accessoriesfiveid;
         string accessoriesfiveprefixid;
 
+        string haircolor;
+        string skincolor;
+        string eyecolor;
+        string shirtcolor;
+        string undershirtcolor;
+        string pantscolor;
+        string shoescolor;
+
         public Form1()
         {
             InitializeComponent();
@@ -197,6 +205,7 @@ namespace TerrariaVitaEditor
 
         //Pour la sauvegarde
         public string endfile;
+
         public string HPMANA;
 
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2615,46 +2624,46 @@ namespace TerrariaVitaEditor
 
         private string ColorPlayer(string file)
         {
-            string haircolor = file.Remove(6, file.Length - 6);
-            textBox6.Text = haircolor;
-            Color colorhaircolor = ColorTranslator.FromHtml("#" + haircolor);
-            textBox6.ForeColor = colorhaircolor;
+            string hexhaircolor = file.Remove(6, file.Length - 6);
+            Color colorhaircolor = ColorTranslator.FromHtml("#" + hexhaircolor);
+            haircolor = hexhaircolor;
+            button2.BackColor = colorhaircolor;
             file = file.Remove(0, 6);
 
-            string skincolor = file.Remove(6, file.Length - 6);
-            Color colorskincolor = ColorTranslator.FromHtml("#" + skincolor);
-            textBox7.ForeColor = colorskincolor;
-            textBox7.Text = skincolor;
+            string hexskincolor = file.Remove(6, file.Length - 6);
+            Color colorskincolor = ColorTranslator.FromHtml("#" + hexskincolor);
+            skincolor = hexskincolor;
+            button5.BackColor = colorskincolor;
             file = file.Remove(0, 6);
 
-            string eyecolor = file.Remove(6, file.Length - 6);
-            Color coloreyecolor = ColorTranslator.FromHtml("#" + eyecolor);
-            textBox8.ForeColor = coloreyecolor;
-            textBox8.Text = eyecolor;
+            string hexeyecolor = file.Remove(6, file.Length - 6);
+            Color coloreyecolor = ColorTranslator.FromHtml("#" + hexeyecolor);
+            eyecolor = hexeyecolor;
+            button6.BackColor = coloreyecolor;
             file = file.Remove(0, 6);
 
-            string shirtcolor = file.Remove(6, file.Length - 6);
-            Color colorshirtcolor = ColorTranslator.FromHtml("#" + shirtcolor);
-            textBox9.ForeColor = colorshirtcolor;
-            textBox9.Text = shirtcolor;
+            string hexshirtcolor = file.Remove(6, file.Length - 6);
+            Color colorshirtcolor = ColorTranslator.FromHtml("#" + hexshirtcolor);
+            shirtcolor = hexshirtcolor;
+            button7.BackColor = colorshirtcolor;
             file = file.Remove(0, 6);
 
-            string undershirtcolor = file.Remove(6, file.Length - 6);
-            Color colorundershirtcolor = ColorTranslator.FromHtml("#" + undershirtcolor);
-            textBox10.ForeColor = colorundershirtcolor;
-            textBox10.Text = undershirtcolor;
+            string hexundershirtcolor = file.Remove(6, file.Length - 6);
+            Color colorundershirtcolor = ColorTranslator.FromHtml("#" + hexundershirtcolor);
+            undershirtcolor = hexundershirtcolor;
+            button8.BackColor = colorundershirtcolor;
             file = file.Remove(0, 6);
 
-            string pantscolor = file.Remove(6, file.Length - 6);
-            Color colorpantscolor = ColorTranslator.FromHtml("#" + pantscolor);
-            textBox11.ForeColor = colorpantscolor;
-            textBox11.Text = pantscolor;
+            string hexpantscolor = file.Remove(6, file.Length - 6);
+            Color colorpantscolor = ColorTranslator.FromHtml("#" + hexpantscolor);
+            pantscolor = hexpantscolor;
+            button9.BackColor = colorpantscolor;
             file = file.Remove(0, 6);
 
-            string shoescolor = file.Remove(6, file.Length - 6);
-            Color colorshoescolor = ColorTranslator.FromHtml("#" + shoescolor);
-            textBox12.ForeColor = colorshoescolor;
-            textBox12.Text = shoescolor;
+            string hexshoescolor = file.Remove(6, file.Length - 6);
+            Color colorshoescolor = ColorTranslator.FromHtml("#" + hexshoescolor);
+            shoescolor = hexshoescolor;
+            button10.BackColor = colorshoescolor;
             file = file.Remove(0, 6);
 
             return file;
@@ -2857,7 +2866,7 @@ namespace TerrariaVitaEditor
 
             #region charactercolor
 
-            file = file + textBox6.Text + textBox7.Text + textBox8.Text + textBox9.Text + textBox10.Text + textBox11.Text + textBox12.Text;
+            file = file + haircolor + skincolor + eyecolor + shirtcolor + undershirtcolor + pantscolor + shoescolor;
 
             #endregion
 
@@ -4973,6 +4982,62 @@ namespace TerrariaVitaEditor
                     pictureBox59.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            Color colorhair = colorDialog1.Color;
+            button2.BackColor = colorhair;
+            haircolor = colorhair.R.ToString("X2") + colorhair.G.ToString("X2") + colorhair.B.ToString("X2");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            Color colorskin = colorDialog1.Color;
+            button5.BackColor = colorskin;
+            skincolor = colorskin.R.ToString("X2") + colorskin.G.ToString("X2") + colorskin.B.ToString("X2");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            Color colorhair = colorDialog1.Color;
+            button6.BackColor = colorhair;
+            eyecolor = colorhair.R.ToString("X2") + colorhair.G.ToString("X2") + colorhair.B.ToString("X2");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            Color colorshirt = colorDialog1.Color;
+            button7.BackColor = colorshirt;
+            shirtcolor = colorshirt.R.ToString("X2") + colorshirt.G.ToString("X2") + colorshirt.B.ToString("X2");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            Color colorundershirt = colorDialog1.Color;
+            button8.BackColor = colorundershirt;
+            undershirtcolor = colorundershirt.R.ToString("X2") + colorundershirt.G.ToString("X2") + colorundershirt.B.ToString("X2");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            Color colorpants = colorDialog1.Color;
+            button9.BackColor = colorpants;
+            pantscolor = colorpants.R.ToString("X2") + colorpants.G.ToString("X2") + colorpants.B.ToString("X2");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            Color colorshoes = colorDialog1.Color;
+            button10.BackColor = colorshoes;
+            shoescolor = colorshoes.R.ToString("X2") + colorshoes.G.ToString("X2") + colorshoes.B.ToString("X2");
         }
     }
 }
