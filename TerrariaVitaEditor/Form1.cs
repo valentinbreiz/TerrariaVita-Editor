@@ -276,18 +276,6 @@ namespace TerrariaVitaEditor
 
             fs.Close();
 
-            groupBox1.Enabled = true;
-            groupBox8.Enabled = true;
-            groupBox9.Enabled = true;
-            groupBox10.Enabled = true;
-
-            groupBox5.Enabled = true;
-            groupBox6.Enabled = true;
-            groupBox7.Enabled = true;
-
-
-            textBox2.Text = file;
-
             Interpreter(file);
             }
             catch {}
@@ -328,16 +316,21 @@ namespace TerrariaVitaEditor
 
                     file = Ammo(file);
 
-                    button3.Enabled = true;
-                    button2.Enabled = true;
-                    textBox2.Enabled = true;
-
                     endfile = file;
+
+                    groupBox1.Enabled = true;
+                    groupBox8.Enabled = true;
+                    groupBox9.Enabled = true;
+                    groupBox10.Enabled = true;
+
+                    groupBox5.Enabled = true;
+                    groupBox6.Enabled = true;
+                    groupBox7.Enabled = true;
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error.\n" + ex);
+                    MessageBox.Show("Error while loading PLR file.\n" + ex);
                 }
             }
             else
@@ -2707,21 +2700,6 @@ namespace TerrariaVitaEditor
         private void àProposToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Terraria Character Editor for PS Vita v1\nBy valentinbreiz from CustomProtocol.com");
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string file = textBox2.Text;
-                File.WriteAllBytes(path, StringToByteArray(file));
-                MessageBox.Show("Success!");
-            }
-            catch
-            {
-                MessageBox.Show("Error!");
-            }
-            
         }
 
         public static byte[] StringToByteArray(string hex)
