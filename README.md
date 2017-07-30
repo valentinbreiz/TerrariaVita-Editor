@@ -3,11 +3,11 @@ A Terraria character editor for PSVita.
 
 First tab:
 
-![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501430068-tce1.png)
+![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501440261-tce1.png)
 
 Second tab:
 
-![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501430068-tce2.png)
+![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501440260-tce2.png)
 
 # How to use it ?
 First, download and install [Vita Save Manager](https://github.com/d3m3vilurr/vita-savemgr/releases). Make a backup of the Terraria's savedatas (you can make two saves (SLOT1 and SLOT2) in case of my software corrupts your savedatas!).
