@@ -5,15 +5,11 @@ Screenshots:
 
 First tab:
 
-Soon...
+![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501430068-tce1.png)
 
 Second tab:
 
-Soon...
-
-Third tab:
-
-Soon...
+![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501430068-tce2.png)
 
 Useful links:
 - http://terraria-fr.gamepedia.com/Item_IDs
