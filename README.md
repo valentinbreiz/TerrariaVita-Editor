@@ -23,3 +23,5 @@ Please, if you have an exclamation mark on an item, you can create an issue on t
 I think you will need:
 - https://terraria.gamepedia.com/Item_IDs
 - https://terraria.gamepedia.com/Prefix_IDs
+- https://terraria.gamepedia.com/Hairstyles
+- http://www.color-hex.com
