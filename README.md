@@ -1,4 +1,4 @@
-# TerrariaVita-Editor
+# Terraria Character Editor for PSVita (TCE Vita)
 A Terraria character editor for PSVita.
 
 Screenshots:
