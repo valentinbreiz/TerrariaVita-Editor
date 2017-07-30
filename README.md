@@ -9,6 +9,15 @@ Second tab:
 
 ![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501430068-tce2.png)
 
-Useful links:
-- http://terraria-fr.gamepedia.com/Item_IDs
-- http://www.binaryhexconverter.com/hex-to-decimal-converter
+# How to use it ?
+First, download and install [Vita Save Manager](https://github.com/d3m3vilurr/vita-savemgr/releases). Make a backup of the Terraria's savedatas (you can make two saves (SLOT1 and SLOT2) in case of my software corrupts your savedatas!).
+
+Transfer the 'ux0:data/savegames/PCSE00317/SLOTX' folder from [VitaShell](https://github.com/TheOfficialFloW/VitaShell/releases) to your PC. Open Terraria Character Editor. Click 'file', 'open' and select your PLAYERX.PLR file!
+
+You can now edit your player and your inventory!
+
+Please, if you have an exclamation mark on an item, you can create an issue on this Github repository and indicate the ID of the item, I will be grateful!
+
+I think you will need:
+- https://terraria.gamepedia.com/Item_IDs
+- https://terraria.gamepedia.com/Prefix_IDs
