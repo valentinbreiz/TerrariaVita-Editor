@@ -1,5 +1,5 @@
 # Terraria Character Editor for PSVita (TCE Vita)
-A Terraria character editor for PSVita. Works with Terraria 1.11 (Other versions are not tested).
+A Terraria character and inventory editor for PSVita. Works with Terraria 1.11 (Other versions are not tested).
 
 First tab:
 
