@@ -201,54 +201,6 @@ namespace TerrariaVitaEditor
 
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox25.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox31.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox32.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox33.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox34.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox36.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox37.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox38.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox39.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox40.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
-            pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
 
             openFileDialog1.ShowDialog();
             path = openFileDialog1.FileName;
@@ -288,6 +240,104 @@ namespace TerrariaVitaEditor
             {    
                 try
                 {
+                    pictureBox1.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox2.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox3.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox4.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox5.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox6.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox7.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox8.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox9.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox10.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox11.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox12.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox13.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox14.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox15.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox16.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox17.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox18.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox19.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox20.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox21.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox22.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox23.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox24.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox25.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox26.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox27.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox28.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox29.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox30.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox31.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox32.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox33.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox34.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox35.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox36.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox37.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox38.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox39.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox40.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox41.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox42.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox43.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox44.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox45.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox46.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox47.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+                    pictureBox48.BackgroundImage = Image.FromFile("Images\\Items\\Item_0.png");
+
+                    label28.Text = "";
+                    label29.Text = "";
+                    label30.Text = "";
+                    label31.Text = "";
+                    label32.Text = "";
+                    label33.Text = "";
+                    label34.Text = "";
+                    label35.Text = "";
+                    label36.Text = "";
+                    label37.Text = "";
+                    label38.Text = "";
+                    label39.Text = "";
+                    label40.Text = "";
+                    label41.Text = "";
+                    label42.Text = "";
+                    label43.Text = "";
+                    label44.Text = "";
+                    label45.Text = "";
+                    label46.Text = "";
+                    label47.Text = "";
+                    label48.Text = "";
+                    label49.Text = "";
+                    label50.Text = "";
+                    label51.Text = "";
+                    label52.Text = "";
+                    label53.Text = "";
+                    label54.Text = "";
+                    label55.Text = "";
+                    label56.Text = "";
+                    label57.Text = "";
+                    label58.Text = "";
+                    label59.Text = "";
+                    label60.Text = "";
+                    label61.Text = "";
+                    label62.Text = "";
+                    label63.Text = "";
+                    label64.Text = "";
+                    label65.Text = "";
+                    label67.Text = "";
+                    label68.Text = "";
+                    label69.Text = "";
+                    label70.Text = "";
+                    label71.Text = "";
+                    label72.Text = "";
+                    label73.Text = "";
+                    label74.Text = "";
+                    label75.Text = "";
+                    label66.Text = "";
+
                     file = file.Remove(0, 4);
 
                     file = Pseudo(file);
@@ -2704,14 +2754,6 @@ namespace TerrariaVitaEditor
             MessageBox.Show("Terraria Character Editor for PS Vita v1\nBy valentinbreiz from CustomProtocol.com");
         }
 
-        public static byte[] StringToByteArray(string hex)
-        {
-            return Enumerable.Range(0, hex.Length)
-                             .Where(x => x % 2 == 0)
-                             .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
-                             .ToArray();
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Make();
@@ -3083,13 +3125,39 @@ namespace TerrariaVitaEditor
 
             file += endfile;
 
-            File.WriteAllBytes(path, StringToByteArray(file));
+            var stream = new FileStream(
+            path,
+            FileMode.Create,
+            FileAccess.ReadWrite);
+
+            WriteHexStringToFile(file, stream);
+
+            stream.Close();
+
+            //File.WriteAllBytes(path, file);
             MessageBox.Show("Success!");
 
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Error!");
+                MessageBox.Show("Error!\n" + ex);
+            }
+        }
+
+        private void WriteHexStringToFile(string hexString, FileStream stream)
+        {
+            var twoCharacterBuffer = new StringBuilder();
+            var oneByte = new byte[1];
+            foreach (var character in hexString.Where(c => c != ' '))
+            {
+                twoCharacterBuffer.Append(character);
+
+                if (twoCharacterBuffer.Length == 2)
+                {
+                    oneByte[0] = (byte)Convert.ToByte(twoCharacterBuffer.ToString(), 16);
+                    stream.Write(oneByte, 0, 1);
+                    twoCharacterBuffer.Clear();
+                }
             }
         }
 
