@@ -1,8 +1,6 @@
 # Terraria Character Editor for PSVita (TCE Vita)
 A Terraria character editor for PSVita.
 
-Screenshots:
-
 First tab:
 
 ![alt text](https://image.noelshack.com/fichiers/2017/30/7/1501430068-tce1.png)
