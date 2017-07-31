@@ -18,7 +18,7 @@ You can now edit your player and your inventory! (Select an item, edit the ID, t
 
 Now transfer your modified PLAYERX.PLR to your Vita (in the same place where you took it) launch Vita Save Manager and restore the modified backup. Finally, launch Terraria and Happy Gaming!
 
-Please, if you have an exclamation mark on an item, you can create an issue on this Github repository and indicate the ID of the item, I will be grateful!
+Please, if you have an exclamation mark on an item, a wrong image or a wrong itemID, count or prefixID, you can create an issue on this Github repository and indicate the ID of the item, I will be grateful!
 
 I think you will need:
 - https://terraria.gamepedia.com/Item_IDs
