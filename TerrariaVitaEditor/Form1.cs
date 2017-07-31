@@ -347,6 +347,20 @@ namespace TerrariaVitaEditor
                     label75.Text = "";
                     label66.Text = "";
 
+                    try
+                    {
+                        lastselected.BorderStyle = BorderStyle.None;
+                    }
+                    catch {}
+                    groupBox11.Enabled = false;
+                    textBox84.Text = "";
+                    textBox85.Text = "";
+                    textBox86.Text = "";
+
+                    textBox26.Text = "";
+                    textBox24.Text = "";
+                    groupBox4.Enabled = false;
+
                     file = file.Remove(0, 4);
 
                     file = Pseudo(file);
@@ -3315,6 +3329,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3328,6 +3344,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None;}
             catch{ }
@@ -3341,6 +3359,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3354,6 +3374,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox4.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3367,6 +3389,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox5.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3380,6 +3404,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox6.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3393,6 +3419,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox7.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3406,6 +3434,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox8.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3419,6 +3449,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox9.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3432,6 +3464,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox10.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3445,6 +3479,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox11.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3458,6 +3494,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox12.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3471,6 +3509,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox13.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3484,6 +3524,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox14.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3497,6 +3539,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox15_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox15.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3510,6 +3554,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox16.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3523,6 +3569,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox17.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3536,6 +3584,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox18_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox18.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3549,6 +3599,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox19.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3562,6 +3614,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox20_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox20.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3575,6 +3629,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox21_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox21.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3588,6 +3644,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox22_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox22.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3601,6 +3659,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox23_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox23.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3614,6 +3674,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox24_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox24.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3627,6 +3689,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox25_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox25.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3640,6 +3704,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox26_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox26.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3653,6 +3719,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox27_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox27.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3666,6 +3734,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox29_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox29.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3679,6 +3749,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox28_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox28.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3692,6 +3764,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox30_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox30.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3705,6 +3779,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox31_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox31.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3718,6 +3794,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox32_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox32.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3731,6 +3809,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox33_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox33.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3744,6 +3824,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox34_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox34.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3757,6 +3839,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox35_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox35.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3770,6 +3854,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox36_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox36.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3783,6 +3869,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox37_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox37.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3796,6 +3884,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox38_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox38.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3809,6 +3899,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox39_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox39.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3822,6 +3914,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox40_Click(object sender, EventArgs e)
         {
+            label76.Enabled = true;
+            textBox86.Enabled = true;
             pictureBox40.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3835,6 +3929,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox41_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox41.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3848,6 +3944,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox42_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox42.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3861,6 +3959,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox43_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox43.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3874,6 +3974,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox44_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox44.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3887,6 +3989,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox45_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox45.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3900,6 +4004,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox46_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox46.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3913,6 +4019,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox47_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox47.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -3926,6 +4034,8 @@ namespace TerrariaVitaEditor
 
         private void pictureBox48_Click(object sender, EventArgs e)
         {
+            label76.Enabled = false;
+            textBox86.Enabled = false;
             pictureBox48.BorderStyle = BorderStyle.FixedSingle;
             try { lastselected.BorderStyle = BorderStyle.None; }
             catch { }
@@ -5038,6 +5148,23 @@ namespace TerrariaVitaEditor
             Color colorshoes = colorDialog1.Color;
             button10.BackColor = colorshoes;
             shoescolor = colorshoes.R.ToString("X2") + colorshoes.G.ToString("X2") + colorshoes.B.ToString("X2");
+        }
+
+        private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            try
+            {
+                lastselected.BorderStyle = BorderStyle.None;
+            }
+            catch { }
+            groupBox11.Enabled = false;
+            textBox84.Text = "";
+            textBox85.Text = "";
+            textBox86.Text = "";
+
+            textBox26.Text = "";
+            textBox24.Text = "";
+            groupBox4.Enabled = false;
         }
     }
 }
