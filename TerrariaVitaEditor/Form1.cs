@@ -199,6 +199,152 @@ namespace TerrariaVitaEditor
         public Form1()
         {
             InitializeComponent();
+
+            label28.Parent = pictureBox1;
+            label28.Location = new Point(0 , 0);
+
+            label29.Parent = pictureBox2;
+            label29.Location = new Point(0, 0);
+
+            label30.Parent = pictureBox3;
+            label30.Location = new Point(0, 0);
+
+            label31.Parent = pictureBox4;
+            label31.Location = new Point(0, 0);
+
+            label32.Parent = pictureBox5;
+            label32.Location = new Point(0, 0);
+
+            label33.Parent = pictureBox6;
+            label33.Location = new Point(0, 0);
+
+            label34.Parent = pictureBox7;
+            label34.Location = new Point(0, 0);
+
+            label35.Parent = pictureBox8;
+            label35.Location = new Point(0, 0);
+
+            label36.Parent = pictureBox9;
+            label36.Location = new Point(0, 0);
+
+            label37.Parent = pictureBox10;
+            label37.Location = new Point(0, 0);
+
+            label38.Parent = pictureBox11;
+            label38.Location = new Point(0, 0);
+
+            label39.Parent = pictureBox12;
+            label39.Location = new Point(0, 0);
+
+            label40.Parent = pictureBox13;
+            label40.Location = new Point(0, 0);
+
+            label41.Parent = pictureBox14;
+            label41.Location = new Point(0, 0);
+
+            label42.Parent = pictureBox15;
+            label42.Location = new Point(0, 0);
+
+            label43.Parent = pictureBox16;
+            label43.Location = new Point(0, 0);
+
+            label44.Parent = pictureBox17;
+            label44.Location = new Point(0, 0);
+
+            label45.Parent = pictureBox18;
+            label45.Location = new Point(0, 0);
+
+            label46.Parent = pictureBox19;
+            label46.Location = new Point(0, 0);
+
+            label47.Parent = pictureBox20;
+            label47.Location = new Point(0, 0);
+
+            label48.Parent = pictureBox21;
+            label48.Location = new Point(0, 0);
+
+            label49.Parent = pictureBox22;
+            label49.Location = new Point(0, 0);
+
+            label50.Parent = pictureBox23;
+            label50.Location = new Point(0, 0);
+
+            label51.Parent = pictureBox24;
+            label51.Location = new Point(0, 0);
+
+            label52.Parent = pictureBox25;
+            label52.Location = new Point(0, 0);
+
+            label53.Parent = pictureBox26;
+            label53.Location = new Point(0, 0);
+
+            label54.Parent = pictureBox27;
+            label54.Location = new Point(0, 0);
+
+            label55.Parent = pictureBox28;
+            label55.Location = new Point(0, 0);
+
+            label56.Parent = pictureBox29;
+            label56.Location = new Point(0, 0);
+
+            label57.Parent = pictureBox30;
+            label57.Location = new Point(0, 0);
+
+            label58.Parent = pictureBox31;
+            label58.Location = new Point(0, 0);
+
+            label59.Parent = pictureBox32;
+            label59.Location = new Point(0, 0);
+
+            label60.Parent = pictureBox33;
+            label60.Location = new Point(0, 0);
+
+            label61.Parent = pictureBox34;
+            label61.Location = new Point(0, 0);
+
+            label62.Parent = pictureBox35;
+            label62.Location = new Point(0, 0);
+
+            label63.Parent = pictureBox36;
+            label63.Location = new Point(0, 0);
+
+            label64.Parent = pictureBox37;
+            label64.Location = new Point(0, 0);
+
+            label65.Parent = pictureBox38;
+            label65.Location = new Point(0, 0);
+
+            label67.Parent = pictureBox39;
+            label67.Location = new Point(0, 0);
+
+            label68.Parent = pictureBox40;
+            label68.Location = new Point(0, 0);
+
+            label69.Parent = pictureBox41;
+            label69.Location = new Point(0, 0);
+
+            label70.Parent = pictureBox42;
+            label70.Location = new Point(0, 0);
+
+            label71.Parent = pictureBox43;
+            label71.Location = new Point(0, 0);
+
+            label72.Parent = pictureBox44;
+            label72.Location = new Point(0, 0);
+
+            label73.Parent = pictureBox45;
+            label73.Location = new Point(0, 0);
+
+            label74.Parent = pictureBox46;
+            label74.Location = new Point(0, 0);
+
+            label75.Parent = pictureBox47;
+            label75.Location = new Point(0, 0);
+
+            label66.Parent = pictureBox48;
+            label66.Location = new Point(0, 0);
+
+
         }
 
         public string path;
