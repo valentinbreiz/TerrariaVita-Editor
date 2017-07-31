@@ -24,6 +24,5 @@ I think you will need:
 - https://terraria.gamepedia.com/Item_IDs
 - https://terraria.gamepedia.com/Prefix_IDs
 - https://terraria.gamepedia.com/Hairstyles
-- http://www.color-hex.com
 
 Download : https://github.com/valentinbreiz/TerrariaVita-Editor/releases/download/1.1/TCEVitaV1-1.zip
