@@ -2920,7 +2920,7 @@ namespace TerrariaVitaEditor
 
         private void àProposToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Terraria Character Editor for PSVita v1.1\nBy valentinbreiz from CustomProtocol.com");
+            MessageBox.Show("Terraria Character Editor for PSVita v1.0\nBy valentinbreiz from CustomProtocol.com\nFor the sources see github.com/valentinbreiz/TerrariaVita-Editor");
         }
 
         private void button3_Click(object sender, EventArgs e)
