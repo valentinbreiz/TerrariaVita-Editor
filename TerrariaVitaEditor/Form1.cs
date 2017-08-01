@@ -4084,7 +4084,7 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID41;
             textBox85.Text = itemCOUNT41;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 41;
         }
 
@@ -4099,7 +4099,7 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID42;
             textBox85.Text = itemCOUNT42;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 42;
         }
 
@@ -4114,7 +4114,7 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID43;
             textBox85.Text = itemCOUNT43;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 43;
         }
 
@@ -4129,7 +4129,7 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID44;
             textBox85.Text = itemCOUNT44;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 44;
         }
 
@@ -4144,7 +4144,7 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID45;
             textBox85.Text = itemCOUNT45;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 45;
         }
 
@@ -4159,7 +4159,7 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID46;
             textBox85.Text = itemCOUNT46;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 46;
         }
 
@@ -4174,7 +4174,7 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID47;
             textBox85.Text = itemCOUNT47;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 47;
         }
 
@@ -4189,13 +4189,19 @@ namespace TerrariaVitaEditor
             groupBox11.Enabled = true;
             textBox84.Text = itemID48;
             textBox85.Text = itemCOUNT48;
-            textBox86.Text = "";
+            textBox86.Text = "0";
             currentpcturebox = 48;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (currentpcturebox == 1)
+            if (textBox84.Text == "" || textBox85.Text == "" || textBox86.Text == "")
+            {
+                MessageBox.Show("Missing value!");
+            }
+            else
+            {
+                if (currentpcturebox == 1)
             {
                 try
                 {
@@ -4954,6 +4960,7 @@ namespace TerrariaVitaEditor
                 itemCOUNT48 = textBox85.Text;
                 label66.Text = itemCOUNT48;
             }
+            }
         }
 
         private void pictureBox49_Click(object sender, EventArgs e)
@@ -5095,6 +5102,11 @@ namespace TerrariaVitaEditor
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if  (textBox26.Text == "" || textBox24.Text == "") {
+                MessageBox.Show("Missing value!");
+            }
+            else
+            {
             if (currentpcturebox == 49)
             {
                 try
@@ -5237,6 +5249,7 @@ namespace TerrariaVitaEditor
                 {
                     pictureBox59.BackgroundImage = Image.FromFile("Images\\Items\\Item_unknown.png");
                 }
+            }
             }
         }
 
