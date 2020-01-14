@@ -3,11 +3,11 @@ A Terraria character and inventory editor for PSVita. Works with Terraria 1.11 (
 
 First tab:
 
-![alt text](https://raw.githubusercontent.com/valentinbreiz/TerrariaVita-Editor/master/one.PNG)
+![alt text](https://raw.githubusercontent.com/valentinbreiz/TerrariaVita-Editor/master/Ressources/one.PNG)
 
 Second tab:
 
-![alt text](https://raw.githubusercontent.com/valentinbreiz/TerrariaVita-Editor/master/two.PNG)
+![alt text](https://raw.githubusercontent.com/valentinbreiz/TerrariaVita-Editor/master/Ressources/two.PNG)
 
 # How to use it ?
 First, download and install [Vita Save Manager](https://github.com/d3m3vilurr/vita-savemgr/releases). Make a backup of the Terraria's savedatas (you can make two saves (SLOT1 and SLOT2) in case of my software corrupts your savedatas!).
