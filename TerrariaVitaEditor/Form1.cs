@@ -2971,11 +2971,9 @@ namespace TerrariaVitaEditor
             {
                 file = file + "02";
             }
-
             #endregion
 
             #region hairstyle
-
             int dechairstyle = Int32.Parse(textBox4.Text);
 
             if (dechairstyle > 134 || dechairstyle < 1)
@@ -2987,13 +2985,13 @@ namespace TerrariaVitaEditor
                 int value = Int32.Parse(textBox4.Text);
                 value = value - 1;
 
-                    if (value.ToString().Length == 1)
-                    {
-                        file = file + "0" + HexFromID(value);
-                    }
-                    else {
-                        file = file + HexFromID(value);
-                    }
+                if (value.ToString("X").Length == 1)
+                {
+                    file = file + "0" + HexFromID(value);
+                }
+                else {
+                    file = file + HexFromID(value);
+                }
                 
             }
 
